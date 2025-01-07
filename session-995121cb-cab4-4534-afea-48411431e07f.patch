@@ -1,0 +1,1382 @@
+diff --git a/.prettierrc b/.prettierrc
+new file mode 100644
+index 0000000..35ee042
+--- /dev/null
++++ b/.prettierrc
+@@ -0,0 +1,21 @@
++{
++  "semi": false,
++  "singleQuote": true,
++  "trailingComma": "es5",
++  "printWidth": 100,
++  "tabWidth": 2,
++  "useTabs": false,
++  "bracketSpacing": true,
++  "arrowParens": "avoid",
++  "endOfLine": "lf",
++  "plugins": ["prettier-plugin-tailwindcss"],
++  "tailwindConfig": "./tailwind.config.js",
++  "overrides": [
++    {
++      "files": "*.md",
++      "options": {
++        "proseWrap": "always"
++      }
++    }
++  ]
++}
+diff --git a/README.md b/README.md
+index 493f91b..c4f3a9b 100644
+--- a/README.md
++++ b/README.md
+@@ -1,2 +1,115 @@
+-# BiloxiStudios
+-Public Website
++# Biloxi Studios Website 🌊
++
++A modern, vaporwave-inspired website for Biloxi Studios - creating and educating the Gulf Coast through cooperative and multiplayer gaming experiences. Home of BrainDead.TV.
++
++## Features
++- Modern Next.js-based static site
++- Vaporwave aesthetic with coastal Mississippi flair
++- Dynamic blog/content system using Markdown files
++- Easy content management through file-based posts
++- Responsive design for all devices
++
++## Tech Stack
++- Next.js 13+ with App Router
++- TypeScript
++- TailwindCSS for styling
++- MDX for Markdown content
++- GitHub Pages / Vercel deployment
++
++## Project Structure
++```
++/app             # Next.js app directory
++/components      # Reusable React components
++/content/posts   # Markdown blog posts
++/public          # Static assets
++/styles          # Global styles and theme
++```
++
++## Development
++1. Install dependencies:
++```bash
++npm install
++```
++
++2. Run development server:
++```bash
++npm run dev
++```
++
++3. Adding new posts:
++- Create a new folder in `/content/posts/[post-name]`
++- Add `index.md` with front matter and content
++- Include any images in the same folder
++
++## Deployment
++The site automatically deploys to Vercel on push to main branch.
++
++### Environment Setup
++1. Create a new project on Vercel
++2. Link your GitHub repository
++3. Configure the following environment variables in Vercel:
++   ```bash
++   NEXT_PUBLIC_SITE_URL=https://biloxistudios.com
++   NEXT_PUBLIC_GA_ID=your_ga_id_here
++   ```
++
++### Manual Deployment
++```bash
++# Install dependencies
++npm install
++
++# Build the site
++npm run build
++
++# Start production server
++npm start
++```
++
++### Development Workflow
++1. Clone the repository
++   ```bash
++   git clone https://github.com/BiloxiStudios/BiloxiStudios.git
++   cd BiloxiStudios
++   ```
++
++2. Install dependencies
++   ```bash
++   npm install
++   ```
++
++3. Start development server
++   ```bash
++   npm run dev
++   ```
++
++4. Create new content
++   - Add blog posts in `/content/posts/[post-name]/index.md`
++   - Include images in the same folder as the markdown file
++   - Front matter format:
++     ```yaml
++     ---
++     title: 'Post Title'
++     date: 'YYYY-MM-DD'
++     author: 'Author Name'
++     excerpt: 'Brief description'
++     coverImage: 'image.jpg'
++     ---
++     ```
++
++### Build Analysis
++To analyze the bundle size:
++```bash
++npm run analyze
++```
++
++### Code Formatting
++Format code using Prettier:
++```bash
++npm run format
++```
++
++### Production Checks
++Before deploying:
++1. Run linting: `npm run lint`
++2. Build locally: `npm run build`
++3. Test production build: `npm start`
+diff --git a/app/blog/[slug]/page.tsx b/app/blog/[slug]/page.tsx
+new file mode 100644
+index 0000000..e19ee16
+--- /dev/null
++++ b/app/blog/[slug]/page.tsx
+@@ -0,0 +1,56 @@
++import { getPostBySlug, getAllPosts } from '@/lib/posts'
++import Image from 'next/image'
++import Link from 'next/link'
++
++interface PostParams {
++  params: {
++    slug: string
++  }
++}
++
++// Generate static pages for all posts
++export async function generateStaticParams() {
++  const posts = getAllPosts()
++  return posts.map((post) => ({
++    slug: post.slug,
++  }))
++}
++
++export default function Post({ params }: PostParams) {
++  const post = getPostBySlug(params.slug)
++
++  return (
++    <article className="py-16">
++      <div className="vapor-card max-w-4xl mx-auto">
++        {/* Post Header */}
++        <header className="mb-8">
++          <Link href="/blog" className="coastal-link mb-4 inline-block">
++            ← Back to all posts
++          </Link>
++          <h1 className="vapor-text text-4xl font-bold mb-4">{post.title}</h1>
++          <div className="text-coastal-sand mb-4">
++            <time>{new Date(post.date).toLocaleDateString()}</time>
++            <span className="mx-2">•</span>
++            <span>{post.author}</span>
++          </div>
++          {post.coverImage && (
++            <div className="relative h-64 mb-8">
++              <Image
++                src={`/content/posts/${params.slug}/${post.coverImage}`}
++                alt={post.title}
++                fill
++                className="object-cover rounded-lg"
++              />
++            </div>
++          )}
++        </header>
++
++        {/* Post Content */}
++        <div className="prose prose-invert prose-lg max-w-none">
++          {/* Note: In a real implementation, we'd use a markdown renderer here */}
++          <div dangerouslySetInnerHTML={{ __html: post.content }} />
++        </div>
++      </div>
++    </article>
++  )
++}
+diff --git a/app/blog/page.tsx b/app/blog/page.tsx
+new file mode 100644
+index 0000000..b910e36
+--- /dev/null
++++ b/app/blog/page.tsx
+@@ -0,0 +1,54 @@
++import { getAllPosts } from '@/lib/posts'
++import Image from 'next/image'
++import Link from 'next/link'
++
++export default function BlogIndex() {
++  const posts = getAllPosts()
++
++  return (
++    <div className="py-16">
++      <header className="mb-16 text-center">
++        <h1 className="vapor-text text-5xl font-bold mb-4">Blog</h1>
++        <p className="text-coastal-sand text-xl">
++          Updates and insights from the Biloxi Studios team
++        </p>
++      </header>
++
++      <div className="grid gap-8 max-w-5xl mx-auto">
++        {posts.map((post) => (
++          <Link 
++            key={post.slug}
++            href={`/blog/${post.slug}`}
++            className="vapor-card hover:scale-[1.02] transition-transform duration-300"
++          >
++            <article className="grid md:grid-cols-4 gap-6">
++              {post.coverImage && (
++                <div className="md:col-span-1 relative h-48 md:h-full">
++                  <Image
++                    src={`/content/posts/${post.slug}/${post.coverImage}`}
++                    alt={post.title}
++                    fill
++                    className="object-cover rounded-lg"
++                  />
++                </div>
++              )}
++              <div className={`${post.coverImage ? 'md:col-span-3' : 'md:col-span-4'}`}>
++                <h2 className="text-2xl font-display text-vapor-yellow mb-2">
++                  {post.title}
++                </h2>
++                <div className="text-coastal-sand mb-3">
++                  <time>{new Date(post.date).toLocaleDateString()}</time>
++                  <span className="mx-2">•</span>
++                  <span>{post.author}</span>
++                </div>
++                <p className="text-coastal-sand/80">
++                  {post.excerpt}
++                </p>
++              </div>
++            </article>
++          </Link>
++        ))}
++      </div>
++    </div>
++  )
++}
+diff --git a/app/error.tsx b/app/error.tsx
+new file mode 100644
+index 0000000..f03b67f
+--- /dev/null
++++ b/app/error.tsx
+@@ -0,0 +1,62 @@
++'use client'
++
++import { useEffect } from 'react'
++
++export default function Error({
++  error,
++  reset,
++}: {
++  error: Error
++  reset: () => void
++}) {
++  useEffect(() => {
++    console.error('Application error:', error)
++  }, [error])
++
++  return (
++    <div className="min-h-[80vh] flex items-center justify-center">
++      <div className="vapor-card text-center max-w-xl mx-auto space-y-6 relative overflow-hidden">
++        <h1 className="vapor-text text-4xl font-bold">System Malfunction</h1>
++        <div className="space-y-4">
++          <p className="text-coastal-sand text-lg">
++            Something went wrong in the digital waves...
++          </p>
++          <p className="text-vapor-pink/80 font-mono text-sm">
++            {error.message || 'An unexpected error occurred'}
++          </p>
++        </div>
++
++        <div className="pt-6">
++          <button
++            onClick={reset}
++            className="inline-block bg-vapor-purple/20 hover:bg-vapor-purple/30 text-vapor-yellow px-6 py-3 rounded-lg transition-colors duration-300"
++          >
++            Try Again
++          </button>
++        </div>
++
++        {/* Glitch effect overlay */}
++        <div 
++          className="absolute inset-0 pointer-events-none opacity-10"
++          style={{
++            background: `
++              repeating-linear-gradient(
++                0deg,
++                var(--vapor-pink) 0%,
++                transparent 1px,
++                transparent 3px
++              )
++            `,
++            backgroundSize: '100% 3px',
++            animation: 'glitch 1s infinite',
++          }}
++        />
++
++        {/* Error code pattern */}
++        <div className="absolute -bottom-4 -right-4 text-4xl font-mono text-vapor-purple/20 transform rotate-12">
++          {'< / >'}
++        </div>
++      </div>
++    </div>
++  )
++}
+diff --git a/app/globals.css b/app/globals.css
+new file mode 100644
+index 0000000..d76e52b
+--- /dev/null
++++ b/app/globals.css
+@@ -0,0 +1,121 @@
++@tailwind base;
++@tailwind components;
++@tailwind utilities;
++
++:root {
++  --foreground-rgb: 255, 255, 255;
++  --background-start-rgb: 0, 0, 0;
++  --background-end-rgb: 0, 0, 0;
++  --vapor-pink: #FF71CE;
++  --vapor-blue: #01CDFE;
++  --vapor-purple: #B967FF;
++  --vapor-yellow: #FFFB96;
++  --vapor-green: #05FFA1;
++}
++
++body {
++  color: rgb(var(--foreground-rgb));
++  background: linear-gradient(
++      to bottom,
++      transparent,
++      rgb(var(--background-end-rgb))
++    )
++    rgb(var(--background-start-rgb));
++}
++
++@layer components {
++  .vapor-card {
++    @apply bg-black/30 backdrop-blur-md rounded-lg border border-vapor-pink/20 p-6 shadow-xl relative overflow-hidden;
++    transition: transform 0.3s ease, box-shadow 0.3s ease;
++  }
++  
++  .vapor-card:hover {
++    transform: translateY(-2px);
++    box-shadow: 0 8px 30px rgba(255, 113, 206, 0.2);
++  }
++  
++  .vapor-text {
++    @apply font-display text-transparent bg-clip-text bg-gradient-to-r from-vapor-pink to-vapor-blue;
++    animation: textShine 6s linear infinite;
++  }
++  
++  .coastal-link {
++    @apply text-coastal-water hover:text-vapor-yellow transition-colors duration-300 relative;
++  }
++  
++  .coastal-link::after {
++    content: '';
++    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-vapor-yellow transition-all duration-300;
++  }
++  
++  .coastal-link:hover::after {
++    @apply w-full;
++  }
++}
++
++/* Animations */
++@keyframes textShine {
++  from {
++    background-position: 0% center;
++  }
++  to {
++    background-position: 200% center;
++  }
++}
++
++@keyframes glitch {
++  0% {
++    transform: translate(0);
++  }
++  20% {
++    transform: translate(-2px, 2px);
++  }
++  40% {
++    transform: translate(-2px, -2px);
++  }
++  60% {
++    transform: translate(2px, 2px);
++  }
++  80% {
++    transform: translate(2px, -2px);
++  }
++  100% {
++    transform: translate(0);
++  }
++}
++
++@keyframes float {
++  0% {
++    transform: translateY(0px);
++  }
++  50% {
++    transform: translateY(-10px);
++  }
++  100% {
++    transform: translateY(0px);
++  }
++}
++
++/* Custom scrollbar */
++::-webkit-scrollbar {
++  width: 10px;
++}
++
++::-webkit-scrollbar-track {
++  @apply bg-black/20;
++}
++
++::-webkit-scrollbar-thumb {
++  @apply bg-vapor-purple/50 hover:bg-vapor-purple/70 rounded-full;
++  background-image: linear-gradient(45deg, 
++    var(--vapor-pink) 0%, 
++    var(--vapor-purple) 50%,
++    var(--vapor-blue) 100%
++  );
++}
++
++/* Selection styles */
++::selection {
++  background: var(--vapor-purple);
++  color: var(--vapor-yellow);
++}
+diff --git a/app/layout.tsx b/app/layout.tsx
+new file mode 100644
+index 0000000..2e820f0
+--- /dev/null
++++ b/app/layout.tsx
+@@ -0,0 +1,92 @@
++import './globals.css'
++import { Inter, Orbitron } from 'next/font/google'
++import Navigation from '@/components/Navigation'
++import Link from 'next/link'
++
++const inter = Inter({
++  subsets: ['latin'],
++  variable: '--font-inter',
++})
++
++const orbitron = Orbitron({
++  subsets: ['latin'],
++  variable: '--font-orbitron',
++})
++
++export const metadata = {
++  title: 'Biloxi Studios - Gulf Coast Game Development',
++  description: 'Creating and educating the Gulf Coast through cooperative and multiplayer gaming experiences.',
++  manifest: '/manifest.json',
++  themeColor: '#FF71CE',
++  metadataBase: new URL('https://biloxistudios.com'),
++  openGraph: {
++    title: 'Biloxi Studios',
++    description: 'Gulf Coast Game Development Studio',
++    url: 'https://biloxistudios.com',
++    siteName: 'Biloxi Studios',
++    locale: 'en_US',
++    type: 'website',
++  },
++  twitter: {
++    card: 'summary_large_image',
++    title: 'Biloxi Studios',
++    description: 'Gulf Coast Game Development Studio',
++  },
++  icons: {
++    icon: '/favicon.ico',
++  },
++  viewport: {
++    width: 'device-width',
++    initialScale: 1,
++    maximumScale: 1,
++  },
++}
++
++export default function RootLayout({
++  children,
++}: {
++  children: React.ReactNode
++}) {
++  return (
++    <html lang="en" className={`${inter.variable} ${orbitron.variable}`}>
++      <body className="bg-gradient-to-br from-vapor-purple via-vapor-blue to-vapor-green min-h-screen">
++        <Navigation />
++        <div className="pt-16">
++          <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
++            {children}
++          </main>
++          
++          <footer className="mt-24 border-t border-vapor-pink/20">
++            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
++              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
++                <div>
++                  <h3 className="font-display text-vapor-yellow text-lg mb-4">Biloxi Studios</h3>
++                  <p className="text-coastal-sand">Creating next-gen gaming experiences on the Gulf Coast</p>
++                </div>
++                <div>
++                  <h3 className="font-display text-vapor-yellow text-lg mb-4">Links</h3>
++                  <ul className="space-y-2">
++                    <li><Link href="/blog" className="coastal-link">Blog</Link></li>
++                    <li><Link href="/projects" className="coastal-link">Projects</Link></li>
++                    <li><Link href="https://braindead.tv" className="coastal-link">BrainDead.TV</Link></li>
++                  </ul>
++                </div>
++                <div>
++                  <h3 className="font-display text-vapor-yellow text-lg mb-4">Connect</h3>
++                  <ul className="space-y-2">
++                    <li><a href="https://twitter.com/biloxistudios" className="coastal-link">Twitter</a></li>
++                    <li><a href="https://github.com/biloxistudios" className="coastal-link">GitHub</a></li>
++                    <li><a href="https://discord.gg/biloxistudios" className="coastal-link">Discord</a></li>
++                  </ul>
++                </div>
++              </div>
++              <div className="mt-8 pt-8 border-t border-vapor-pink/20 text-center text-coastal-sand">
++                <p>&copy; {new Date().getFullYear()} Biloxi Studios. All rights reserved.</p>
++              </div>
++            </div>
++          </footer>
++        </div>
++      </body>
++    </html>
++  )
++}
+diff --git a/app/loading.tsx b/app/loading.tsx
+new file mode 100644
+index 0000000..8f5e7cf
+--- /dev/null
++++ b/app/loading.tsx
+@@ -0,0 +1,32 @@
++export default function Loading() {
++  return (
++    <div className="min-h-[60vh] flex items-center justify-center">
++      <div className="vapor-card text-center p-8 relative overflow-hidden">
++        <div className="space-y-4">
++          <h2 className="vapor-text text-2xl font-display animate-pulse">Loading...</h2>
++          <p className="text-coastal-sand">Synthesizing digital waves...</p>
++        </div>
++
++        {/* Animated gradient border */}
++        <div className="absolute -inset-1 bg-gradient-to-r from-vapor-pink via-vapor-blue to-vapor-purple animate-[spin_3s_linear_infinite] opacity-75 blur" />
++        
++        {/* Loading spinner */}
++        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
++          <div className="w-16 h-16 border-4 border-vapor-blue border-t-vapor-pink rounded-full animate-spin" />
++        </div>
++        
++        {/* Retro grid background */}
++        <div 
++          className="absolute inset-0 opacity-20"
++          style={{
++            backgroundImage: `
++              linear-gradient(transparent 0%, var(--vapor-purple) 2%, transparent 5%),
++              linear-gradient(90deg, transparent 0%, var(--vapor-blue) 2%, transparent 5%)
++            `,
++            backgroundSize: '40px 40px',
++          }}
++        />
++      </div>
++    </div>
++  )
++}
+diff --git a/app/not-found.tsx b/app/not-found.tsx
+new file mode 100644
+index 0000000..2adaafa
+--- /dev/null
++++ b/app/not-found.tsx
+@@ -0,0 +1,34 @@
++import Link from 'next/link'
++
++export default function NotFound() {
++  return (
++    <div className="min-h-[80vh] flex items-center justify-center">
++      <div className="vapor-card text-center max-w-xl mx-auto space-y-6">
++        <h1 className="vapor-text text-6xl font-bold">404</h1>
++        <h2 className="text-2xl font-display text-vapor-yellow">Page Not Found</h2>
++        
++        <div className="glitch-text relative">
++          <p className="text-coastal-sand text-lg">
++            Looks like you've ventured into uncharted waters...
++          </p>
++        </div>
++
++        <div className="pt-6">
++          <Link 
++            href="/" 
++            className="inline-block bg-vapor-purple/20 hover:bg-vapor-purple/30 text-vapor-yellow px-6 py-3 rounded-lg transition-colors duration-300"
++          >
++            Return to Shore
++          </Link>
++        </div>
++
++        <div className="absolute w-full h-full top-0 left-0 pointer-events-none opacity-50"
++             style={{
++               background: 'linear-gradient(45deg, transparent 65%, var(--vapor-pink) 100%)',
++               mixBlendMode: 'overlay',
++             }}
++        />
++      </div>
++    </div>
++  )
++}
+diff --git a/app/page.tsx b/app/page.tsx
+new file mode 100644
+index 0000000..3f7e3e8
+--- /dev/null
++++ b/app/page.tsx
+@@ -0,0 +1,59 @@
++import Image from 'next/image'
++import Link from 'next/link'
++
++export default function Home() {
++  return (
++    <main className="min-h-screen py-24 space-y-24">
++      {/* Hero Section */}
++      <section className="text-center space-y-8">
++        <h1 className="vapor-text text-6xl font-bold">
++          Biloxi Studios
++        </h1>
++        <p className="text-2xl text-coastal-sand max-w-2xl mx-auto">
++          Creating and educating the Gulf Coast through cooperative and multiplayer gaming experiences
++        </p>
++        <div className="flex justify-center gap-4">
++          <Link href="/projects" className="vapor-card hover:scale-105 transition-transform duration-300">
++            Our Projects
++          </Link>
++          <Link href="https://braindead.tv" className="vapor-card hover:scale-105 transition-transform duration-300">
++            BrainDead.TV
++          </Link>
++        </div>
++      </section>
++
++      {/* Featured Section */}
++      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
++        <div className="vapor-card">
++          <h2 className="text-2xl font-display text-vapor-yellow mb-4">UEFN Experiences</h2>
++          <p className="text-coastal-sand">
++            Pushing the boundaries of interactive entertainment with Unreal Editor for Fortnite
++          </p>
++        </div>
++        
++        <div className="vapor-card">
++          <h2 className="text-2xl font-display text-vapor-pink mb-4">AI Integration</h2>
++          <p className="text-coastal-sand">
++            Next-generation AI-supported gaming experiences
++          </p>
++        </div>
++        
++        <div className="vapor-card">
++          <h2 className="text-2xl font-display text-vapor-green mb-4">Gulf Coast Gaming</h2>
++          <p className="text-coastal-sand">
++            Building a vibrant game development community on the Mississippi Coast
++          </p>
++        </div>
++      </section>
++
++      {/* Latest Posts Section */}
++      <section className="vapor-card">
++        <h2 className="text-3xl font-display text-vapor-blue mb-8">Latest Updates</h2>
++        <div className="space-y-4">
++          {/* This will be populated dynamically from markdown files */}
++          <p className="text-coastal-sand italic">Coming soon...</p>
++        </div>
++      </section>
++    </main>
++  )
++}
+diff --git a/app/projects/page.tsx b/app/projects/page.tsx
+new file mode 100644
+index 0000000..352a5ea
+--- /dev/null
++++ b/app/projects/page.tsx
+@@ -0,0 +1,84 @@
++import Link from 'next/link'
++import Image from 'next/image'
++
++interface Project {
++  title: string
++  description: string
++  type: string
++  imageUrl?: string
++  link?: string
++}
++
++const projects: Project[] = [
++  {
++    title: 'BrainDead.TV',
++    description: 'Our flagship interactive streaming platform combining gaming and live entertainment.',
++    type: 'Platform',
++    link: 'https://braindead.tv'
++  },
++  {
++    title: 'Gulf Coast Game Jam',
++    description: 'Annual game development event bringing together creators from across the Gulf Coast.',
++    type: 'Community Event'
++  },
++  {
++    title: 'UEFN Experiences',
++    description: 'Upcoming innovative multiplayer experiences built with Unreal Editor for Fortnite.',
++    type: 'Games'
++  }
++]
++
++export default function Projects() {
++  return (
++    <div className="py-16">
++      <header className="text-center mb-16">
++        <h1 className="vapor-text text-5xl font-bold mb-4">Our Projects</h1>
++        <p className="text-coastal-sand text-xl max-w-2xl mx-auto">
++          Exploring the intersection of gaming, education, and community through innovative experiences
++        </p>
++      </header>
++
++      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
++        {projects.map((project) => (
++          <div key={project.title} className="vapor-card group">
++            {project.imageUrl && (
++              <div className="relative h-48 mb-4">
++                <Image
++                  src={project.imageUrl}
++                  alt={project.title}
++                  fill
++                  className="object-cover rounded-lg"
++                />
++              </div>
++            )}
++            
++            <div className="space-y-4">
++              <span className="text-vapor-pink text-sm font-medium">{project.type}</span>
++              <h2 className="text-2xl font-display text-vapor-yellow group-hover:text-vapor-green transition-colors duration-300">
++                {project.link ? (
++                  <Link href={project.link}>{project.title}</Link>
++                ) : (
++                  project.title
++                )}
++              </h2>
++              <p className="text-coastal-sand">{project.description}</p>
++            </div>
++          </div>
++        ))}
++      </div>
++
++      <div className="mt-16 vapor-card text-center">
++        <h2 className="text-2xl font-display text-vapor-blue mb-4">Have a project in mind?</h2>
++        <p className="text-coastal-sand mb-6">
++          We're always open to new collaborations and exciting projects.
++        </p>
++        <a 
++          href="mailto:contact@biloxistudios.com" 
++          className="inline-block bg-vapor-purple/20 hover:bg-vapor-purple/30 text-vapor-yellow px-6 py-3 rounded-lg transition-colors duration-300"
++        >
++          Get in touch
++        </a>
++      </div>
++    </div>
++  )
++}
+diff --git a/app/robots.txt b/app/robots.txt
+new file mode 100644
+index 0000000..aa47324
+--- /dev/null
++++ b/app/robots.txt
+@@ -0,0 +1,5 @@
++User-agent: *
++Allow: /
++
++# Sitemaps
++Sitemap: https://biloxistudios.com/sitemap.xml
+diff --git a/components/Navigation.tsx b/components/Navigation.tsx
+new file mode 100644
+index 0000000..020bac3
+--- /dev/null
++++ b/components/Navigation.tsx
+@@ -0,0 +1,78 @@
++'use client'
++
++import Link from 'next/link'
++import { useState } from 'react'
++
++export default function Navigation() {
++  const [isOpen, setIsOpen] = useState(false)
++
++  const navItems = [
++    { label: 'Home', href: '/' },
++    { label: 'Blog', href: '/blog' },
++    { label: 'Projects', href: '/projects' },
++    { label: 'BrainDead.TV', href: 'https://braindead.tv' }
++  ]
++
++  return (
++    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/30 backdrop-blur-md">
++      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
++        <div className="flex items-center justify-between h-16">
++          {/* Logo */}
++          <Link href="/" className="flex items-center">
++            <span className="font-display text-2xl vapor-text">Biloxi Studios</span>
++          </Link>
++
++          {/* Desktop Navigation */}
++          <div className="hidden md:flex items-center space-x-8">
++            {navItems.map((item) => (
++              <Link
++                key={item.href}
++                href={item.href}
++                className="text-coastal-sand hover:text-vapor-yellow transition-colors duration-300"
++              >
++                {item.label}
++              </Link>
++            ))}
++          </div>
++
++          {/* Mobile menu button */}
++          <div className="md:hidden">
++            <button
++              onClick={() => setIsOpen(!isOpen)}
++              className="text-coastal-sand hover:text-vapor-yellow"
++            >
++              <span className="sr-only">Open main menu</span>
++              {isOpen ? (
++                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
++                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
++                </svg>
++              ) : (
++                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
++                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
++                </svg>
++              )}
++            </button>
++          </div>
++        </div>
++
++        {/* Mobile Navigation */}
++        {isOpen && (
++          <div className="md:hidden">
++            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
++              {navItems.map((item) => (
++                <Link
++                  key={item.href}
++                  href={item.href}
++                  className="text-coastal-sand hover:text-vapor-yellow block px-3 py-2 rounded-md text-base"
++                  onClick={() => setIsOpen(false)}
++                >
++                  {item.label}
++                </Link>
++              ))}
++            </div>
++          </div>
++        )}
++      </div>
++    </nav>
++  )
++}
+diff --git a/content/posts/welcome-to-biloxi-studios/index.md b/content/posts/welcome-to-biloxi-studios/index.md
+new file mode 100644
+index 0000000..8101384
+--- /dev/null
++++ b/content/posts/welcome-to-biloxi-studios/index.md
+@@ -0,0 +1,37 @@
++---
++title: 'Welcome to Biloxi Studios'
++date: '2023-11-15'
++author: 'Biloxi Studios Team'
++excerpt: 'Introducing our new game development studio on the Mississippi Gulf Coast'
++coverImage: 'hero.jpg'
++---
++
++# Welcome to Biloxi Studios! 🌊
++
++We're thrilled to announce the launch of Biloxi Studios, a new game development studio based in beautiful coastal Mississippi. Our mission is to create engaging multiplayer experiences while fostering a vibrant game development community on the Gulf Coast.
++
++## Our Focus
++
++At Biloxi Studios, we're passionate about:
++
++- Creating innovative multiplayer games using UEFN
++- Integrating cutting-edge AI technology
++- Building educational resources for aspiring developers
++- Fostering a collaborative gaming community
++
++## The Gulf Coast Advantage
++
++Being based in Biloxi gives us a unique perspective on game development. The rich culture, beautiful coastline, and growing tech scene provide endless inspiration for our creative projects.
++
++## Join Our Journey
++
++Whether you're a player, developer, or someone interested in game development, we invite you to join us on this exciting journey. Stay tuned for:
++
++- Development updates
++- Community events
++- Educational content
++- Game releases
++
++Follow us on social media and join our Discord community to stay connected!
++
++*Together, we're building something special on the Gulf Coast.*
+diff --git a/lib/posts.ts b/lib/posts.ts
+new file mode 100644
+index 0000000..ac7183a
+--- /dev/null
++++ b/lib/posts.ts
+@@ -0,0 +1,55 @@
++import fs from 'fs'
++import path from 'path'
++import matter from 'gray-matter'
++
++const postsDirectory = path.join(process.cwd(), 'content/posts')
++
++export interface PostMetadata {
++  slug: string
++  title: string
++  date: string
++  author: string
++  excerpt: string
++  coverImage?: string
++}
++
++export function getPostSlugs() {
++  return fs.readdirSync(postsDirectory)
++}
++
++export function getPostBySlug(slug: string) {
++  const realSlug = slug.replace(/\.md$/, '')
++  const fullPath = path.join(postsDirectory, realSlug, 'index.md')
++  const fileContents = fs.readFileSync(fullPath, 'utf8')
++  const { data, content } = matter(fileContents)
++
++  return {
++    slug: realSlug,
++    title: data.title,
++    date: data.date,
++    author: data.author,
++    excerpt: data.excerpt,
++    coverImage: data.coverImage,
++    content,
++  }
++}
++
++export function getAllPosts() {
++  const slugs = getPostSlugs()
++  const posts = slugs
++    .map((slug) => getPostBySlug(slug))
++    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
++  return posts
++}
++
++export function getLatestPosts(count: number = 5): PostMetadata[] {
++  const posts = getAllPosts()
++  return posts.slice(0, count).map(({ slug, title, date, author, excerpt, coverImage }) => ({
++    slug,
++    title,
++    date,
++    author,
++    excerpt,
++    coverImage,
++  }))
++}
+diff --git a/next-sitemap.config.js b/next-sitemap.config.js
+new file mode 100644
+index 0000000..adb662c
+--- /dev/null
++++ b/next-sitemap.config.js
+@@ -0,0 +1,39 @@
++/** @type {import('next-sitemap').IConfig} */
++module.exports = {
++  siteUrl: process.env.SITE_URL || 'https://biloxistudios.com',
++  generateRobotsTxt: false, // we already have a custom robots.txt
++  changefreq: 'weekly',
++  priority: 0.7,
++  sitemapSize: 7000,
++  exclude: ['/404', '/500'],
++  generateIndexSitemap: false,
++  transform: async (config, path) => {
++    // Custom transform function to adjust priority for specific pages
++    const priorities = {
++      '/': 1.0,
++      '/projects': 0.9,
++      '/blog': 0.8,
++    }
++    
++    return {
++      loc: path,
++      changefreq: config.changefreq,
++      priority: priorities[path] || config.priority,
++      lastmod: new Date().toISOString(),
++    }
++  },
++  additionalPaths: async (config) => {
++    // Add any dynamic paths that should be included in the sitemap
++    const dynamicPaths = []
++    
++    // Add blog posts
++    // You can modify this to fetch actual blog post paths
++    dynamicPaths.push({
++      loc: '/blog/welcome-to-biloxi-studios',
++      priority: 0.8,
++      changefreq: 'monthly',
++    })
++    
++    return dynamicPaths
++  },
++}
+diff --git a/next.config.analyzer.js b/next.config.analyzer.js
+new file mode 100644
+index 0000000..d491c7b
+--- /dev/null
++++ b/next.config.analyzer.js
+@@ -0,0 +1,10 @@
++const withBundleAnalyzer = require('@next/bundle-analyzer')({
++  enabled: process.env.ANALYZE === 'true',
++  openAnalyzer: true,
++})
++
++// Import base config
++const nextConfig = require('./next.config.js')
++
++// Merge configs
++module.exports = withBundleAnalyzer(nextConfig)
+diff --git a/next.config.js b/next.config.js
+new file mode 100644
+index 0000000..192aeb3
+--- /dev/null
++++ b/next.config.js
+@@ -0,0 +1,40 @@
++const withMDX = require('@next/mdx')()
++
++/** @type {import('next').NextConfig} */
++const nextConfig = {
++  // Configure pageExtensions to include md and mdx
++  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
++  
++  // Configure images to allow external domains if needed
++  images: {
++    domains: [],
++  },
++  
++  // Enable MDX
++  experimental: {
++    mdxRs: true,
++  },
++
++  // Configure redirects
++  async redirects() {
++    return [
++      {
++        source: '/braindead',
++        destination: 'https://braindead.tv',
++        permanent: true,
++      },
++    ]
++  },
++
++  // Specify output configuration
++  output: 'standalone',
++  
++  // Disable source maps in production
++  productionBrowserSourceMaps: false,
++
++  // Configure distDir for Vercel
++  distDir: '.next',
++}
++
++// Merge MDX config with Next.js config
++module.exports = withMDX(nextConfig)
+diff --git a/package.json b/package.json
+new file mode 100644
+index 0000000..4c936d8
+--- /dev/null
++++ b/package.json
+@@ -0,0 +1,36 @@
++{
++  "name": "biloxi-studios",
++  "version": "0.1.0",
++  "private": true,
++  "scripts": {
++    "dev": "next dev",
++    "build": "node scripts/build.js",
++    "start": "next start",
++    "lint": "next lint",
++    "format": "prettier --write .",
++    "clean": "rm -rf .next out",
++    "prebuild": "npm run clean",
++    "postbuild": "next-sitemap",
++    "analyze": "ANALYZE=true next build"
++  },
++  "dependencies": {
++    "@types/node": "^20.0.0",
++    "@types/react": "^18.2.0",
++    "@types/react-dom": "^18.2.0",
++    "next": "^13.4.0",
++    "react": "^18.2.0",
++    "react-dom": "^18.2.0",
++    "typescript": "^5.0.0",
++    "@mdx-js/loader": "^2.3.0",
++    "@mdx-js/react": "^2.3.0",
++    "@next/mdx": "^13.4.0",
++    "gray-matter": "^4.0.3",
++    "tailwindcss": "^3.3.0",
++    "postcss": "^8.4.0",
++    "autoprefixer": "^10.4.0",
++    "next-sitemap": "^4.0.0",
++    "prettier": "^2.8.0",
++    "prettier-plugin-tailwindcss": "^0.5.0",
++    "@next/bundle-analyzer": "^13.4.0"
++  }
++}
+diff --git a/postcss.config.js b/postcss.config.js
+new file mode 100644
+index 0000000..33ad091
+--- /dev/null
++++ b/postcss.config.js
+@@ -0,0 +1,6 @@
++module.exports = {
++  plugins: {
++    tailwindcss: {},
++    autoprefixer: {},
++  },
++}
+diff --git a/public/favicon.ico b/public/favicon.ico
+new file mode 100644
+index 0000000..8b13789
+--- /dev/null
++++ b/public/favicon.ico
+@@ -0,0 +1,1 @@
++
+diff --git a/public/manifest.json b/public/manifest.json
+new file mode 100644
+index 0000000..72159f8
+--- /dev/null
++++ b/public/manifest.json
+@@ -0,0 +1,18 @@
++{
++  "name": "Biloxi Studios",
++  "short_name": "Biloxi",
++  "description": "Gulf Coast Game Development Studio",
++  "start_url": "/",
++  "display": "standalone",
++  "background_color": "#000000",
++  "theme_color": "#FF71CE",
++  "icons": [
++    {
++      "src": "/favicon.ico",
++      "sizes": "64x64",
++      "type": "image/x-icon"
++    }
++  ],
++  "orientation": "portrait",
++  "prefer_related_applications": false
++}
+diff --git a/public/vercel.svg b/public/vercel.svg
+new file mode 100644
+index 0000000..f620e50
+--- /dev/null
++++ b/public/vercel.svg
+@@ -0,0 +1,3 @@
++<svg width="283" height="64" viewBox="0 0 283 64" fill="none" xmlns="http://www.w3.org/2000/svg">
++  <path d="M141.04 16c-11.04 0-19 7.2-19 18s8.96 18 20 18c6.67 0 12.55-2.64 16.19-7.09l-7.65-4.42c-2.02 2.21-5.09 3.5-8.54 3.5-4.79 0-8.86-2.5-10.37-6.5h28.02c.22-1.12.35-2.28.35-3.5 0-10.79-7.96-17.99-19-17.99zm-9.46 14.5c1.25-3.99 4.67-6.5 9.45-6.5 4.79 0 8.21 2.51 9.45 6.5h-18.9zM248.72 16c-11.04 0-19 7.2-19 18s8.96 18 20 18c6.67 0 12.55-2.64 16.19-7.09l-7.65-4.42c-2.02 2.21-5.09 3.5-8.54 3.5-4.79 0-8.86-2.5-10.37-6.5h28.02c.22-1.12.35-2.28.35-3.5 0-10.79-7.96-17.99-19-17.99zm-9.45 14.5c1.25-3.99 4.67-6.5 9.45-6.5 4.79 0 8.21 2.51 9.45 6.5h-18.9zM200.24 34c0 6 3.92 10 10 10 4.12 0 7.21-1.87 8.8-4.92l7.68 4.43c-3.18 5.3-9.14 8.49-16.48 8.49-11.05 0-19-7.2-19-18s7.96-18 19-18c7.34 0 13.29 3.19 16.48 8.49l-7.68 4.43c-1.59-3.05-4.68-4.92-8.8-4.92-6.07 0-10 4-10 10zm82.48-29v46h-9V5h9zM36.95 0L73.9 64H0L36.95 0zm92.38 5l-27.71 48L73.91 5H84.3l17.32 30 17.32-30h10.39zm58.91 12v9.69c-1-.29-2.06-.49-3.2-.49-5.81 0-10 4-10 10V51h-9V17h9v9.2c0-5.08 5.91-9.2 13.2-9.2z" fill="#FF71CE"/>
++</svg>
+diff --git a/scripts/build.js b/scripts/build.js
+new file mode 100644
+index 0000000..fccc645
+--- /dev/null
++++ b/scripts/build.js
+@@ -0,0 +1,43 @@
++const { execSync } = require('child_process');
++const path = require('path');
++const fs = require('fs');
++
++// Ensure required directories exist
++const publicDir = path.join(process.cwd(), 'public');
++if (!fs.existsSync(publicDir)) {
++  fs.mkdirSync(publicDir, { recursive: true });
++}
++
++// Run the build process
++try {
++  console.log('🏗️  Starting build process...');
++  
++  // Clean previous build
++  console.log('🧹 Cleaning previous build...');
++  if (fs.existsSync('.next')) {
++    execSync('rm -rf .next');
++  }
++  
++  // Install dependencies
++  console.log('📦 Installing dependencies...');
++  execSync('npm install', { stdio: 'inherit' });
++  
++  // Run Next.js build
++  console.log('🔨 Building Next.js application...');
++  execSync('next build', { stdio: 'inherit' });
++  
++  // Copy files to public directory if needed
++  console.log('📋 Ensuring public directory is ready...');
++  const requiredFiles = ['favicon.ico', 'manifest.json', 'vercel.svg'];
++  requiredFiles.forEach(file => {
++    const filePath = path.join(publicDir, file);
++    if (!fs.existsSync(filePath)) {
++      console.warn(`⚠️  Warning: ${file} not found in public directory`);
++    }
++  });
++  
++  console.log('✅ Build completed successfully!');
++} catch (error) {
++  console.error('❌ Build failed:', error);
++  process.exit(1);
++}
+diff --git a/tailwind.config.js b/tailwind.config.js
+new file mode 100644
+index 0000000..38ad699
+--- /dev/null
++++ b/tailwind.config.js
+@@ -0,0 +1,31 @@
++/** @type {import('tailwindcss').Config} */
++module.exports = {
++  content: [
++    './pages/**/*.{js,ts,jsx,tsx,mdx}',
++    './components/**/*.{js,ts,jsx,tsx,mdx}',
++    './app/**/*.{js,ts,jsx,tsx,mdx}',
++  ],
++  theme: {
++    extend: {
++      colors: {
++        'vapor-pink': '#FF71CE',
++        'vapor-blue': '#01CDFE',
++        'vapor-purple': '#B967FF',
++        'vapor-yellow': '#FFFB96',
++        'vapor-green': '#05FFA1',
++        'coastal-sand': '#F5E6CA',
++        'coastal-water': '#2B95FF',
++        'coastal-sunset': '#FF6B6B'
++      },
++      fontFamily: {
++        sans: ['var(--font-inter)'],
++        display: ['var(--font-orbitron)']
++      },
++      backgroundImage: {
++        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
++        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
++      },
++    },
++  },
++  plugins: [],
++}
+diff --git a/tsconfig.json b/tsconfig.json
+new file mode 100644
+index 0000000..e06a445
+--- /dev/null
++++ b/tsconfig.json
+@@ -0,0 +1,28 @@
++{
++  "compilerOptions": {
++    "target": "es5",
++    "lib": ["dom", "dom.iterable", "esnext"],
++    "allowJs": true,
++    "skipLibCheck": true,
++    "strict": true,
++    "forceConsistentCasingInFileNames": true,
++    "noEmit": true,
++    "esModuleInterop": true,
++    "module": "esnext",
++    "moduleResolution": "node",
++    "resolveJsonModule": true,
++    "isolatedModules": true,
++    "jsx": "preserve",
++    "incremental": true,
++    "plugins": [
++      {
++        "name": "next"
++      }
++    ],
++    "paths": {
++      "@/*": ["./*"]
++    }
++  },
++  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
++  "exclude": ["node_modules"]
++}
+diff --git a/vercel.json b/vercel.json
+new file mode 100644
+index 0000000..c7c4071
+--- /dev/null
++++ b/vercel.json
+@@ -0,0 +1,59 @@
++{
++  "version": 2,
++  "buildCommand": "npm run build",
++  "devCommand": "npm run dev",
++  "installCommand": "npm install",
++  "framework": "nextjs",
++  "outputDirectory": ".next",
++  "public": true,
++  "builds": [
++    {
++      "src": "package.json",
++      "use": "@vercel/next"
++    }
++  ],
++  "routes": [
++    {
++      "src": "/(.*)",
++      "dest": "/"
++    }
++  ],
++  "env": {
++    "NEXT_PUBLIC_SITE_URL": "https://biloxistudios.com",
++    "NEXT_PUBLIC_GA_ID": "",
++    "NODE_ENV": "production"
++  },
++  "github": {
++    "silent": true,
++    "autoAlias": true
++  },
++  "git": {
++    "deploymentEnabled": {
++      "main": true,
++      "development": false
++    }
++  },
++  "headers": [
++    {
++      "source": "/(.*)",
++      "headers": [
++        {
++          "key": "X-Content-Type-Options",
++          "value": "nosniff"
++        },
++        {
++          "key": "X-Frame-Options",
++          "value": "DENY"
++        },
++        {
++          "key": "X-XSS-Protection",
++          "value": "1; mode=block"
++        },
++        {
++          "key": "Referrer-Policy",
++          "value": "strict-origin-when-cross-origin"
++        }
++      ]
++    }
++  ]
++}

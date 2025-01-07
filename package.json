@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+
     "build": "node scripts/build.js",
     "start": "next start",
     "lint": "next lint",
@@ -12,6 +13,7 @@
     "prebuild": "npm run clean",
     "postbuild": "next-sitemap",
     "analyze": "ANALYZE=true next build"
+
   },
   "dependencies": {
     "@types/node": "^20.0.0",
@@ -32,5 +34,6 @@
     "prettier": "^2.8.0",
     "prettier-plugin-tailwindcss": "^0.5.0",
     "@next/bundle-analyzer": "^13.4.0"
+
   }
 }

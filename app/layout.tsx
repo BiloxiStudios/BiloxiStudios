@@ -16,6 +16,7 @@ const orbitron = Orbitron({
 export const metadata = {
   title: 'Biloxi Studios - Gulf Coast Game Development',
   description: 'Creating and educating the Gulf Coast through cooperative and multiplayer gaming experiences.',
+
   manifest: '/manifest.json',
   themeColor: '#FF71CE',
   metadataBase: new URL('https://biloxistudios.com'),
@@ -40,7 +41,7 @@ export const metadata = {
     initialScale: 1,
     maximumScale: 1,
   },
-}
+
 
 export default function RootLayout({
   children,
