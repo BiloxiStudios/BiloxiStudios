@@ -13,43 +13,46 @@ export interface PostMetadata {
   coverImage?: string
 }
 
+export interface Post {
+  content: string
+  frontmatter: PostMetadata
+}
+
 export function getPostSlugs() {
   return fs.readdirSync(postsDirectory)
 }
 
-export function getPostBySlug(slug: string) {
-  const realSlug = slug.replace(/\.md$/, '')
-  const fullPath = path.join(postsDirectory, realSlug, 'index.md')
+export async function getPostBySlug(slug: string): Promise<Post> {
+  const fullPath = path.join(postsDirectory, slug, 'index.md')
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const { data, content } = matter(fileContents)
 
   return {
-    slug: realSlug,
-    title: data.title,
-    date: data.date,
-    author: data.author,
-    excerpt: data.excerpt,
-    coverImage: data.coverImage,
     content,
+    frontmatter: {
+      slug,
+      title: data.title,
+      date: data.date,
+      author: data.author,
+      excerpt: data.excerpt,
+      coverImage: data.coverImage,
+    },
   }
 }
 
-export function getAllPosts() {
+export async function getAllPosts(): Promise<Post[]> {
   const slugs = getPostSlugs()
-  const posts = slugs
-    .map((slug) => getPostBySlug(slug))
-    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
-  return posts
+  const posts = await Promise.all(
+    slugs.map((slug) => getPostBySlug(slug))
+  )
+  return posts.sort((post1, post2) => 
+    post1.frontmatter.date > post2.frontmatter.date ? -1 : 1
+  )
 }
 
-export function getLatestPosts(count: number = 5): PostMetadata[] {
-  const posts = getAllPosts()
-  return posts.slice(0, count).map(({ slug, title, date, author, excerpt, coverImage }) => ({
-    slug,
-    title,
-    date,
-    author,
-    excerpt,
-    coverImage,
-  }))
+export async function getLatestPosts(count: number = 5): Promise<PostMetadata[]> {
+  const posts = await getAllPosts()
+  return posts
+    .slice(0, count)
+    .map(post => post.frontmatter)
 }

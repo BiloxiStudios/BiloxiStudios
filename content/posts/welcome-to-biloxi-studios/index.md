@@ -3,9 +3,8 @@ title: 'Welcome to Biloxi Studios'
 date: '2023-11-15'
 author: 'Biloxi Studios Team'
 excerpt: 'Introducing our new game development studio on the Mississippi Gulf Coast'
-coverImage: 'hero.jpg'
+coverImage: 'BiloxiStudios.webp'
 ---
-
 # Welcome to Biloxi Studios! 🌊
 
 We're thrilled to announce the launch of Biloxi Studios, a new game development studio based in beautiful coastal Mississippi. Our mission is to create engaging multiplayer experiences while fostering a vibrant game development community on the Gulf Coast.
