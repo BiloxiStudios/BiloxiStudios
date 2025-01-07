@@ -3,7 +3,7 @@ title: 'Welcome to Biloxi Studios'
 date: '2023-11-15'
 author: 'Biloxi Studios Team'
 excerpt: 'Introducing our new game development studio on the Mississippi Gulf Coast'
-coverImage: 'hero.jpg'
+coverImage: 'BiloxiStudios.webp'
 ---
 
 # Welcome to Biloxi Studios! 🌊
