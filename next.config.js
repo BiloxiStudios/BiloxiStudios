@@ -25,6 +25,17 @@ const nextConfig = {
       },
     ]
   },
+
+
+  // Specify output configuration
+  output: 'standalone',
+  
+  // Disable source maps in production
+  productionBrowserSourceMaps: false,
+
+  // Configure distDir for Vercel
+  distDir: '.next',
+
 }
 
 // Merge MDX config with Next.js config

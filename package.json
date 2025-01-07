@@ -4,9 +4,16 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+
+    "build": "node scripts/build.js",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "clean": "rm -rf .next out",
+    "prebuild": "npm run clean",
+    "postbuild": "next-sitemap",
+    "analyze": "ANALYZE=true next build"
+
   },
   "dependencies": {
     "@types/node": "^20.0.0",
@@ -22,6 +29,11 @@
     "gray-matter": "^4.0.3",
     "tailwindcss": "^3.3.0",
     "postcss": "^8.4.0",
-    "autoprefixer": "^10.4.0"
+    "autoprefixer": "^10.4.0",
+    "next-sitemap": "^4.0.0",
+    "prettier": "^2.8.0",
+    "prettier-plugin-tailwindcss": "^0.5.0",
+    "@next/bundle-analyzer": "^13.4.0"
+
   }
 }
