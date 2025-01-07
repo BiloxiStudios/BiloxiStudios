@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+  --vapor-pink: #FF71CE;
+  --vapor-blue: #01CDFE;
+  --vapor-purple: #B967FF;
+  --vapor-yellow: #FFFB96;
+  --vapor-green: #05FFA1;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer components {
+  .vapor-card {
+    @apply bg-black/30 backdrop-blur-md rounded-lg border border-vapor-pink/20 p-6 shadow-xl relative overflow-hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .vapor-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(255, 113, 206, 0.2);
+  }
+  
+  .vapor-text {
+    @apply font-display text-transparent bg-clip-text bg-gradient-to-r from-vapor-pink to-vapor-blue;
+    animation: textShine 6s linear infinite;
+  }
+  
+  .coastal-link {
+    @apply text-coastal-water hover:text-vapor-yellow transition-colors duration-300 relative;
+  }
+  
+  .coastal-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-vapor-yellow transition-all duration-300;
+  }
+  
+  .coastal-link:hover::after {
+    @apply w-full;
+  }
+}
+
+/* Animations */
+@keyframes textShine {
+  from {
+    background-position: 0% center;
+  }
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-black/20;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-vapor-purple/50 hover:bg-vapor-purple/70 rounded-full;
+  background-image: linear-gradient(45deg, 
+    var(--vapor-pink) 0%, 
+    var(--vapor-purple) 50%,
+    var(--vapor-blue) 100%
+  );
+}
+
+/* Selection styles */
+::selection {
+  background: var(--vapor-purple);
+  color: var(--vapor-yellow);
+}
