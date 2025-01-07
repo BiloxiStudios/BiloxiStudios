@@ -26,7 +26,6 @@ const nextConfig = {
     ]
   },
 
-
   // Specify output configuration
   output: 'standalone',
   
@@ -36,6 +35,11 @@ const nextConfig = {
   // Configure distDir for Vercel
   distDir: '.next',
 
+  // Add webpack configuration to handle MDX properly
+  webpack: (config) => {
+    config.resolve.fallback = { fs: false }
+    return config
+  }
 }
 
 // Merge MDX config with Next.js config
