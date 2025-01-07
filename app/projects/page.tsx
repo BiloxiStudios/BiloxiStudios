@@ -73,7 +73,7 @@ export default function Projects() {
           We're always open to new collaborations and exciting projects.
         </p>
         <a 
-          href="mailto:contact@biloxistudios.com" 
+          href="https://discord.gg/fWHBt5kyjj" 
           className="inline-block bg-vapor-purple/20 hover:bg-vapor-purple/30 text-vapor-yellow px-6 py-3 rounded-lg transition-colors duration-300"
         >
           Get in touch
