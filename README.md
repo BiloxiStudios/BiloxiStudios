@@ -42,4 +42,4 @@ npm run dev
 - Include any images in the same folder
 
 ## Deployment
-The site automatically deploys to Vercel on push to main branch.
+The site automatically deploys to Vercel on push to main branch or preview on dev.
