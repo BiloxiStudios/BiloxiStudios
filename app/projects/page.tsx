@@ -11,6 +11,12 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: 'StudioBrain.AI',
+    description: 'AI-powered world building for game developers. Build your universe and keep it consistent with multi-provider generation and native ComfyUI support.',
+    type: 'AI Tooling',
+    link: 'https://studiobrain.ai'
+  },
+  {
     title: 'BrainDead.TV',
     description: 'Our flagship interactive streaming platform combining gaming and live entertainment.',
     type: 'Platform',

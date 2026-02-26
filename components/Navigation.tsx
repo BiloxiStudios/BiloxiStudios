@@ -10,6 +10,7 @@ export default function Navigation() {
     { label: 'Home', href: '/' },
     { label: 'Blog', href: '/blog' },
     { label: 'Projects', href: '/projects' },
+    { label: 'StudioBrain.AI', href: 'https://studiobrain.ai' },
     { label: 'BrainDead.TV', href: 'https://braindead.tv' }
   ]
 
