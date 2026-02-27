@@ -72,9 +72,9 @@ export default function RootLayout({
                 <div>
                   <h3 className="font-display text-vapor-yellow text-lg mb-4">Connect</h3>
                   <ul className="space-y-2">
-                    <li><a href="https://twitter.com/biloxistudios" className="coastal-link">Twitter</a></li>
+                    <li><a href="https://x.com/cityofbrains" className="coastal-link">Twitter</a></li>
                     <li><a href="https://github.com/biloxistudios" className="coastal-link">GitHub</a></li>
-                    <li><a href="https://discord.gg/biloxistudios" className="coastal-link">Discord</a></li>
+                    <li><a href="https://braindeadguild.com/discord" className="coastal-link">Discord</a></li>
                   </ul>
                 </div>
               </div>

@@ -48,10 +48,22 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="relative h-80 lg:h-full min-h-[300px] rounded-lg overflow-hidden border border-vapor-blue/30 bg-black/50 flex items-center justify-center">
-          <div className="text-center space-y-4">
-            <div className="text-6xl">🧠</div>
-            <div className="font-mono text-vapor-blue/50">AI_WORLD_BUILDER_ACTIVE</div>
+        <div className="relative h-80 lg:h-full min-h-[300px] rounded-lg overflow-hidden border border-vapor-blue/30 bg-black/50 flex items-center justify-center group">
+          {/* Neural/Universe Background Effect */}
+          <div className="absolute inset-0 opacity-30 group-hover:opacity-50 transition-opacity duration-700">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200%] h-[200%] animate-[spin_20s_linear_infinite]"
+                 style={{
+                   background: 'radial-gradient(circle, transparent 20%, var(--vapor-blue) 20%, transparent 21%, transparent 40%, var(--vapor-purple) 40%, transparent 41%, transparent 60%, var(--vapor-pink) 60%, transparent 61%)',
+                   backgroundSize: '100px 100px'
+                 }}
+            />
+            <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px]" />
+          </div>
+          <div className="text-center space-y-4 relative z-10">
+            <div className="text-6xl animate-pulse">🧠</div>
+            <div className="font-mono text-vapor-blue/80 overflow-hidden whitespace-nowrap border-r-2 border-vapor-blue animate-[typing_3.5s_steps(40,end),blink-caret_.75s_step-end_infinite]">
+              AI_WORLD_BUILDER_ACTIVE
+            </div>
           </div>
         </div>
       </section>
@@ -59,9 +71,20 @@ export default function Home() {
       {/* BrainDead.TV Section */}
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center vapor-card bg-black/40">
         <div className="order-2 lg:order-1 relative h-80 lg:h-full min-h-[300px] rounded-lg overflow-hidden border border-vapor-pink/30 bg-black/50 flex items-center justify-center">
-          <div className="text-center space-y-4">
-            <div className="text-6xl">📺</div>
-            <div className="font-mono text-vapor-pink/50">BROADCAST_SIGNAL_FOUND</div>
+          {/* TV Static Background */}
+          <div className="absolute inset-0 opacity-20 mix-blend-screen"
+               style={{
+                 backgroundImage: 'url("https://media.giphy.com/media/Yy26NRbpB9lDi/giphy.gif")',
+                 backgroundSize: 'cover',
+                 backgroundPosition: 'center'
+               }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-vapor-pink/10 to-black/80" />
+          <div className="text-center space-y-4 relative z-10">
+            <div className="text-6xl animate-bounce">📺</div>
+            <div className="font-mono text-vapor-pink font-bold tracking-widest drop-shadow-[0_0_8px_rgba(255,113,206,0.8)]">
+              BROADCAST_SIGNAL_FOUND
+            </div>
           </div>
         </div>
         <div className="space-y-6 order-1 lg:order-2">
@@ -118,10 +141,18 @@ export default function Home() {
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center vapor-card bg-black/40 border-vapor-purple/50">
         <div className="space-y-6">
           <h2 className="text-4xl font-display text-vapor-purple">City of Brains</h2>
-          <h3 className="text-2xl text-vapor-yellow">An Animated Interactive Series</h3>
+          <h3 className="text-2xl text-vapor-yellow">How Will Your Story End?</h3>
+          <div className="text-vapor-green font-mono text-sm tracking-widest">
+            WATCH | INTERACT | SURVIVE
+          </div>
           <p className="text-coastal-sand text-lg leading-relaxed">
-            Our upcoming AI-powered animated series coming to Showrunner. All of our UEFN experiences are woven into this unique IP storyline, crafted with StudioBrain.AI assisting our artists, narrators, and programmers to ensure a consistent universe across all platforms.
+            Experience a new form of media. Watch & create your own story in the City of Brains. Survive together in this evolving narrative adventure, vote on discord to shape characters, locations & events.
           </p>
+          <div className="text-coastal-sand/60 text-sm space-y-1 border-l-2 border-vapor-purple/30 pl-4">
+            <p>Created by Biloxi Studios | Powered by Showrunner</p>
+            <p>Play Free on Fortnite</p>
+            <p className="text-vapor-blue/80 mt-2">Powered by AI | Created by Humans with Brains (StudioBrain.ai)</p>
+          </div>
           <div className="flex flex-wrap gap-4 pt-4">
             <a href="https://youtu.be/aAin3PXxCg4?si=s-tB2gW7YuhMd7b_" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 bg-vapor-purple/20 hover:bg-vapor-purple/40 text-vapor-purple border border-vapor-purple/50 rounded transition-all">
               Watch Pilot Episode
@@ -136,8 +167,8 @@ export default function Home() {
         </div>
         <div className="relative h-80 lg:h-full min-h-[400px] rounded-lg overflow-hidden border border-vapor-purple/30 bg-black/50 group">
           <Image 
-            src="/images/TvGuide_CityOfBrainsTvsHit.png" 
-            alt="City of Brains TV Guide" 
+            src="/images/CityOfBrainsInteractiveAnimatedShowPilot_Thumbnail_YoutubeResized.png" 
+            alt="City of Brains Interactive Animated Show" 
             fill 
             className="object-cover transition-transform duration-700 group-hover:scale-105"
           />
