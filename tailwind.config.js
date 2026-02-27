@@ -18,7 +18,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['var(--font-inter)'],
-        display: ['var(--font-orbitron)']
+        display: ['var(--font-space-grotesk)']
       },
       typography: {
         DEFAULT: {

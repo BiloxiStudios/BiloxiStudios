@@ -1,5 +1,5 @@
 import './globals.css'
-import { Inter, Orbitron } from 'next/font/google'
+import { Inter, Space_Grotesk } from 'next/font/google'
 import Navigation from '@/components/Navigation'
 
 const inter = Inter({
@@ -7,9 +7,9 @@ const inter = Inter({
   variable: '--font-inter',
 })
 
-const orbitron = Orbitron({
+const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
-  variable: '--font-orbitron',
+  variable: '--font-space-grotesk',
 })
 
 // Define metadata
@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${orbitron.variable}`}>
+    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <body className="bg-gradient-to-br from-black via-vapor-purple/20 to-vapor-blue/20 min-h-screen relative">
         {/* Retrowave Grid Background */}
         <div 

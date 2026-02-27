@@ -147,7 +147,7 @@ export default function Home() {
             WATCH | INTERACT | SURVIVE
           </div>
           <p className="text-coastal-sand text-lg leading-relaxed">
-            Step into a neon-drenched dystopia where your choices dictate who survives. <span className="text-vapor-pink font-bold">City of Brains</span> isn't just a show—it's a living, breathing ecosystem powered by Showrunner and shaped by you. Dive into the interactive animated series where the community holds the pen, voting on Discord to forge alliances, trigger betrayals, and alter the very fabric of the universe.
+            Step into a neon-drenched dystopia where you drive the story. <span className="text-vapor-pink font-bold">City of Brains</span> isn't just a show—it's a living, breathing ecosystem powered by Showrunner. Votes determine canon for new locations, characters, and events that are integrated directly into the free-to-play game.
           </p>
           <div className="text-coastal-sand/60 text-sm space-y-1 border-l-2 border-vapor-purple/30 pl-4">
             <p>Created by Biloxi Studios | Powered by Showrunner</p>
@@ -163,14 +163,14 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="relative h-80 lg:h-full min-h-[400px] rounded-lg overflow-hidden border border-vapor-purple/30 bg-black/50 group">
+        <div className="relative h-[500px] lg:h-[600px] rounded-lg overflow-hidden border border-vapor-purple/30 bg-black/80 group flex items-center justify-center p-4">
           <Image 
             src="/images/TvGuide_CityOfBrainsTvsHit.png" 
             alt="City of Brains TV Guide" 
             fill 
-            className="object-cover transition-transform duration-700 group-hover:scale-105"
+            className="object-contain transition-transform duration-700 group-hover:scale-105 p-4"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
         </div>
       </section>
 
