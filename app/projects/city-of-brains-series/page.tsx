@@ -49,6 +49,14 @@ export default function CityOfBrainsSeries() {
               <span className="text-2xl">▶</span> WATCH PILOT
             </a>
             <a 
+              href="https://youtube.com/shorts/vBa9Kwfw9Pc?si=X76tFux9xvT4XEtB" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-flex items-center gap-3 px-8 py-4 bg-vapor-pink/20 hover:bg-vapor-pink/40 text-vapor-pink border border-vapor-pink/50 rounded-lg transition-all font-bold tracking-wider hover:scale-105"
+            >
+              <span className="text-2xl">🎬</span> BEHIND THE PILOT
+            </a>
+            <a 
               href="https://showrunnerapp.xyz/shows/city-of-brains" 
               target="_blank" 
               rel="noopener noreferrer" 

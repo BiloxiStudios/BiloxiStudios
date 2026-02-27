@@ -34,10 +34,10 @@ export default function RewinDead() {
             About This Island
           </h2>
           <p className="text-coastal-sand text-xl leading-relaxed mb-6 drop-shadow-md">
-            A point-and-click adventure set in the City of Brains universe. Step into the shoes of a desperate street reporter chasing the story of a lifetime as the city spirals into chaos. Search dark alleys, interview survivors, and collect haunted VHS tapes to uncover what really happened before the broadcast ends. Every tape rewinds a new piece of the nightmare — but some stories don't want to be told.
+            A point-and-click adventure set in the City of Brains universe. Step into the shoes of a teenager on their first real job as a street reporter during the night of a lifetime. Take your camcorder and search the city to unlock stories (tapes) to piece together the Nightly News and uncover the truth. Collect enough stories before running out of batteries—or getting mugged by hobos, bitten by dogs, or worse. Make it back to the news van to arrange your tapes in any order to unlock the evening news. The right combinations yield the most impact, better ratings, and secret lore.
           </p>
           <div className="flex flex-wrap gap-2 mb-8">
-            {['Artistic', 'Side Scroller', 'Visual Novel', 'Series'].map(tag => (
+            {['Point & Click', 'Adventure', 'Mystery', 'Epic MegaJam 2025'].map(tag => (
               <span key={tag} className="px-3 py-1 bg-vapor-purple/20 border border-vapor-purple/30 text-vapor-purple text-xs font-mono rounded-full">
                 #{tag.toUpperCase()}
               </span>
@@ -56,24 +56,24 @@ export default function RewinDead() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="vapor-card bg-black/40 border-vapor-blue/30">
-          <div className="text-4xl mb-4">📼</div>
-          <h3 className="text-xl font-display text-vapor-blue mb-3">Haunted VHS Tapes</h3>
+          <div className="text-4xl mb-4">📹</div>
+          <h3 className="text-xl font-display text-vapor-blue mb-3">Street Reporter</h3>
           <p className="text-coastal-sand/80">
-            Collect and rewind mysterious tapes to piece together the nightmare. Every tape reveals a new fragment of the truth.
+            Armed with only a camcorder and limited batteries, explore the dangerous streets to capture the stories no one else will.
           </p>
         </div>
         <div className="vapor-card bg-black/40 border-vapor-pink/30">
-          <div className="text-4xl mb-4">🕵️</div>
-          <h3 className="text-xl font-display text-vapor-pink mb-3">Point & Click Mystery</h3>
+          <div className="text-4xl mb-4">📺</div>
+          <h3 className="text-xl font-display text-vapor-pink mb-3">Edit the News</h3>
           <p className="text-coastal-sand/80">
-            Search dark alleys and interview survivors in this narrative-driven visual novel experience set in the City of Brains universe.
+            Survive the night and make it to the news van. Arrange your collected tapes to create the perfect broadcast for maximum ratings and secret lore.
           </p>
         </div>
         <div className="vapor-card bg-black/40 border-vapor-yellow/30">
-          <div className="text-4xl mb-4">🎨</div>
-          <h3 className="text-xl font-display text-vapor-yellow mb-3">Artistic Side-Scroller</h3>
+          <div className="text-4xl mb-4">🏆</div>
+          <h3 className="text-xl font-display text-vapor-yellow mb-3">Epic MegaJam 2025</h3>
           <p className="text-coastal-sand/80">
-            Immerse yourself in a beautifully crafted, atmospheric world where every frame tells a story of a city spiraling into chaos.
+            Built in just one week for the Epic MegaJam, featuring exclusive teaser clips and news reels from the upcoming City of Brains animated series.
           </p>
         </div>
       </div>

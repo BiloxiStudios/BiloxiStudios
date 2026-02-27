@@ -14,10 +14,10 @@ export default function CityOfBrainsChapter1() {
 
       <div className="relative w-full h-[60vh] min-h-[500px] rounded-xl overflow-hidden border border-vapor-purple/30 vapor-card p-0 group">
         <Image 
-          src="/images/CityOfBrainsInteractiveAnimatedShowPilot_Thumbnail_YoutubeResized.png"
+          src="/images/CityOfBrains_BoxCover_Brains-small.png"
           alt="City of Brains Outbreak"
           fill
-          className="object-cover transition-transform duration-1000 group-hover:scale-105 opacity-60"
+          className="object-contain transition-transform duration-1000 group-hover:scale-105 opacity-80 p-4"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent" />
         

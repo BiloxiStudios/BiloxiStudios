@@ -6,6 +6,7 @@ interface Project {
   description: string
   type: string
   imageUrl?: string
+  containImage?: boolean
   link?: string
 }
 
@@ -15,7 +16,7 @@ const projects: Project[] = [
     description: 'An interactive animated series powered by Showrunner where the community holds the pen. Vote on Discord to shape the universe.',
     type: 'Animated Series',
     link: '/projects/city-of-brains-series',
-    imageUrl: '/images/TvGuide_CityOfBrainsTvsHit.png'
+    imageUrl: '/images/CityOfBrainsInteractiveAnimatedShowPilot_Thumbnail_YoutubeResized.png'
   },
   {
     title: 'RewinDead',
@@ -29,7 +30,8 @@ const projects: Project[] = [
     description: 'The first playable chapter in the City of Brains universe. Survive the neon-drenched streets and uncover the truth.',
     type: 'UEFN Game',
     link: '/projects/city-of-brains-chapter-1',
-    imageUrl: '/images/CityOfBrainsInteractiveAnimatedShowPilot_Thumbnail_YoutubeResized.png'
+    imageUrl: '/images/CityOfBrains_BoxCover_Brains-small.png',
+    containImage: true
   },
   {
     title: 'ELJ Arena',
@@ -42,13 +44,16 @@ const projects: Project[] = [
     description: 'AI-powered world building for game developers. Build your universe and keep it consistent with multi-provider generation and native ComfyUI support.',
     type: 'AI Tooling',
     link: 'https://studiobrain.ai',
-    imageUrl: '/images/StudioBrain_Logo_Transparent.png'
+    imageUrl: '/images/StudioBrain_Logo_Transparent.png',
+    containImage: true
   },
   {
     title: 'BrainDead.TV',
     description: 'The window into the BrainDead Universe. Where horror "meats" comedy in a 1998 neon and amber-lit fog.',
     type: 'Universe Hub',
-    link: 'https://braindead.tv'
+    link: 'https://braindead.tv',
+    imageUrl: '/images/TvGuide_CityOfBrainsTvsHit.png',
+    containImage: true
   },
   {
     title: 'Gulf Coast Game Jam',
@@ -77,7 +82,7 @@ export default function Projects() {
                     src={project.imageUrl}
                     alt={project.title}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className={`${project.containImage ? 'object-contain p-4' : 'object-cover'} transition-transform duration-500 group-hover:scale-105`}
                   />
                 </div>
               ) : (
