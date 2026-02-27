@@ -163,26 +163,23 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="relative h-[500px] lg:h-[600px] rounded-lg overflow-hidden border border-vapor-purple/30 bg-black/80 group flex items-center justify-center p-4">
+        <div className="relative w-full max-w-md mx-auto aspect-[3/4] rounded-lg overflow-hidden border border-vapor-purple/30 bg-black/50 group shadow-[0_0_20px_rgba(185,103,255,0.15)]">
           <Image 
             src="/images/TvGuide_CityOfBrainsTvsHit.png" 
             alt="City of Brains TV Guide" 
             fill 
-            className="object-contain transition-transform duration-700 group-hover:scale-105 p-4"
+            className="object-cover transition-transform duration-700 group-hover:scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent pointer-events-none"></div>
         </div>
       </section>
 
       {/* Contact / CTA Section */}
       <section className="vapor-card border-vapor-blue/50 bg-gradient-to-br from-black/80 to-vapor-blue/10">
         <div className="text-center space-y-6 max-w-3xl mx-auto">
-          <h2 className="text-3xl font-display text-vapor-blue">Interested in Next-Gen Media?</h2>
-          <p className="text-coastal-sand text-lg">
-            Brands require consistent, repeatable results but with AI speed. From games to next-gen entertainment and media experiences, we're pushing the boundaries of what's possible.
-          </p>
-          <p className="text-vapor-pink/80 italic">
-            * Currently fully booked with pre-production for our upcoming Showrunner series, but always open to discussing the future of media.
+          <h2 className="text-3xl font-display text-vapor-blue">Bring Your Vision to Life</h2>
+          <p className="text-coastal-sand text-lg leading-relaxed">
+            Crafting bleeding-edge media solutions is a chaotic blend of technical madness and creative genius. Got a story you want to bring to life, or a brand you'd like to envision in new and creative ways? Reach out.
           </p>
           <div className="bg-black/50 p-6 rounded-lg border border-vapor-blue/30 inline-block text-left mt-4">
             <h3 className="text-xl font-bold text-vapor-yellow mb-4">Biloxi Studios Inc</h3>
