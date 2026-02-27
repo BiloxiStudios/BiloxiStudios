@@ -57,11 +57,12 @@ export default function Home() {
                    backgroundSize: '100px 100px'
                  }}
             />
+            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMSIgZmlsbD0icmdiYSgwLCAyNTUsIDI1NSwgMC41KSIvPjwvc3ZnPg==')] opacity-50"></div>
             <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px]" />
           </div>
           <div className="text-center space-y-4 relative z-10">
-            <div className="text-6xl animate-pulse">🧠</div>
-            <div className="font-mono text-vapor-blue/80 overflow-hidden whitespace-nowrap border-r-2 border-vapor-blue animate-[typing_3.5s_steps(40,end),blink-caret_.75s_step-end_infinite]">
+            <div className="text-6xl animate-pulse drop-shadow-[0_0_15px_rgba(0,255,255,0.8)]">🧠</div>
+            <div className="font-mono text-vapor-blue/80 overflow-hidden whitespace-nowrap border-r-4 border-vapor-blue animate-[typing_3.5s_steps(40,end),blink-caret_.75s_step-end_infinite] pr-2">
               AI_WORLD_BUILDER_ACTIVE
             </div>
           </div>
@@ -111,19 +112,19 @@ export default function Home() {
           </p>
           <ul className="space-y-3 pt-2 text-coastal-sand/90">
             <li>
-              <a href="https://www.fortnite.com/@bizanator/0742-6605-8749?lang=en-US" target="_blank" rel="noopener noreferrer" className="hover:text-vapor-green transition-colors flex items-center gap-2">
+              <Link href="/projects/rewindead" className="hover:text-vapor-green transition-colors flex items-center gap-2">
                 <span className="text-vapor-green">▶</span> RewinDead
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="https://braindead.tv/games/cityofbrains_outbreak" target="_blank" rel="noopener noreferrer" className="hover:text-vapor-green transition-colors flex items-center gap-2">
+              <Link href="/projects/city-of-brains-chapter-1" className="hover:text-vapor-green transition-colors flex items-center gap-2">
                 <span className="text-vapor-green">▶</span> City Of Brains - Chapter 1
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="https://braindead.tv/games/elj-battle-of-the-tusks" target="_blank" rel="noopener noreferrer" className="hover:text-vapor-green transition-colors flex items-center gap-2">
+              <Link href="/projects/elj-arena" className="hover:text-vapor-green transition-colors flex items-center gap-2">
                 <span className="text-vapor-yellow">⏳</span> ELJ Arena (Coming Soon)
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -146,7 +147,7 @@ export default function Home() {
             WATCH | INTERACT | SURVIVE
           </div>
           <p className="text-coastal-sand text-lg leading-relaxed">
-            Experience a new form of media. Watch & create your own story in the City of Brains. Survive together in this evolving narrative adventure, vote on discord to shape characters, locations & events.
+            Step into a neon-drenched dystopia where your choices dictate who survives. <span className="text-vapor-pink font-bold">City of Brains</span> isn't just a show—it's a living, breathing ecosystem powered by Showrunner and shaped by you. Dive into the interactive animated series where the community holds the pen, voting on Discord to forge alliances, trigger betrayals, and alter the very fabric of the universe.
           </p>
           <div className="text-coastal-sand/60 text-sm space-y-1 border-l-2 border-vapor-purple/30 pl-4">
             <p>Created by Biloxi Studios | Powered by Showrunner</p>
@@ -154,21 +155,18 @@ export default function Home() {
             <p className="text-vapor-blue/80 mt-2">Powered by AI | Created by Humans with Brains (StudioBrain.ai)</p>
           </div>
           <div className="flex flex-wrap gap-4 pt-4">
-            <a href="https://youtu.be/aAin3PXxCg4?si=s-tB2gW7YuhMd7b_" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 bg-vapor-purple/20 hover:bg-vapor-purple/40 text-vapor-purple border border-vapor-purple/50 rounded transition-all">
-              Watch Pilot Episode
-            </a>
-            <a href="https://showrunnerapp.xyz/shows/city-of-brains" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 bg-black/40 hover:bg-black/60 text-coastal-sand border border-coastal-sand/30 rounded transition-all">
-              Showrunner App
-            </a>
-            <a href="https://www.youtube.com/@CityOfBrains/" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 bg-black/40 hover:bg-black/60 text-coastal-sand border border-coastal-sand/30 rounded transition-all">
-              YouTube Channel
+            <Link href="/projects/city-of-brains-series" className="inline-block px-6 py-3 bg-vapor-purple/20 hover:bg-vapor-purple/40 text-vapor-purple border border-vapor-purple/50 rounded transition-all font-bold tracking-wider">
+              Explore the Series
+            </Link>
+            <a href="https://youtu.be/aAin3PXxCg4?si=s-tB2gW7YuhMd7b_" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 bg-black/40 hover:bg-black/60 text-coastal-sand border border-coastal-sand/30 rounded transition-all">
+              Watch Pilot
             </a>
           </div>
         </div>
         <div className="relative h-80 lg:h-full min-h-[400px] rounded-lg overflow-hidden border border-vapor-purple/30 bg-black/50 group">
           <Image 
-            src="/images/CityOfBrainsInteractiveAnimatedShowPilot_Thumbnail_YoutubeResized.png" 
-            alt="City of Brains Interactive Animated Show" 
+            src="/images/TvGuide_CityOfBrainsTvsHit.png" 
+            alt="City of Brains TV Guide" 
             fill 
             className="object-cover transition-transform duration-700 group-hover:scale-105"
           />
