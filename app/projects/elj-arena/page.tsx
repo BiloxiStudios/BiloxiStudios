@@ -1,5 +1,21 @@
 import Link from 'next/link'
 
+export const metadata = {
+  title: 'ELJ Arena | Biloxi Studios',
+  description: 'A prequel to the outbreak. Step into the arena and witness the most violent act since the 1998 Circus.',
+  openGraph: {
+    title: 'ELJ Arena | Biloxi Studios',
+    description: 'A prequel to the outbreak. Step into the arena and witness the most violent act since the 1998 Circus.',
+    images: ['https://biloxistudios.com/images/TvGuide_CityOfBrainsTvsHit.png'], // Fallback image
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'ELJ Arena | Biloxi Studios',
+    description: 'A prequel to the outbreak. Step into the arena and witness the most violent act since the 1998 Circus.',
+    images: ['https://biloxistudios.com/images/TvGuide_CityOfBrainsTvsHit.png'], // Fallback image
+  },
+}
+
 export default function EljArena() {
   return (
     <div className="py-16 space-y-16">

@@ -1,6 +1,22 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+export const metadata = {
+  title: 'RewinDead | Biloxi Studios',
+  description: 'A point-and-click adventure set in the City of Brains universe. Collect haunted VHS tapes to uncover what really happened before the broadcast ends.',
+  openGraph: {
+    title: 'RewinDead | Biloxi Studios',
+    description: 'A point-and-click adventure set in the City of Brains universe. Collect haunted VHS tapes to uncover what really happened before the broadcast ends.',
+    images: ['https://cdn-0001.qstv.on.epicgames.com/kqpTWvTMxkmYWNKWmc/image/landscape_comp.jpeg'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'RewinDead | Biloxi Studios',
+    description: 'A point-and-click adventure set in the City of Brains universe. Collect haunted VHS tapes to uncover what really happened before the broadcast ends.',
+    images: ['https://cdn-0001.qstv.on.epicgames.com/kqpTWvTMxkmYWNKWmc/image/landscape_comp.jpeg'],
+  },
+}
+
 export default function RewinDead() {
   return (
     <div className="py-16 space-y-16">

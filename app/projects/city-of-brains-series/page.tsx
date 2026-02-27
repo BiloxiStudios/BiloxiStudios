@@ -1,6 +1,22 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+export const metadata = {
+  title: 'City of Brains Series | Biloxi Studios',
+  description: 'An interactive animated series powered by Showrunner where the community holds the pen. Vote on Discord to shape the universe.',
+  openGraph: {
+    title: 'City of Brains Series | Biloxi Studios',
+    description: 'An interactive animated series powered by Showrunner where the community holds the pen. Vote on Discord to shape the universe.',
+    images: ['https://biloxistudios.com/images/CityOfBrainsInteractiveAnimatedShowPilot_Thumbnail_YoutubeResized.png'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'City of Brains Series | Biloxi Studios',
+    description: 'An interactive animated series powered by Showrunner where the community holds the pen. Vote on Discord to shape the universe.',
+    images: ['https://biloxistudios.com/images/CityOfBrainsInteractiveAnimatedShowPilot_Thumbnail_YoutubeResized.png'],
+  },
+}
+
 export default function CityOfBrainsSeries() {
   return (
     <div className="py-16 space-y-16">

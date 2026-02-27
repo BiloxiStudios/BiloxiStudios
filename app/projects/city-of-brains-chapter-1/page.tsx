@@ -1,6 +1,22 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+export const metadata = {
+  title: 'City of Brains - Chapter 1 | Biloxi Studios',
+  description: 'The first playable chapter in the City of Brains universe. Survive the neon-drenched streets and uncover the truth.',
+  openGraph: {
+    title: 'City of Brains - Chapter 1 | Biloxi Studios',
+    description: 'The first playable chapter in the City of Brains universe. Survive the neon-drenched streets and uncover the truth.',
+    images: ['https://biloxistudios.com/images/CityOfBrains_BoxCover_Brains-small.png'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'City of Brains - Chapter 1 | Biloxi Studios',
+    description: 'The first playable chapter in the City of Brains universe. Survive the neon-drenched streets and uncover the truth.',
+    images: ['https://biloxistudios.com/images/CityOfBrains_BoxCover_Brains-small.png'],
+  },
+}
+
 export default function CityOfBrainsChapter1() {
   return (
     <div className="py-16 space-y-16">

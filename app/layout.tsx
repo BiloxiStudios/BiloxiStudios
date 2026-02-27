@@ -16,6 +16,29 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata = {
   title: 'Biloxi Studios Inc | Next-Gen AI & Gaming',
   description: 'Creating next-gen generative AI media and gaming experiences on the Gulf Coast. Home of StudioBrain.AI and BrainDead.TV.',
+  openGraph: {
+    title: 'Biloxi Studios Inc | Next-Gen AI & Gaming',
+    description: 'Creating next-gen generative AI media and gaming experiences on the Gulf Coast. Home of StudioBrain.AI and BrainDead.TV.',
+    url: 'https://biloxistudios.com',
+    siteName: 'Biloxi Studios',
+    images: [
+      {
+        url: 'https://biloxistudios.com/images/TvGuide_CityOfBrainsTvsHit.png',
+        width: 1200,
+        height: 630,
+        alt: 'Biloxi Studios - Next-Gen AI & Gaming',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Biloxi Studios Inc | Next-Gen AI & Gaming',
+    description: 'Creating next-gen generative AI media and gaming experiences on the Gulf Coast. Home of StudioBrain.AI and BrainDead.TV.',
+    creator: '@cityofbrains',
+    images: ['https://biloxistudios.com/images/TvGuide_CityOfBrainsTvsHit.png'],
+  },
 }
 
 export default function RootLayout({
