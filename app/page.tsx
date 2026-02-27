@@ -86,6 +86,23 @@ export default function Home() {
           <p className="text-coastal-sand">
             Pushing the boundaries of interactive entertainment with Unreal Editor for Fortnite. We create innovative multiplayer experiences that bring players together in entirely new ways.
           </p>
+          <ul className="space-y-3 pt-2 text-coastal-sand/90">
+            <li>
+              <a href="https://www.fortnite.com/@bizanator/0742-6605-8749?lang=en-US" target="_blank" rel="noopener noreferrer" className="hover:text-vapor-green transition-colors flex items-center gap-2">
+                <span className="text-vapor-green">▶</span> RewinDead
+              </a>
+            </li>
+            <li>
+              <a href="https://braindead.tv/games/cityofbrains_outbreak" target="_blank" rel="noopener noreferrer" className="hover:text-vapor-green transition-colors flex items-center gap-2">
+                <span className="text-vapor-green">▶</span> City Of Brains - Chapter 1
+              </a>
+            </li>
+            <li>
+              <a href="https://braindead.tv/games/elj-battle-of-the-tusks" target="_blank" rel="noopener noreferrer" className="hover:text-vapor-green transition-colors flex items-center gap-2">
+                <span className="text-vapor-yellow">⏳</span> ELJ Arena (Coming Soon)
+              </a>
+            </li>
+          </ul>
         </div>
         
         <div className="vapor-card space-y-4">
@@ -97,14 +114,48 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact / Apple Developer Info Section */}
-      <section className="vapor-card border-vapor-purple/50 bg-gradient-to-br from-black/80 to-vapor-purple/10">
-        <div className="text-center space-y-6 max-w-2xl mx-auto">
-          <h2 className="text-3xl font-display text-vapor-purple">Corporate Headquarters</h2>
-          <p className="text-coastal-sand text-lg">
-            Biloxi Studios Inc. is a registered Apple Developer and official game development studio.
+      {/* City of Brains Animated Series Section */}
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center vapor-card bg-black/40 border-vapor-purple/50">
+        <div className="space-y-6">
+          <h2 className="text-4xl font-display text-vapor-purple">City of Brains</h2>
+          <h3 className="text-2xl text-vapor-yellow">An Animated Interactive Series</h3>
+          <p className="text-coastal-sand text-lg leading-relaxed">
+            Our upcoming AI-powered animated series coming to Showrunner. All of our UEFN experiences are woven into this unique IP storyline, crafted with StudioBrain.AI assisting our artists, narrators, and programmers to ensure a consistent universe across all platforms.
           </p>
-          <div className="bg-black/50 p-6 rounded-lg border border-vapor-purple/30 inline-block text-left">
+          <div className="flex flex-wrap gap-4 pt-4">
+            <a href="https://youtu.be/aAin3PXxCg4?si=s-tB2gW7YuhMd7b_" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 bg-vapor-purple/20 hover:bg-vapor-purple/40 text-vapor-purple border border-vapor-purple/50 rounded transition-all">
+              Watch Pilot Episode
+            </a>
+            <a href="https://showrunnerapp.xyz/shows/city-of-brains" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 bg-black/40 hover:bg-black/60 text-coastal-sand border border-coastal-sand/30 rounded transition-all">
+              Showrunner App
+            </a>
+            <a href="https://www.youtube.com/@CityOfBrains/" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 bg-black/40 hover:bg-black/60 text-coastal-sand border border-coastal-sand/30 rounded transition-all">
+              YouTube Channel
+            </a>
+          </div>
+        </div>
+        <div className="relative h-80 lg:h-full min-h-[400px] rounded-lg overflow-hidden border border-vapor-purple/30 bg-black/50 group">
+          <Image 
+            src="/images/TvGuide_CityOfBrainsTvsHit.png" 
+            alt="City of Brains TV Guide" 
+            fill 
+            className="object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+        </div>
+      </section>
+
+      {/* Contact / CTA Section */}
+      <section className="vapor-card border-vapor-blue/50 bg-gradient-to-br from-black/80 to-vapor-blue/10">
+        <div className="text-center space-y-6 max-w-3xl mx-auto">
+          <h2 className="text-3xl font-display text-vapor-blue">Interested in Next-Gen Media?</h2>
+          <p className="text-coastal-sand text-lg">
+            Brands require consistent, repeatable results but with AI speed. From games to next-gen entertainment and media experiences, we're pushing the boundaries of what's possible.
+          </p>
+          <p className="text-vapor-pink/80 italic">
+            * Currently fully booked with pre-production for our upcoming Showrunner series, but always open to discussing the future of media.
+          </p>
+          <div className="bg-black/50 p-6 rounded-lg border border-vapor-blue/30 inline-block text-left mt-4">
             <h3 className="text-xl font-bold text-vapor-yellow mb-4">Biloxi Studios Inc</h3>
             <div className="space-y-2 text-coastal-sand font-mono">
               <p>📍 45 Hardy Court Shopping Center #374</p>
