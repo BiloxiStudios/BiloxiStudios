@@ -107,13 +107,30 @@ export default function Home() {
         </div>
         <div className="space-y-6 order-1 lg:order-2">
           <h2 className="text-4xl font-display text-vapor-pink">BrainDead.TV</h2>
-          <h3 className="text-2xl text-vapor-yellow">Interactive Streaming & Gaming</h3>
-          <p className="text-coastal-sand text-lg leading-relaxed">
-            Our flagship interactive streaming platform combining gaming and live entertainment. We're pushing the boundaries of what it means to be a viewer by turning audiences into active participants.
-          </p>
-          <div className="pt-4">
-            <a href="https://braindead.tv" className="inline-block px-6 py-3 bg-vapor-pink/20 hover:bg-vapor-pink/40 text-vapor-pink border border-vapor-pink/50 rounded transition-all">
-              Tune In
+          <h3 className="text-2xl text-vapor-yellow">The Window into the BrainDead Universe</h3>
+          <div className="text-vapor-green font-mono text-sm tracking-widest">
+            WHERE HORROR "MEATS" COMEDY
+          </div>
+          <div className="text-coastal-sand text-lg leading-relaxed space-y-4">
+            <p>
+              BrainDead.TV isn't a streaming platform—it's the lore, the universe, and the thread that ties it all together. Step into 1998, where the streets are soaked in neon and amber-lit fog. Corporations have created every imaginable over-the-top brand to please you, seduce you, trick you, and now... maybe even eat you.
+            </p>
+            <p>
+              It's your window into the <span className="text-vapor-pink font-bold">City of Brains</span>. From battling elephants in the <strong>ELJ Arena</strong> prequel (the most violent act you've seen since the 1998 Circus), to uncovering mysteries as a kid with a camcorder in <strong>RewinDead</strong>, to surviving a living, breathing city full of insane factions.
+            </p>
+            <p className="text-sm text-coastal-sand/80 border-l-2 border-vapor-pink/30 pl-4">
+              Beware the <strong>Flamingos</strong> (illegal counterfeit smuggling fabulous fashionistas), the off-grid wizard bears keeping <em>BrainOnLine</em> running, and the <strong>Department of Neural Affairs</strong> looking to catch you without a permit. Grab a hot dog, dodge the neon green goo under an eclipse moon, and take a joyride through vice city with the top down and a vaporwave soundtrack blaring.
+            </p>
+            <p className="text-xs font-mono text-vapor-yellow/80 italic">
+              Brought to you by DoubleDip: "So good, you just gotta double dip... Shhh it's ok, we won't tell no one."
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-4 pt-4">
+            <a href="https://braindead.tv" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 bg-vapor-pink/20 hover:bg-vapor-pink/40 text-vapor-pink border border-vapor-pink/50 rounded transition-all font-bold tracking-wider">
+              Explore the Universe
+            </a>
+            <a href="https://braindeadguild.com/discord" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 bg-[#5865F2]/20 hover:bg-[#5865F2]/40 text-[#5865F2] border border-[#5865F2]/50 rounded transition-all font-bold tracking-wider">
+              Join Discord Waitlist
             </a>
           </div>
         </div>
