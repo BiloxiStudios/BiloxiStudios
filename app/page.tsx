@@ -49,20 +49,37 @@ export default function Home() {
           </div>
         </div>
         <div className="relative h-80 lg:h-full min-h-[300px] rounded-lg overflow-hidden border border-vapor-blue/30 bg-black/50 flex items-center justify-center group">
-          {/* Neural/Universe Background Effect */}
-          <div className="absolute inset-0 opacity-30 group-hover:opacity-50 transition-opacity duration-700">
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200%] h-[200%] animate-[spin_20s_linear_infinite]"
+          {/* Supernova / Wormhole Background Effect */}
+          <div className="absolute inset-0 overflow-hidden opacity-80 group-hover:opacity-100 transition-opacity duration-1000">
+            {/* Spinning Casino/Wormhole Rays */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200%] h-[200%] animate-[spin_12s_linear_infinite]"
                  style={{
-                   background: 'radial-gradient(circle, transparent 20%, var(--vapor-blue) 20%, transparent 21%, transparent 40%, var(--vapor-purple) 40%, transparent 41%, transparent 60%, var(--vapor-pink) 60%, transparent 61%)',
-                   backgroundSize: '100px 100px'
+                   background: 'repeating-conic-gradient(from 0deg, var(--vapor-pink) 0deg 15deg, transparent 15deg 30deg, var(--vapor-blue) 30deg 45deg, transparent 45deg 60deg)',
+                   opacity: 0.4
                  }}
             />
-            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMSIgZmlsbD0icmdiYSgwLCAyNTUsIDI1NSwgMC41KSIvPjwvc3ZnPg==')] opacity-50"></div>
-            <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px]" />
+            {/* Counter-Spinning Inner Rays */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[150%] animate-[spin_8s_linear_infinite_reverse]"
+                 style={{
+                   background: 'repeating-conic-gradient(from 0deg, var(--vapor-purple) 0deg 10deg, transparent 10deg 20deg, var(--vapor-yellow) 20deg 30deg, transparent 30deg 40deg)',
+                   opacity: 0.3
+                 }}
+            />
+            {/* Supernova Core */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full animate-pulse"
+                 style={{
+                   background: 'radial-gradient(circle at center, var(--vapor-yellow) 0%, var(--vapor-pink) 20%, var(--vapor-purple) 40%, transparent 70%)',
+                   opacity: 0.7,
+                   mixBlendMode: 'screen'
+                 }}
+            />
+            {/* Starfield Overlay */}
+            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMSIgZmlsbD0icmdiYSgwLCAyNTUsIDI1NSwgMC41KSIvPjwvc3ZnPg==')] opacity-60"></div>
+            <div className="absolute inset-0 bg-black/30 backdrop-blur-[2px]" />
           </div>
-          <div className="text-center space-y-4 relative z-10">
-            <div className="text-6xl animate-pulse drop-shadow-[0_0_15px_rgba(0,255,255,0.8)]">🧠</div>
-            <div className="font-mono text-vapor-blue/80 overflow-hidden whitespace-nowrap border-r-4 border-vapor-blue animate-[typing_3.5s_steps(40,end),blink-caret_.75s_step-end_infinite] pr-2">
+          <div className="text-center space-y-4 relative z-10 flex flex-col items-center">
+            <div className="text-7xl animate-bounce drop-shadow-[0_0_25px_rgba(255,251,150,1)]">🧠</div>
+            <div className="font-mono text-vapor-yellow font-bold text-lg md:text-xl overflow-hidden whitespace-nowrap border-r-4 border-vapor-yellow animate-[typing_3.5s_steps(40,end),blink-caret_.75s_step-end_infinite] pr-2 drop-shadow-[0_0_10px_rgba(255,251,150,0.8)] bg-black/40 px-4 py-2 rounded-full backdrop-blur-sm">
               AI_WORLD_BUILDER_ACTIVE
             </div>
           </div>
