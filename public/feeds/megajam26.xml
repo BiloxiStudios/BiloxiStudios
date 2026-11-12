@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+<title>Biloxi Studios - MegaJam26 Devlog</title>
+<link>https://www.biloxistudios.com/blog/megajam26-devlog</link>
+<atom:link href="https://www.biloxistudios.com/feeds/megajam26.xml" rel="self" type="application/rss+xml" />
+<description>Running devlog of our UEFN island for the GlassDoor MegaJam26 benefit jam.</description>
+<language>en-us</language>
+<lastBuildDate>Thu, 12 Nov 2026 09:35:54 -0600</lastBuildDate>
+<item>
+<title>MegaJam26 begins</title>
+<link>https://www.biloxistudios.com/blog/megajam26-devlog#u-20261112-0935</link>
+<guid isPermaLink="false">megajam26-devlog-u-20261112-0935</guid>
+<pubDate>Thu, 12 Nov 2026 09:35:54 -0600</pubDate>
+<description>MegaJam26 is underway. Over the next few days our studio is building a brand-new Fortnite island in UEFN for the GlassDoor MegaJam26 benefit jam, and this devlog follows along from the first blank level to the final build. The jam runs until Sunday, November 15 at 7:59 PM Central. Today was all about getting set up: the team is in place, roles are assigned, the project and our task board are ready, and the first gameplay goals are on the list. Our studio team works alongside AI-assisted production tools, and this log itself is assembled automatically every few hours from our progress, then checked before it goes out. Check back for screenshots, clips and new features as the island comes together.</description>
+<content:encoded><![CDATA[<section id="u-20261112-0935" class="devlog-entry">
+<!-- section:u-20261112-0935 -->
+<h2>MegaJam26 begins</h2>
+<p><em><time datetime="2026-11-12T09:35:54-06:00">Thursday, November 12, 2026 at 9:35 AM Central</time></em></p>
+<p>MegaJam26 is underway. Over the next few days our studio is building a brand-new Fortnite island in UEFN for the GlassDoor MegaJam26 benefit jam, and this devlog follows along from the first blank level to the final build. The jam runs until Sunday, November 15 at 7:59 PM Central. Today was all about getting set up: the team is in place, roles are assigned, the project and our task board are ready, and the first gameplay goals are on the list. Our studio team works alongside AI-assisted production tools, and this log itself is assembled automatically every few hours from our progress, then checked before it goes out. Check back for screenshots, clips and new features as the island comes together.</p>
+</section><hr />]]></content:encoded>
+<enclosure url="https://www.biloxistudios.com/images/posts/megajam26-devlog/cover.webp" type="image/webp" length="0" />
+<media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/cover.webp" medium="image" type="image/webp" />
+</item>
+</channel>
+</rss>

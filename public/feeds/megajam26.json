@@ -1,0 +1,47 @@
+{
+ "version": "https://jsonfeed.org/version/1.1",
+ "title": "Biloxi Studios - MegaJam26 Devlog",
+ "home_page_url": "https://www.biloxistudios.com/blog/megajam26-devlog",
+ "feed_url": "https://www.biloxistudios.com/feeds/megajam26.json",
+ "description": "Running devlog of our UEFN island for the GlassDoor MegaJam26 benefit jam.",
+ "icon": "https://www.biloxistudios.com/images/posts/megajam26-devlog/cover.webp",
+ "language": "en-US",
+ "authors": [
+  {
+   "name": "Biloxi Studios",
+   "url": "https://www.biloxistudios.com"
+  }
+ ],
+ "items": [
+  {
+   "id": "https://www.biloxistudios.com/blog/megajam26-devlog#u-20261112-0935",
+   "url": "https://www.biloxistudios.com/blog/megajam26-devlog#u-20261112-0935",
+   "title": "MegaJam26 begins",
+   "content_html": "<section id=\"u-20261112-0935\" class=\"devlog-entry\">\n<!-- section:u-20261112-0935 -->\n<h2>MegaJam26 begins</h2>\n<p><em><time datetime=\"2026-11-12T09:35:54-06:00\">Thursday, November 12, 2026 at 9:35 AM Central</time></em></p>\n<p>MegaJam26 is underway. Over the next few days our studio is building a brand-new Fortnite island in UEFN for the GlassDoor MegaJam26 benefit jam, and this devlog follows along from the first blank level to the final build. The jam runs until Sunday, November 15 at 7:59 PM Central. Today was all about getting set up: the team is in place, roles are assigned, the project and our task board are ready, and the first gameplay goals are on the list. Our studio team works alongside AI-assisted production tools, and this log itself is assembled automatically every few hours from our progress, then checked before it goes out. Check back for screenshots, clips and new features as the island comes together.</p>\n</section><hr />",
+   "summary": "MegaJam26 is underway. Over the next few days our studio is building a brand-new Fortnite island in UEFN for the GlassDoor MegaJam26 benefit jam, and this devlog follows along from the first blank level to the final build. The jam runs until Sunday, November 15 at 7:59 PM Central. Today was all about getting set up: the team is in place, roles are assigned, the project and our task board are ready, and the first gameplay goals are on the list. Our studio team works alongside AI-assisted production tools, and this log itself is assembled automatically every few hours from our progress, then checked before it goes out. Check back for screenshots, clips and new features as the island comes together.",
+   "date_published": "2026-11-12T09:35:54-06:00",
+   "tags": [
+    "MegaJam26",
+    "UEFN",
+    "Fortnite",
+    "devlog"
+   ],
+   "image": "https://www.biloxistudios.com/images/posts/megajam26-devlog/cover.webp",
+   "attachments": [
+    {
+     "url": "https://www.biloxistudios.com/images/posts/megajam26-devlog/cover.webp",
+     "mime_type": "image/webp",
+     "title": "MegaJam26 devlog"
+    }
+   ],
+   "_megajam26": {
+    "images": [
+     "https://www.biloxistudios.com/images/posts/megajam26-devlog/cover.webp"
+    ],
+    "clips": [],
+    "done": [],
+    "in_progress": []
+   }
+  }
+ ]
+}
