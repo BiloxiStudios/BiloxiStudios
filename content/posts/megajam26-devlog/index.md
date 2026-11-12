@@ -5,6 +5,15 @@ author: 'Biloxi Studios Team'
 excerpt: 'A running devlog of our UEFN island for the GlassDoor MegaJam26 benefit jam, updated every few hours.'
 coverImage: 'cover.webp'
 ---
+<!-- live-board:start -->
+<section id="live-board" class="devlog-live-board">
+<h2>Live jam board</h2>
+<p>Our task board for the jam, updated automatically about every 10 minutes.</p>
+<iframe src="https://share.braindead.games/api/v1/public/artifacts/99fec6f9-b95a-4ad9-9704-b7e9a84b3d1a/sLfdg1r_ZkHRqmFrkTz83HadpdClXCnh7eisds1ERGc/index.html" title="MegaJam26 live jam board" loading="lazy" sandbox="allow-scripts" referrerpolicy="no-referrer" style="display:block;width:100%;height:900px;max-height:85vh;border:0;border-radius:8px;background:#171412"></iframe>
+<p><a href="https://share.braindead.games/api/v1/public/artifacts/99fec6f9-b95a-4ad9-9704-b7e9a84b3d1a/sLfdg1r_ZkHRqmFrkTz83HadpdClXCnh7eisds1ERGc/index.html" target="_blank" rel="noopener noreferrer">Open the live board</a></p>
+</section>
+<hr />
+<!-- live-board:end -->
 <p>Follow along as we build a Fortnite island in UEFN for the <strong>GlassDoor MegaJam26</strong> benefit jam.
 This page updates automatically every few hours, newest first, until the jam wraps on Sunday, November 15 at 7:59 PM Central.</p>
 <p>Feeds: <a href="/feeds/megajam26.xml">RSS</a> &middot; <a href="/feeds/megajam26.json">JSON</a></p>
