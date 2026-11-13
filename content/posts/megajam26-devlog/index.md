@@ -19,6 +19,13 @@ This page updates automatically every few hours, newest first, until the jam wra
 <p>Feeds: <a href="/feeds/megajam26.xml">RSS</a> &middot; <a href="/feeds/megajam26.json">JSON</a></p>
 <hr />
 <!-- devlog-sections -->
+<section id="u-20261113-1217" class="devlog-entry">
+<!-- section:u-20261113-1217 -->
+<h2>Jam update: Fri 12:17 PM</h2>
+<p><em><time datetime="2026-11-13T12:17:01-06:00">Friday, November 13, 2026 at 12:17 PM Central</time></em></p>
+<p>5 more are in progress. The team pushed 47 project updates across Verse gameplay code, art, props and materials, audio.</p>
+<h3>In progress</h3><ul><li>EDGE 4: music and stings - generated genre beds first, then the owner&#x27;s Patchwork reactive pipeline (stems -&gt; MIDI -&gt; Patchwork -&gt; Song Sync -&gt; stage events)</li><li>All player UI as Widget Blueprints: convert the Verse-built menu and take bar (animations, sounds, IA_ glyphs, mobile + controller)</li><li>EDGE 2: witness run and fix loop until one plain take is clean (voice path WORKS or HIDDEN)</li><li>EDGE 3: one-press loop - ACTION / CUT / NEW SHOW on screen, auto-roll, reopenable menu, less dead air (the menu must be fixed)</li><li>EDGE 6: freeze, capture, declare, dev log (Glass Box), submit by Sunday 17:00 CST</li></ul>
+</section><hr />
 <section id="u-20261113-0617" class="devlog-entry">
 <!-- section:u-20261113-0617 -->
 <h2>Jam update: Fri 6:17 AM</h2>

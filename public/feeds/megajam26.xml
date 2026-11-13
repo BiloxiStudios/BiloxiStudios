@@ -7,7 +7,21 @@
 <atom:link href="https://share.braindead.games/api/v1/public/artifacts/99fec6f9-b95a-4ad9-9704-b7e9a84b3d1a/sLfdg1r_ZkHRqmFrkTz83HadpdClXCnh7eisds1ERGc/index.html" rel="related" type="text/html" title="Live jam board" />
 <description>Running devlog of our UEFN island for the GlassDoor MegaJam26 benefit jam.</description>
 <language>en-us</language>
-<lastBuildDate>Fri, 13 Nov 2026 06:17:01 -0600</lastBuildDate>
+<lastBuildDate>Fri, 13 Nov 2026 12:17:01 -0600</lastBuildDate>
+<item>
+<title>Jam update: Fri 12:17 PM</title>
+<link>https://www.biloxistudios.com/blog/megajam26-devlog#u-20261113-1217</link>
+<guid isPermaLink="false">megajam26-devlog-u-20261113-1217</guid>
+<pubDate>Fri, 13 Nov 2026 12:17:01 -0600</pubDate>
+<description>5 more are in progress. The team pushed 47 project updates across Verse gameplay code, art, props and materials, audio.</description>
+<content:encoded><![CDATA[<section id="u-20261113-1217" class="devlog-entry">
+<!-- section:u-20261113-1217 -->
+<h2>Jam update: Fri 12:17 PM</h2>
+<p><em><time datetime="2026-11-13T12:17:01-06:00">Friday, November 13, 2026 at 12:17 PM Central</time></em></p>
+<p>5 more are in progress. The team pushed 47 project updates across Verse gameplay code, art, props and materials, audio.</p>
+<h3>In progress</h3><ul><li>EDGE 4: music and stings - generated genre beds first, then the owner&#x27;s Patchwork reactive pipeline (stems -&gt; MIDI -&gt; Patchwork -&gt; Song Sync -&gt; stage events)</li><li>All player UI as Widget Blueprints: convert the Verse-built menu and take bar (animations, sounds, IA_ glyphs, mobile + controller)</li><li>EDGE 2: witness run and fix loop until one plain take is clean (voice path WORKS or HIDDEN)</li><li>EDGE 3: one-press loop - ACTION / CUT / NEW SHOW on screen, auto-roll, reopenable menu, less dead air (the menu must be fixed)</li><li>EDGE 6: freeze, capture, declare, dev log (Glass Box), submit by Sunday 17:00 CST</li></ul>
+</section><hr />]]></content:encoded>
+</item>
 <item>
 <title>Jam update: Fri 6:17 AM</title>
 <link>https://www.biloxistudios.com/blog/megajam26-devlog#u-20261113-0617</link>
