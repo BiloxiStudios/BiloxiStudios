@@ -1,6 +1,6 @@
 ---
 title: 'MegaJam26 Devlog'
-date: '2026-11-12'
+date: '2026-11-13'
 author: 'Biloxi Studios Team'
 excerpt: 'A running devlog of our UEFN island for the GlassDoor MegaJam26 benefit jam, updated every few hours.'
 coverImage: 'cover.webp'
@@ -19,6 +19,13 @@ This page updates automatically every few hours, newest first, until the jam wra
 <p>Feeds: <a href="/feeds/megajam26.xml">RSS</a> &middot; <a href="/feeds/megajam26.json">JSON</a></p>
 <hr />
 <!-- devlog-sections -->
+<section id="u-20261113-0017" class="devlog-entry">
+<!-- section:u-20261113-0017 -->
+<h2>Jam update: Fri 12:17 AM</h2>
+<p><em><time datetime="2026-11-13T00:17:01-06:00">Friday, November 13, 2026 at 12:17 AM Central</time></em></p>
+<p>9 more are in progress. The team pushed 78 project updates across Verse gameplay code, art, props and materials, levels and maps, project files.</p>
+<h3>In progress</h3><ul><li>Persona Director: director_ui_bridge so the UI can replace WBP_DirectorPanel without touching Director logic</li><li>Persona Director: EffectsSystem - realtime event triggers off the Director StageBus</li><li>UI: migrate Rinella&#x27;s new UI from RinProject_17_UI into Content/UI (owner decision)</li><li>Persona Director: episodes, points and unlocks (sets, themes, actors)</li><li>Persona Director: interactable set marks in all 11 sets (6-12 per set, tagged)</li><li>Persona Director: new genre locations (space station, spooky night forest, school, ice-cream shop)</li><li>Persona Director: player_data save system + session_data (owner request)</li><li>Persona Director: cast bios + day rates for the actor profile screen (IMDb-style)</li><li>First playable</li></ul>
+</section><hr />
 <section id="u-20261112-2117" class="devlog-entry">
 <!-- section:u-20261112-2117 -->
 <h2>Jam update: Thu 9:17 PM</h2>
