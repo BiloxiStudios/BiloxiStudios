@@ -18,6 +18,34 @@
  },
  "items": [
   {
+   "id": "https://www.biloxistudios.com/blog/megajam26-devlog#u-20261112-2117",
+   "url": "https://www.biloxistudios.com/blog/megajam26-devlog#u-20261112-2117",
+   "title": "Jam update: Thu 9:17 PM",
+   "content_html": "<section id=\"u-20261112-2117\" class=\"devlog-entry\">\n<!-- section:u-20261112-2117 -->\n<h2>Jam update: Thu 9:17 PM</h2>\n<p><em><time datetime=\"2026-11-12T21:17:01-06:00\">Thursday, November 12, 2026 at 9:17 PM Central</time></em></p>\n<p>We finished 1 item on the island. 5 more are in progress. The team pushed 60 project updates across Verse gameplay code, art, props and materials, levels and maps, project files.</p>\n<h3>Done</h3><ul><li>P0 Project: create the MegaJam26 UEFN project in Project/ and submit it (unblocks every lane)</li></ul>\n<h3>In progress</h3><ul><li>P1 Gameplay: core loop - director_device + scene_set + edit_bay (Content/Gameplay)</li><li>UI: widget contract + HUD/menu/prompt spec (jam-ui)</li><li>P2 Props: prop kit for greybox + pickups/interactables (Content/Props)</li><li>P2 Level area 2: greybox the second area + dressing pass (Content/Levels/Area2)</li><li>P1 Gameplay: one-page game design (core loop, win/lose, 10-min session) for owner approval</li></ul>\n</section><hr />",
+   "summary": "We finished 1 item on the island. 5 more are in progress. The team pushed 60 project updates across Verse gameplay code, art, props and materials, levels and maps, project files.",
+   "date_published": "2026-11-12T21:17:01-06:00",
+   "tags": [
+    "MegaJam26",
+    "UEFN",
+    "Fortnite",
+    "devlog"
+   ],
+   "_megajam26": {
+    "images": [],
+    "clips": [],
+    "done": [
+     "P0 Project: create the MegaJam26 UEFN project in Project/ and submit it (unblocks every lane)"
+    ],
+    "in_progress": [
+     "P1 Gameplay: core loop - director_device + scene_set + edit_bay (Content/Gameplay)",
+     "UI: widget contract + HUD/menu/prompt spec (jam-ui)",
+     "P2 Props: prop kit for greybox + pickups/interactables (Content/Props)",
+     "P2 Level area 2: greybox the second area + dressing pass (Content/Levels/Area2)",
+     "P1 Gameplay: one-page game design (core loop, win/lose, 10-min session) for owner approval"
+    ]
+   }
+  },
+  {
    "id": "https://www.biloxistudios.com/blog/megajam26-devlog#u-20261112-0935",
    "url": "https://www.biloxistudios.com/blog/megajam26-devlog#u-20261112-0935",
    "title": "MegaJam26 begins",

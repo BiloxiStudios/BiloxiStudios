@@ -19,6 +19,14 @@ This page updates automatically every few hours, newest first, until the jam wra
 <p>Feeds: <a href="/feeds/megajam26.xml">RSS</a> &middot; <a href="/feeds/megajam26.json">JSON</a></p>
 <hr />
 <!-- devlog-sections -->
+<section id="u-20261112-2117" class="devlog-entry">
+<!-- section:u-20261112-2117 -->
+<h2>Jam update: Thu 9:17 PM</h2>
+<p><em><time datetime="2026-11-12T21:17:01-06:00">Thursday, November 12, 2026 at 9:17 PM Central</time></em></p>
+<p>We finished 1 item on the island. 5 more are in progress. The team pushed 60 project updates across Verse gameplay code, art, props and materials, levels and maps, project files.</p>
+<h3>Done</h3><ul><li>P0 Project: create the MegaJam26 UEFN project in Project/ and submit it (unblocks every lane)</li></ul>
+<h3>In progress</h3><ul><li>P1 Gameplay: core loop - director_device + scene_set + edit_bay (Content/Gameplay)</li><li>UI: widget contract + HUD/menu/prompt spec (jam-ui)</li><li>P2 Props: prop kit for greybox + pickups/interactables (Content/Props)</li><li>P2 Level area 2: greybox the second area + dressing pass (Content/Levels/Area2)</li><li>P1 Gameplay: one-page game design (core loop, win/lose, 10-min session) for owner approval</li></ul>
+</section><hr />
 
 <section id="u-20261112-0935" class="devlog-entry">
 <!-- section:u-20261112-0935 -->
