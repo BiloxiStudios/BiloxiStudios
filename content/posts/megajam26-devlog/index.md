@@ -19,6 +19,30 @@ This page updates automatically every few hours, newest first, until the jam wra
 <p>Feeds: <a href="/feeds/megajam26.xml">RSS</a> &middot; <a href="/feeds/megajam26.json">JSON</a></p>
 <hr />
 <!-- devlog-sections -->
+<section id="u-20261114-0317" class="devlog-entry">
+<!-- section:u-20261114-0317 -->
+<h2>Jam update: Sat 3:17 AM</h2>
+<p><em><time datetime="2026-11-14T03:17:01-06:00">Saturday, November 14, 2026 at 3:17 AM Central</time></em></p>
+<div class="devlog-written" data-key="968624bc7bd1">
+<h3>Saturday, 3:00 AM: the camera learns to look at the person talking</h3>
+<p>Dev log entry for Saturday November 14, 2026, written at three in the morning. Pictures marked &quot;from the game&quot; are real takes played tonight.</p>
+<p>Two hours ago we opened every set like a stage so the cameras could see in. Then we did the only thing that proves anything: we played it, set after set, and wrote down what each frame actually showed.</p>
+<p>The first pass was humbling. Four sets, sixteen lines of dialogue, and a simple count: a blank wall in the picture, zero times. That was the fix working. The speaker&#x27;s face in the picture: also zero times. The camera no longer hid behind walls, but it was framing chests and elbows, and five times out of nine it was pointed at the actor who was listening.</p>
+<p>So the camera got three new rules before the next pass. Show the one who is speaking. Aim at the face, not the middle of the body. And never choose a shot you have not checked. We played the same three sets again with the same cast.</p>
+<p>The second count: wrong actor, none. Shots with nothing usable in them, none, where there had been nine. One true close-up of a speaking face, one two-shot worth keeping. That is not finished. Heads still get cut off when the camera lands beside an actor, and the western town&#x27;s wide shot makes its cast look like ants. But it is the first time tonight the game looked like someone was directing it.</p>
+<p>Horror turned out to have its own problem: darkness. Measured from the frames, a horror scene was about a seventh as bright as a daylight one. We did not want to wash the mood out, so the rule we settled on has two halves: a wide shot must always be bright enough to read, and a close-up may stay as dark as it likes so long as a face or a pair of eyes comes through. Each actor now carries a stronger light in dark scenes, and a follow spot finds whoever is speaking.</p>
+<p>The other thing seen in the game for the first time tonight is the end of a take. It used to stop on a plain cut screen. Now the curtain comes down on a sheet that says &quot;That&#x27;s a wrap&quot;: what the take made at the box office, what the cast, the location and the film cost, how many stars it earned, a one-line tip, and your director level.</p>
+<p>That sheet also taught us the night&#x27;s most useful lesson. It trapped our tester: no click and no key would close it. The cause was a single unticked setting that says whether a panel is allowed to take focus. With it off, every instruction to focus the panel was ignored without a word of complaint. The same setting explains why nothing had ever answered a controller. It is ticked now, and written into our rules.</p>
+<p>Elsewhere tonight: the director&#x27;s office, where every show starts, went from a concrete yard to a room with posters, trophies and a film camera; the count of hand props we have modelled reached seventy-one, each with its own icon; and the space station got a red alert.</p>
+<p>Still not done at three o&#x27;clock: nobody has seen a prop in an actor&#x27;s hand, wide shots at night are too dark, and no one has yet played a full show with a controller. Those are next.</p>
+<figure><img src="/images/posts/megajam26-devlog/dl-48a8b3392bf4.webp" alt="From the game: the first real two-shot, in the castle, both actors large in the frame" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>From the game: the first real two-shot, in the castle, both actors large in the frame</figcaption></figure>
+<figure><img src="/images/posts/megajam26-devlog/dl-fc2a1b4bd5cb.webp" alt="From the game: a speaker&#x27;s face in close-up, for the first time" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>From the game: a speaker&#x27;s face in close-up, for the first time</figcaption></figure>
+<figure><img src="/images/posts/megajam26-devlog/dl-5fe804b85c6f.webp" alt="From the game: horror in the haunted manor after the lighting change" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>From the game: horror in the haunted manor after the lighting change</figcaption></figure>
+<figure><img src="/images/posts/megajam26-devlog/dl-f30570d5dbf8.webp" alt="From the game: the end-of-take sheet" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>From the game: the end-of-take sheet</figcaption></figure>
+<figure><img src="/images/posts/megajam26-devlog/dl-11e8288c08db.webp" alt="The director&#x27;s office, dressed tonight" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>The director&#x27;s office, dressed tonight</figcaption></figure>
+</div>
+<p>The team pushed 116 project updates across Verse gameplay code, art, props and materials, audio.</p>
+</section><hr />
 <section id="u-20261114-0129" class="devlog-entry">
 <!-- section:u-20261114-0129 -->
 <h2>Jam update: Sat 1:29 AM</h2>
