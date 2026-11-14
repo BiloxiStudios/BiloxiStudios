@@ -18,6 +18,28 @@
  },
  "items": [
   {
+   "id": "https://www.biloxistudios.com/blog/megajam26-devlog#u-20261114-0017",
+   "url": "https://www.biloxistudios.com/blog/megajam26-devlog#u-20261114-0017",
+   "title": "Jam update: Sat 12:17 AM",
+   "content_html": "<section id=\"u-20261114-0017\" class=\"devlog-entry\">\n<!-- section:u-20261114-0017 -->\n<h2>Jam update: Sat 12:17 AM</h2>\n<p><em><time datetime=\"2026-11-14T00:17:01-06:00\">Saturday, November 14, 2026 at 12:17 AM Central</time></em></p>\n<p>1 more is in progress. The team pushed 89 project updates across Verse gameplay code, art, props and materials, audio.</p>\n<h3>In progress</h3><ul><li>Key light on the actors: faces must be lit in every genre and weather (owner)</li></ul>\n</section><hr />",
+   "summary": "1 more is in progress. The team pushed 89 project updates across Verse gameplay code, art, props and materials, audio.",
+   "date_published": "2026-11-14T00:17:01-06:00",
+   "tags": [
+    "MegaJam26",
+    "UEFN",
+    "Fortnite",
+    "devlog"
+   ],
+   "_megajam26": {
+    "images": [],
+    "clips": [],
+    "done": [],
+    "in_progress": [
+     "Key light on the actors: faces must be lit in every genre and weather (owner)"
+    ]
+   }
+  },
+  {
    "id": "https://www.biloxistudios.com/blog/megajam26-devlog#u-20261113-2117",
    "url": "https://www.biloxistudios.com/blog/megajam26-devlog#u-20261113-2117",
    "title": "Jam update: Fri 9:17 PM",
