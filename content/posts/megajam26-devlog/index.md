@@ -19,6 +19,26 @@ This page updates automatically every few hours, newest first, until the jam wra
 <p>Feeds: <a href="/feeds/megajam26.xml">RSS</a> &middot; <a href="/feeds/megajam26.json">JSON</a></p>
 <hr />
 <!-- devlog-sections -->
+<section id="u-20261114-1217" class="devlog-entry">
+<!-- section:u-20261114-1217 -->
+<h2>Jam update: Sat 12:17 PM</h2>
+<p><em><time datetime="2026-11-14T12:17:01-06:00">Saturday, November 14, 2026 at 12:17 PM Central</time></em></p>
+<div class="devlog-written" data-key="1dab8db58db6">
+<h3>Saturday, noon: first controller playtest, and one diner in two worlds</h3>
+<p>Until this morning every full take had been played with a mouse and keyboard. Late this morning the game was played start to finish on a controller for the first time, two whole shows. Most of it held up. Two things did not, and both are ones a player would meet in the first minute.</p>
+<p>The first is a talk prompt. Fortnite&#x27;s own &quot;Talk (hold)&quot; card for an actor stayed on the screen the whole time, menus included, where holding the button does nothing. The cause was ours: the game was pointing the player at an actor after every take instead of only while the director is giving notes. A change that points the player at an actor only during notes has been written. It has not been played yet.</p>
+<p>The second is the wrap sheet at the end of a take. On the controller only one of its four buttons ever took a press. Looking inside the sheet turned up one real difference: the three buttons that failed each carry a small button icon, and that icon was catching mouse clicks meant for the button under it. The icons have been made click-through. Whether that also cures the controller we do not know yet; it may be a separate fault, and we are reading the logs from that session to find out. None of this counts as fixed until it is played on a controller again.</p>
+<p>The bigger change today is that sets and biomes are being pulled apart. A set is the building and the marks the cameras use; a biome is the world around it. The goal is one diner that can stand in a desert or a forest, and later a city or a jungle. The two pictures below are views from the editor, not from a take: the same diner, with the desert around it and then the forest. The open water at the edges is the next thing to hide. It has not been seen in play yet, and a mistake in how the diner was tied to its desert was caught an hour ago, before anyone played it.</p>
+<p>This morning a random Director&#x27;s Challenge was added too. At Action, each full take draws one goal, such as getting an actor to tell a joke, and pays a bonus if it happens. It is in the build and has not been played, so we cannot say how it feels.</p>
+<figure><img src="/images/posts/megajam26-devlog/dl-4debfe76b67c.webp" alt="A fault we caught: the talk card on the left never leaves, and the director&#x27;s controls are missing after the wrap" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>A fault we caught: the talk card on the left never leaves, and the director&#x27;s controls are missing after the wrap</figcaption></figure>
+<figure><img src="/images/posts/megajam26-devlog/dl-bb28df3b860d.webp" alt="Nine frames from one Castle take, ending on the wrap sheet" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>Nine frames from one Castle take, ending on the wrap sheet</figcaption></figure>
+<figure><img src="/images/posts/megajam26-devlog/dl-c1237b8fa492.webp" alt="The diner in the desert: an editor view, not a take" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>The diner in the desert: an editor view, not a take</figcaption></figure>
+<figure><img src="/images/posts/megajam26-devlog/dl-086c8445792e.webp" alt="The same diner in the forest: an editor view, not a take" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>The same diner in the forest: an editor view, not a take</figcaption></figure>
+<figure><img src="/images/posts/megajam26-devlog/dl-60e9bbb2239b.webp" alt="The wrap sheet: box office, day rates, rent, film and stars" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>The wrap sheet: box office, day rates, rent, film and stars</figcaption></figure>
+</div>
+<p>2 more are in progress. The team pushed 58 project updates across Verse gameplay code, art, props and materials, audio.</p>
+<h3>In progress</h3><ul><li>Reusable biomes: any set can load inside a city, desert, jungle or forest biome (biome layer first, then the set layer)</li><li>Persona Director (stretch): on-set challenges - QTE to save the show (e.g. falling light)</li></ul>
+</section><hr />
 <section id="u-20261114-0917" class="devlog-entry">
 <!-- section:u-20261114-0917 -->
 <h2>Jam update: Sat 9:17 AM</h2>
