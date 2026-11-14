@@ -19,6 +19,33 @@ This page updates automatically every few hours, newest first, until the jam wra
 <p>Feeds: <a href="/feeds/megajam26.xml">RSS</a> &middot; <a href="/feeds/megajam26.json">JSON</a></p>
 <hr />
 <!-- devlog-sections -->
+<section id="u-20261114-0129" class="devlog-entry">
+<!-- section:u-20261114-0129 -->
+<h2>Jam update: Sat 1:29 AM</h2>
+<p><em><time datetime="2026-11-14T01:29:19-06:00">Saturday, November 14, 2026 at 1:29 AM Central</time></em></p>
+<div class="devlog-written">
+<h3>Saturday, 1:30 AM: the night we opened every set</h3>
+<p>Dev log entry for Saturday November 14, 2026. Written overnight. Pictures are from the editor unless a caption says they are from the game.</p>
+<p>The last thing we were told before the studio went to sleep was blunt: most of the time you cannot see the show. The camera sits behind a wall, or looks at the back of a prop, while two AI actors perform a scene nobody can watch. For a game about directing a show, that is the one fault that cannot ship.</p>
+<p>So tonight we stopped fixing blocked shots one playtest at a time and measured all of them. A script stands a figure on every spot an actor can use, on every set, and from each spot tries every camera position the game is able to choose: the wide shot, close-ups, over-the-shoulder, pans, dollies, the crane. For each one it asks a simple question: is anything between the lens and this actor&#x27;s face?</p>
+<p>The first numbers were hard to read. In the castle, 30 camera lines in 100 reached an actor. In the old theatre, 40. In the jungle temple, 48. The widest shot, the one meant to show the whole scene, was blocked every single time on all three.</p>
+<p>The cause turned out to be simple. Our cameras stand six to fourteen metres back, and the rooms are smaller than that. The lens was outside the building.</p>
+<p>The fix is the oldest trick in film and television: a set is not a room, it is a stage with one wall missing. We opened every set on the side where the cameras work. Outer walls came off, a bay window and a tower roof left the castle, partitions and a vending machine left the theatre, a barn lost half its west wall. Each set also got a marker that says &quot;the audience sits here&quot;, and no camera is allowed to stand further back than it.</p>
+<p>By a quarter past one, all eight sets measured between 90 and 99 clear lines in 100. The game&#x27;s own camera code changed too: every shot now checks that it can see its actor before it is used, and picks a different shot if it cannot.</p>
+<p>Then we played it, and the game reminded us that a measurement is not a show. In the first take on the western town, every shot was rejected and replaced, because one actor was sitting in a chair that no camera could see, and our new rule insisted on seeing everyone. The picture below is from the build before tonight&#x27;s changes, and it is exactly the complaint we started with: the director&#x27;s panel is up, and behind it the camera is staring at a porch rail.</p>
+<p>That chair has been moved and the rule corrected. The same shot gets taken again on the next build, and we will post it either way.</p>
+<p>Other things that moved tonight:</p>
+<ul><li>Money. A take now costs something: rent for the location, film for every take, and the cast&#x27;s day rates. It earns box office, a score in stars, and progress toward the next director level. The first take played on the new rules made $420, cost $350, and earned one star with the advice &quot;more emotions&quot;.</li><li>Props. Forty-five hand props of our own are modelled, with twenty-four new short animations for holding and using them. No actor has held one in the game yet; that test is running as this is written.</li></ul>
+<p>What is honest to say at half past one: the sets are open, the numbers are good, the code is in, and none of it has yet been watched working in a full take with the actors in every frame. That is what the rest of the night is for.</p>
+<figure><img src="/images/posts/megajam26-devlog/dl-b0e5bd8d69d2.webp" alt="What the castle&#x27;s wide camera saw before tonight: the back of a wall" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>What the castle&#x27;s wide camera saw before tonight: the back of a wall</figcaption></figure>
+<figure><img src="/images/posts/megajam26-devlog/dl-da9b6f72ac25.webp" alt="The castle after its fourth wall was opened, seen from the new audience marker" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>The castle after its fourth wall was opened, seen from the new audience marker</figcaption></figure>
+<figure><img src="/images/posts/megajam26-devlog/dl-6cadd53696d3.webp" alt="From the game, before the fixes: the wide camera jammed against a porch rail, no actor in sight" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>From the game, before the fixes: the wide camera jammed against a porch rail, no actor in sight</figcaption></figure>
+<figure><img src="/images/posts/megajam26-devlog/dl-8fa95deb1615.webp" alt="Eleven of the new hand props, two for each kind of show" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>Eleven of the new hand props, two for each kind of show</figcaption></figure>
+<figure><img src="/images/posts/megajam26-devlog/dl-e16abed89d64.webp" alt="The end-of-take sheet, laid out and waiting for its numbers" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>The end-of-take sheet, laid out and waiting for its numbers</figcaption></figure>
+</div>
+<p>We&#x27;re deep into the weekend with about 42 hours still on the clock, and the team has been busy with 87 updates across gameplay code, art, props, materials, and audio. Right now we&#x27;re doing a big sight-line audit, checking every camera position against every set and then opening things up by pulling out walls and reworking layouts so the action is easy to see. No big milestones to announce just yet, but plenty of polish is landing behind the scenes. Stay tuned for visuals soon!</p>
+<h3>In progress</h3><ul><li>Sight-line audit: trace every camera position against every set, then open the sets (walls out, layouts changed)</li></ul>
+</section><hr />
 <section id="u-20261114-0017" class="devlog-entry">
 <!-- section:u-20261114-0017 -->
 <h2>Jam update: Sat 12:17 AM</h2>
