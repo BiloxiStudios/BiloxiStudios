@@ -19,6 +19,13 @@ This page updates automatically every few hours, newest first, until the jam wra
 <p>Feeds: <a href="/feeds/megajam26.xml">RSS</a> &middot; <a href="/feeds/megajam26.json">JSON</a></p>
 <hr />
 <!-- devlog-sections -->
+<section id="u-20261113-2117" class="devlog-entry">
+<!-- section:u-20261113-2117 -->
+<h2>Jam update: Fri 9:17 PM</h2>
+<p><em><time datetime="2026-11-13T21:17:01-06:00">Friday, November 13, 2026 at 9:17 PM Central</time></em></p>
+<p>5 more are in progress. The team pushed 101 project updates across Verse gameplay code, art, props and materials, audio.</p>
+<h3>In progress</h3><ul><li>Show fails to auto-start after the Showrunner interview; needs repeated prompts</li><li>Space Station must look like it is in space: windows, and space outside them</li><li>In-play director UI cannot be used with a controller: no focus set; dead while rolling (Rinella: &quot;this is not ok&quot;)</li><li>Extra shots per set: establishing shot, cutaways, tagged points of interest, more shot locations</li><li>Film Noir look is unviewable: the screen is solid grey fog (owner playtest)</li></ul>
+</section><hr />
 <section id="u-20261113-1817" class="devlog-entry">
 <!-- section:u-20261113-1817 -->
 <h2>Jam update: Fri 6:17 PM</h2>
