@@ -18,6 +18,32 @@
  },
  "items": [
   {
+   "id": "https://www.biloxistudios.com/blog/megajam26-devlog#u-20261113-1817",
+   "url": "https://www.biloxistudios.com/blog/megajam26-devlog#u-20261113-1817",
+   "title": "Jam update: Fri 6:17 PM",
+   "content_html": "<section id=\"u-20261113-1817\" class=\"devlog-entry\">\n<!-- section:u-20261113-1817 -->\n<h2>Jam update: Fri 6:17 PM</h2>\n<p><em><time datetime=\"2026-11-13T18:17:01-06:00\">Friday, November 13, 2026 at 6:17 PM Central</time></em></p>\n<p>We finished 3 items on the island. 1 more is in progress. The team pushed 101 project updates across Verse gameplay code, art, props and materials, audio.</p>\n<h3>Done</h3><ul><li>Interview is a dead end: take bar captures input, hold-to-talk never reaches the Showrunner</li><li>SHIP BLOCKER: Verse Print() debug lines are drawn on the player&#x27;s screen</li><li>Menu mic path auto-rolls on defaults instead of the Director&#x27;s voice interview</li></ul>\n<h3>In progress</h3><ul><li>Persona Director: animation lane - acting animations on the Fortnite mannequin skeleton (bind GestureAnimations)</li></ul>\n</section><hr />",
+   "summary": "We finished 3 items on the island. 1 more is in progress. The team pushed 101 project updates across Verse gameplay code, art, props and materials, audio.",
+   "date_published": "2026-11-13T18:17:01-06:00",
+   "tags": [
+    "MegaJam26",
+    "UEFN",
+    "Fortnite",
+    "devlog"
+   ],
+   "_megajam26": {
+    "images": [],
+    "clips": [],
+    "done": [
+     "Interview is a dead end: take bar captures input, hold-to-talk never reaches the Showrunner",
+     "SHIP BLOCKER: Verse Print() debug lines are drawn on the player's screen",
+     "Menu mic path auto-rolls on defaults instead of the Director's voice interview"
+    ],
+    "in_progress": [
+     "Persona Director: animation lane - acting animations on the Fortnite mannequin skeleton (bind GestureAnimations)"
+    ]
+   }
+  },
+  {
    "id": "https://www.biloxistudios.com/blog/megajam26-devlog#u-20261113-1517",
    "url": "https://www.biloxistudios.com/blog/megajam26-devlog#u-20261113-1517",
    "title": "Jam update: Fri 3:17 PM",

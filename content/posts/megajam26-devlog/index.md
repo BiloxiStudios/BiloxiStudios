@@ -19,6 +19,14 @@ This page updates automatically every few hours, newest first, until the jam wra
 <p>Feeds: <a href="/feeds/megajam26.xml">RSS</a> &middot; <a href="/feeds/megajam26.json">JSON</a></p>
 <hr />
 <!-- devlog-sections -->
+<section id="u-20261113-1817" class="devlog-entry">
+<!-- section:u-20261113-1817 -->
+<h2>Jam update: Fri 6:17 PM</h2>
+<p><em><time datetime="2026-11-13T18:17:01-06:00">Friday, November 13, 2026 at 6:17 PM Central</time></em></p>
+<p>We finished 3 items on the island. 1 more is in progress. The team pushed 101 project updates across Verse gameplay code, art, props and materials, audio.</p>
+<h3>Done</h3><ul><li>Interview is a dead end: take bar captures input, hold-to-talk never reaches the Showrunner</li><li>SHIP BLOCKER: Verse Print() debug lines are drawn on the player&#x27;s screen</li><li>Menu mic path auto-rolls on defaults instead of the Director&#x27;s voice interview</li></ul>
+<h3>In progress</h3><ul><li>Persona Director: animation lane - acting animations on the Fortnite mannequin skeleton (bind GestureAnimations)</li></ul>
+</section><hr />
 <section id="u-20261113-1517" class="devlog-entry">
 <!-- section:u-20261113-1517 -->
 <h2>Jam update: Fri 3:17 PM</h2>
