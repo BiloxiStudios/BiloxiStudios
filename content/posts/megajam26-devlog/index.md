@@ -19,6 +19,26 @@ This page updates automatically every few hours, newest first, until the jam wra
 <p>Feeds: <a href="/feeds/megajam26.xml">RSS</a> &middot; <a href="/feeds/megajam26.json">JSON</a></p>
 <hr />
 <!-- devlog-sections -->
+<section id="u-20261114-0617" class="devlog-entry">
+<!-- section:u-20261114-0617 -->
+<h2>Jam update: Sat 6:17 AM</h2>
+<p><em><time datetime="2026-11-14T06:17:01-06:00">Saturday, November 14, 2026 at 6:17 AM Central</time></em></p>
+<div class="devlog-written" data-key="a9220d836f72">
+<h3>Saturday, 6:00 AM: one take, read like a film strip</h3>
+<p>Dev log entry for Saturday November 14, 2026, at six in the morning. Every picture marked &quot;from the game&quot; is a real take played overnight.</p>
+<p>At midnight the camera in our castle set was looking at the back of a wall. This is the same set six hours later, one frame for each line of an eight-line scene, in order:</p>
+<p>The speaker is in the picture in all eight frames, with a face you can read in seven. No walls. One back of a head. We have been keeping that count all night, because &quot;it looks better&quot; is not a measurement:</p>
+<ul><li>2 AM, three sets: no speaker&#x27;s face in any frame, and the camera on the wrong actor five times in nine.</li><li>4 AM, the castle: speaker in frame four times in eight, a bare wall once.</li><li>5 AM: six in eight.</li><li>6 AM: eight in eight.</li></ul>
+<p>Three things got it there, and none of them was clever. The standing spots the cameras could not see were found by measuring every one of them and moved a few steps. The camera was stopped from cutting away to the listener more than twice a take. And the actors now turn slightly toward the audience when they talk to each other, as stage actors always have.</p>
+<p>The same playing turned up a mistake that had been in front of us for hours: the character cast as the ghoul had been walking around in someone else&#x27;s costume, a hooded figure in red and black. The casting was fine; one entry in her costume record pointed at the wrong character. She is herself again in the strip above.</p>
+<p>The space station was played for the first time tonight too. Its windows look onto a field of stars, and when the scene turns dangerous the whole bridge goes red for eight seconds.</p>
+<p>What still is not right as the sun comes up: a second show in the same sitting does not start by itself, one actor wandered off the set mid-scene, and nobody has yet played a full show with a controller in their hands. Today is for those, and for the people who make this game to wake up and play it.</p>
+<figure><img src="/images/posts/megajam26-devlog/dl-976284b39cfa.webp" alt="From the game: every line of one take in the castle" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>From the game: every line of one take in the castle</figcaption></figure>
+<figure><img src="/images/posts/megajam26-devlog/dl-c3094d66a972.webp" alt="From the game: red alert on the space station" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>From the game: red alert on the space station</figcaption></figure>
+<figure><img src="/images/posts/megajam26-devlog/dl-064b4ecdf2d7.webp" alt="All eight sets, each seen from where its audience sits" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>All eight sets, each seen from where its audience sits</figcaption></figure>
+</div>
+<p>The team pushed 80 project updates across Verse gameplay code, art, props and materials, audio.</p>
+</section><hr />
 <section id="u-20261114-0317" class="devlog-entry">
 <!-- section:u-20261114-0317 -->
 <h2>Jam update: Sat 3:17 AM</h2>
