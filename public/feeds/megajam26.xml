@@ -7,7 +7,44 @@
 <atom:link href="https://share.braindead.games/api/v1/public/artifacts/99fec6f9-b95a-4ad9-9704-b7e9a84b3d1a/sLfdg1r_ZkHRqmFrkTz83HadpdClXCnh7eisds1ERGc/index.html" rel="related" type="text/html" title="Live jam board" />
 <description>Running devlog of our UEFN island for the GlassDoor MegaJam26 benefit jam.</description>
 <language>en-us</language>
-<lastBuildDate>Sun, 15 Nov 2026 00:34:27 -0600</lastBuildDate>
+<lastBuildDate>Sun, 15 Nov 2026 04:29:20 -0600</lastBuildDate>
+<item>
+<title>Jam update: Sun 4:29 AM</title>
+<link>https://www.biloxistudios.com/blog/megajam26-devlog#u-20261115-0429</link>
+<guid isPermaLink="false">megajam26-devlog-u-20261115-0429</guid>
+<pubDate>Sun, 15 Nov 2026 04:29:20 -0600</pubDate>
+<description>Things are quiet on the island front this morning, but we&#x27;re keeping the momentum going. The team is tidying up and lining everything up for the next big push, and we&#x27;ve got fresh screenshots to share with you. With about 15 hours left in the jam, we&#x27;re settling in for the final stretch and can&#x27;t wait to show you more soon.</description>
+<content:encoded><![CDATA[<section id="u-20261115-0429" class="devlog-entry">
+<!-- section:u-20261115-0429 -->
+<h2>Jam update: Sun 4:29 AM</h2>
+<p><em><time datetime="2026-11-15T04:29:20-06:00">Sunday, November 15, 2026 at 4:29 AM Central</time></em></p>
+<div class="devlog-written" data-key="756c77bf5234">
+<h3>Sunday, 4:30 AM: three fixes played, three finds, and a pile of polish nobody has played yet</h3>
+<p>Same rule as always: PLAYED means someone ran it in a game session; BUILT means it compiles and was read by a second pair of eyes but nobody has seen it work. Fifteen hours to the deadline.</p>
+<p>Played and fixed</p>
+<ul><li>The results sheet and the take bar. The results sheet used to close itself after 12 seconds when opened with the mouse. It now stays up, tested with the mouse and a virtual controller (it stayed past 15 seconds both times; on the controller it ran to the 60-second safety timer). The take bar&#x27;s line counter, goal, CUT and camera buttons now sit in their own bands on a small screen. PLAYED. It is on the overnight branch only. A real console controller has not tried it.</li><li>The Director&#x27;s Call menu, controller focus. Before, after using the keyboard, the next controller press could fire TALK by mistake. A small guard now ignores the first press after focus comes back. We ran all five steps (keyboard then controller, controller note, mouse click, results after keyboard) and all five passed. PLAYED. It still waits for the co-owner&#x27;s OK on the look of the highlight before it goes anywhere.</li><li>The &quot;THAT&#x27;S A WRAP&quot; card. It shows on a natural last line, and CUT during the card goes cleanly to the results. PLAYED in the Castle.</li></ul>
+<p>Three live problems found, all being fixed</p>
+<ul><li>Held props float. A rose bouquet hung 20 to 30 cm in front of and above the hand. We saw it on the test machine and the lead confirmed it on the frame. The new hold position and prop table are BUILT and read; they have not been played yet. They are the next test run.</li><li>Two-shots blocked on eight sets. On eight of twelve sets the two actors were placed 8 to 18 metres apart, too far for one shot, so the camera fell back to a close-up or the wide (the owner&#x27;s own log from last night shows it on the Western set). New standing marks put them 2.5 to 3.8 metres apart, side by side. They are shelved for all eight sets; each point was checked twice by two people, from the placed data (floor height, clear space, angle to the camera). BUILT; nobody has seen the new shots. Two spots (Haunted Manor, Theatre) were moved on the second check because the first points were weak.</li><li>One set&#x27;s lights are on everywhere. Four space-station lights were never switched off, so they lit the Theatre, the Haunted Manor, the Diner and the Castle too. Every frame we had of those sets showed that orange and blue wash. The fix registers the lights with the set so they only come on in space. BUILT. We still need a before-and-after pair on a dark interior to make sure nothing goes flat.</li></ul>
+<p>Anime look. The flat side-on camera twins are built and read. The test plan uses the three sets with the best angles (Diner, Wild West, Space Station); Jungle Temple and Haunted Manor stay out of it for now. BUILT, not seen. We also have a stronger focus highlight for the menu as a second option, waiting for the co-owner&#x27;s pick.</p>
+<p>The cinematic branch. A title sequence with the HOT SET logo, end credits, a camera push into the Showrunner&#x27;s office, a level-unlock card and three tutorial hints are all on a separate branch, each behind its own switch, all OFF. BUILT and read; never played. The first attempt to play the title failed four times because the test machine would not launch a second game session. Nothing from this branch is in the game we would submit.</p>
+<p>Also being built: a seventh actor, a banana-costume character, as a cast member. Character, persona text and menu are in place or shelved; the spawn is not yet proven.</p>
+<p>NOT seen yet: a published copy of the game, the mouse path played by a person, the new camera marks, the light fix, the prop fix, the weather card (blocked by missing level data), and anything on the cinematic branch.</p>
+<p>Next entry around 8:30 AM.</p>
+</div>
+<p>Things are quiet on the island front this morning, but we&#x27;re keeping the momentum going. The team is tidying up and lining everything up for the next big push, and we&#x27;ve got fresh screenshots to share with you. With about 15 hours left in the jam, we&#x27;re settling in for the final stretch and can&#x27;t wait to show you more soon.</p>
+<h3>Highlights</h3>
+<figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/2026-11-15-daf0539a.webp" alt="focus_guard_talkto_lit.png" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>focus_guard_talkto_lit.png</figcaption></figure>
+<figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/2026-11-15-f263eaae.webp" alt="focus_mouse_hover.png" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>focus_mouse_hover.png</figcaption></figure>
+<figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/2026-11-15-33809766.webp" alt="focus_pad_lit_card.png" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>focus_pad_lit_card.png</figcaption></figure>
+<figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/2026-11-15-abbf0ffb.webp" alt="wrapcard_take1_hold.png" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>wrapcard_take1_hold.png</figcaption></figure>
+<h3>In progress</h3><ul><li>Maintain overnight run evidence ledger for the 2026-11-15 morning report</li></ul>
+</section><hr />]]></content:encoded>
+<enclosure url="https://www.biloxistudios.com/images/posts/megajam26-devlog/2026-11-15-daf0539a.webp" type="image/webp" length="0" />
+<media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/2026-11-15-daf0539a.webp" medium="image" type="image/webp" />
+<media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/2026-11-15-f263eaae.webp" medium="image" type="image/webp" />
+<media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/2026-11-15-33809766.webp" medium="image" type="image/webp" />
+<media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/2026-11-15-abbf0ffb.webp" medium="image" type="image/webp" />
+</item>
 <item>
 <title>Jam update: Sun 12:34 AM</title>
 <link>https://www.biloxistudios.com/blog/megajam26-devlog#u-20261115-0034</link>
