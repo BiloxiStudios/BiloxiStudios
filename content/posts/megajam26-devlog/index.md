@@ -19,6 +19,12 @@ This page updates automatically every few hours, newest first, until the jam wra
 <p>Feeds: <a href="/feeds/megajam26.xml">RSS</a> &middot; <a href="/feeds/megajam26.json">JSON</a></p>
 <hr />
 <!-- devlog-sections -->
+<section id="u-20261114-2117" class="devlog-entry">
+<!-- section:u-20261114-2117 -->
+<h2>Jam update: Sat 9:17 PM</h2>
+<p><em><time datetime="2026-11-14T21:17:01-06:00">Saturday, November 14, 2026 at 9:17 PM Central</time></em></p>
+<p>The team pushed 104 project updates across Verse gameplay code, art, props and materials, audio.</p>
+</section><hr />
 <section id="u-20261114-1817" class="devlog-entry">
 <!-- section:u-20261114-1817 -->
 <h2>Jam update: Sat 6:17 PM</h2>
