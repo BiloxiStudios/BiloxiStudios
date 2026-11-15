@@ -19,6 +19,25 @@ This page updates automatically every few hours, newest first, until the jam wra
 <p>Feeds: <a href="/feeds/megajam26.xml">RSS</a> &middot; <a href="/feeds/megajam26.json">JSON</a></p>
 <hr />
 <!-- devlog-sections -->
+<section id="u-20261115-1628" class="devlog-entry">
+<!-- section:u-20261115-1628 -->
+<h2>Jam update: Sun 4:28 PM</h2>
+<p><em><time datetime="2026-11-15T16:28:23-06:00">Sunday, November 15, 2026 at 4:28 PM Central</time></em></p>
+<div class="devlog-written" data-key="c4d86f52093c">
+<h3>Sunday, 4:30 PM: a guest star walks on, voices fixed, and the last build is close</h3>
+<p>Three and a half hours to the deadline. Same labels as always: PLAYED means someone ran it in a game session; BUILT means it compiles and was read by a second person, but nobody has seen it work.</p>
+<p>Guest Star: a surprise actor walks onto the set. Mid-take, a quick-time prompt can bring on a guest, and landing it earns a cash bonus. The guest stays for the rest of the episode and leaves when a new show starts. PLAYED by the owner: on a retake the guest kept the same slot and mark with no respawn flicker, spoke their lines, and the log shows the slot freed again on a new show. The guest now has a picture on the &quot;GUEST STAR!&quot; card that pops up when they walk on. That picture is BUILT; nobody has looked at it on screen yet.</p>
+<p>Quick-time prompts, made fairer. A wrong key that was already in flight used to end the prompt almost instantly (46 milliseconds in one log). The fix adds half a second of grace, and the button picture is bigger. Both are BUILT. Nobody has played the new timing, so we cannot say yet whether half a second feels right.</p>
+<p>Voices: every actor heard after a TALK. After talking to one actor between takes, the next take could play only that one actor&#x27;s voice. The fix rebuilds the stage voice channel after each TALK and resets the talk target. Along with one placed-setting change, it is in the game now. PLAYED: the owner tried it on the console and reported that the voice fix worked, and the log shows the rebuild after TALK. What we still do not know is whether an actor remembers the direction they were given after the rebuild. That check is open.</p>
+<p>Space Station alarm, once per take. The alarm is now a single 10-second moment per take instead of a constant. An earlier test showed the red beacon and red room lingering long after the alarm was logged off; after the fix, a check saw no alarm and no red room at the start of a take. The owner also played the Space Station and said it works. The fix is BUILT; the alarm&#x27;s 10 seconds have not been timed by eye.</p>
+<p>The Set and Genre screen, plus six new genre cards. The co-owner&#x27;s new Set and Genre screen was PLAYED: every press was heard, and backing out and re-entering was clean three times. A focus fix, so the picked card stays white over gold and the D-pad and A work on every card, is being finished. It is not in the game yet, it waits for a controller check, and it may miss this build. Six new genre cards (Western, Film Noir, Drama, Horror, Comedy, Sci-Fi) are in the game, each checked as an image. Nobody has seen them in a take.</p>
+<p>A Settings sheet, a slot row, and HEAD TO SET. The Settings sheet has switches for events, goals and guest stars. The slot row is a button on the Director&#x27;s Call menu that offers WRAP (bank the take) or CARRY ON between takes, and in the office it becomes HEAD TO SET, which sends the player to the set. All of it landed and is BUILT. It still needs a controller pass, so the button glyphs on it are hidden for now.</p>
+<p>How to Play card. A short how-to appears beside the Showrunner while the player talks in the office and goes away when the talk ends. It landed and is BUILT; it has not yet shown up in a live session.</p>
+<p>Honest open items. Actors still do not always take direction. The fix is being worked on and is not in the game. The anime look and the new interface sounds are next build, if at all.</p>
+<p>NOT seen yet: a published copy of the game, the Guest Star card picture, the new quick-time timing, the Space Station alarm&#x27;s 10 seconds timed by eye, the Set and Genre focus fix (not in the game yet), the Settings sheet and HEAD TO SET, the How to Play card, actors taking direction, and everything on the cinematic branch (title, credits, office, unlock card, hints). Next entry about 8:30 PM, after the deadline, as a wrap-up if there is anything to say.</p>
+</div>
+<p>The team is in the final stretch with about three hours left on the clock, and there&#x27;s no big news to share this round. We&#x27;re heads-down polishing what we&#x27;ve got and keeping everything steady for the finish. Stay tuned, because the next update should have more to show you.</p>
+</section><hr />
 <section id="u-20261115-1142" class="devlog-entry">
 <!-- section:u-20261115-1142 -->
 <h2>Jam update: Sun 11:42 AM</h2>
