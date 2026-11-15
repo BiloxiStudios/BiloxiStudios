@@ -7,7 +7,35 @@
 <atom:link href="https://share.braindead.games/api/v1/public/artifacts/99fec6f9-b95a-4ad9-9704-b7e9a84b3d1a/sLfdg1r_ZkHRqmFrkTz83HadpdClXCnh7eisds1ERGc/index.html" rel="related" type="text/html" title="Live jam board" />
 <description>Running devlog of our UEFN island for the GlassDoor MegaJam26 benefit jam.</description>
 <language>en-us</language>
-<lastBuildDate>Sun, 15 Nov 2026 04:29:20 -0600</lastBuildDate>
+<lastBuildDate>Sun, 15 Nov 2026 08:12:30 -0600</lastBuildDate>
+<item>
+<title>Jam update: Sun 8:12 AM</title>
+<link>https://www.biloxistudios.com/blog/megajam26-devlog#u-20261115-0812</link>
+<guid isPermaLink="false">megajam26-devlog-u-20261115-0812</guid>
+<pubDate>Sun, 15 Nov 2026 08:12:30 -0600</pubDate>
+<description>Quiet stretch on the island right now, but we&#x27;ve got a fresh screenshot to show for it and the build is holding steady. With about 11 hours left in the jam, we&#x27;re lining up the next round of work and can&#x27;t wait to share more. Stay tuned for new looks at the island soon!</description>
+<content:encoded><![CDATA[<section id="u-20261115-0812" class="devlog-entry">
+<!-- section:u-20261115-0812 -->
+<h2>Jam update: Sun 8:12 AM</h2>
+<p><em><time datetime="2026-11-15T08:12:30-06:00">Sunday, November 15, 2026 at 8:12 AM Central</time></em></p>
+<div class="devlog-written" data-key="5563b9efa300">
+<h3>Sunday, 8:30 AM: the two-shot never worked, and now we know why</h3>
+<p>Eleven and a half hours to the deadline. Same labels as always: PLAYED means someone ran it in a game session; BUILT means it compiles and was read by a second person, but nobody has seen it work.</p>
+<p>The big find: two-actor shots have essentially never worked in a live game. The Director is meant to cut to a shot with both actors in it. In every take we looked at overnight, including the owner&#x27;s own takes from Saturday, it refused and fell back to a close-up or the wide: about 400 refusals, none clear at full distance. We tested our guesses one at a time and then proved the cause in the editor: our own parked close-up cameras, and sometimes a held prop, sat on the line the camera uses to check that it can see the actor. The camera was being blocked by our own equipment. The fix, which tells that check to ignore those objects, is BUILT and compile-checked. The first test take is encouraging: on the Theatre set a two-shot played with no fallback, and the log has no blocked lines at all. That is one take on one set, so it is PLAYED once, not proven. The rest of the test run (more sets, framing judged by eye) is under way. A second change then keeps both actors&#x27; faces clear of the on-screen buttons. It is BUILT and compile-checked; nobody has seen it yet.</p>
+<p>Standing marks on eight sets: landed and played. On eight of the twelve sets the second actor used to stand 8 to 18 metres from the first. The new marks put them 2.5 to 3.8 metres apart, side by side. They are now on the overnight branch. PLAYED: on the Wild West set the two-shot plays for the first time, with both actors in the frame, and nobody floats or clips. On the Theatre, Jungle Temple and Dock sets the shot still fell back to a close-up, which is the camera problem above, not the marks. Our art reviewer judged the frames green. Two sets had a tie between two spots, and the test run showed it, so each was moved by 10 centimetres. Those two fixes are BUILT, not seen.</p>
+<p>Held props: half landed. What landed and was PLAYED: one prop per actor, a thrown-in prop stays for retakes and drops on a cast swap, and a seated actor holds it at chest height. What is still wrong, also PLAYED: one-handed props sit about 10 centimetres in front of the hand, and two-handed props float, because gesture animations override the grip. The fix is BUILT and being tested now.</p>
+<p>One set&#x27;s lights were on everywhere: fixed, pending one frame. The four space-station lights are now switched off on every other set. Castle and Haunted Manor look the same before and after, which is what we wanted. BUILT. It still needs a frame showing the lights come on in the Space Station itself.</p>
+<p>The menu highlight: three options for the co-owner. The current look, a stronger one and a gold one are all built. The gold is clearly the easiest to see, and it follows the real focus (we checked keyboard-then-controller and it never stays on the wrong button). Notes on the card: white text on gold is soft, and one plate is already yellow at rest. PLAYED, waiting on the co-owner&#x27;s pick.</p>
+<p>A seventh actor. A candidate for the new Casting Call card is an in-engine render framed like the six. The character still needs one proper spawn test: our first attempt used the wrong method, so it proves nothing either way. NOT seen.</p>
+<p>NOT seen yet: a published copy of the game, the mouse path played by a person, the two-shot fix across all sets, the prop fix, the Space Station lights, the anime look in a real take, and everything on the cinematic branch (title, credits, office, unlock card, hints). Next entry about 12:30 PM.</p>
+</div>
+<p>Quiet stretch on the island right now, but we&#x27;ve got a fresh screenshot to show for it and the build is holding steady. With about 11 hours left in the jam, we&#x27;re lining up the next round of work and can&#x27;t wait to share more. Stay tuned for new looks at the island soon!</p>
+<h3>Highlights</h3>
+<figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/2026-11-15-720581cf.webp" alt="focus_kbd_then_pad_2_pad_gold.png" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>focus_kbd_then_pad_2_pad_gold.png</figcaption></figure>
+</section><hr />]]></content:encoded>
+<enclosure url="https://www.biloxistudios.com/images/posts/megajam26-devlog/2026-11-15-720581cf.webp" type="image/webp" length="0" />
+<media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/2026-11-15-720581cf.webp" medium="image" type="image/webp" />
+</item>
 <item>
 <title>Jam update: Sun 4:29 AM</title>
 <link>https://www.biloxistudios.com/blog/megajam26-devlog#u-20261115-0429</link>
