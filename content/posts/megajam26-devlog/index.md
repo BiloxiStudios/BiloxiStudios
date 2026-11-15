@@ -19,6 +19,24 @@ This page updates automatically every few hours, newest first, until the jam wra
 <p>Feeds: <a href="/feeds/megajam26.xml">RSS</a> &middot; <a href="/feeds/megajam26.json">JSON</a></p>
 <hr />
 <!-- devlog-sections -->
+<section id="u-20261115-1142" class="devlog-entry">
+<!-- section:u-20261115-1142 -->
+<h2>Jam update: Sun 11:42 AM</h2>
+<p><em><time datetime="2026-11-15T11:42:33-06:00">Sunday, November 15, 2026 at 11:42 AM Central</time></em></p>
+<div class="devlog-written" data-key="28756d667418">
+<h3>Sunday, 12:30 PM: two-shots in frame, a seventh actor in test, and a lot of small fixes waiting for a play</h3>
+<p>Seven and a half hours to the deadline. Same labels as always: PLAYED means someone ran it in a game session; BUILT means it compiles and was read by a second person, but nobody has seen it work.</p>
+<p>Played by the owner this morning. A third session on the test copy: a dust-storm prompt and a second one on the next take, both tapped through; the goal that carries over to the next take (it was kept, then met on take two); and the PROPS button switching tabs with one press. Take two ended with five stars. PLAYED. Two things we cannot know without asking: why two of three TALK presses closed straight away, and what a mid-take shoulder-button press was meant to do.</p>
+<p>Two-shots, part two. After the cameras stopped blocking themselves, the next problem was where the actors landed in the frame. The first framing pass (version 2) has landed and was PLAYED: both actors are now balanced in the shot instead of one at the edge. A third pass (version 3) pulls both actors&#x27; faces clear of the on-screen buttons, which cover the left and right sides of the picture. It is BUILT, compile-checked, read by a second person, and sits in the owner&#x27;s test copy waiting to be seen.</p>
+<p>Peely, a seventh actor: in test. The menu now shows a second Casting Call page, and the character, the Director&#x27;s cast slot and the persona text are all built. The first full test found a real fault: the second page cannot be reached with the controller&#x27;s shoulder buttons or the keyboard. Focus only moves to the first card, so a player could never pick the seventh actor. BROKEN in test; it is being traced now. Nobody has seen Peely standing on a set yet.</p>
+<p>Reward sounds are coming back. The tick of the money counter, the thud and the level-up chime went silent when the sound route changed. A fix that plays them through placed audio players is BUILT, compiled, and read by two people. We checked from the saved level data that nothing needs to be ticked by hand for it to work. Nobody has heard it yet.</p>
+<p>Prop jitter. Props handed to an actor were colliding with the actor and bouncing. A fix that makes held props never collide is BUILT and compile-checked, and a test take that counts the bounces is running.</p>
+<p>Two more, re-made on the latest code. A lighter haze over the studio sky, and an early-press fix for the quick-time prompts, so a press before the prompt is ignored and only a missed prompt counts as a miss. Both are BUILT and compile-checked, and both wait for the owner&#x27;s approval card. They are NOT in the game yet.</p>
+<p>New rule for Verse changes. Every code change now gets its own card with the exact lines, for the owner to approve before it lands. It is slower but it means nothing changes without being seen.</p>
+<p>NOT seen yet: a published copy of the game, the version-3 framing, Peely on a set, the reward sounds, the prop fix, the haze, the early-press fix, and everything on the cinematic branch. Next entry about 4:30 PM.</p>
+</div>
+<p>The art team spent the latest stretch working on props and materials, giving the island&#x27;s look a bit more polish. There&#x27;s no big headline news to share right now, but steady progress is being made behind the scenes. With about eight hours left in the jam, we&#x27;re pushing to bring everything together, so stay tuned for more updates soon!</p>
+</section><hr />
 <section id="u-20261115-0812" class="devlog-entry">
 <!-- section:u-20261115-0812 -->
 <h2>Jam update: Sun 8:12 AM</h2>
