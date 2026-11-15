@@ -18,6 +18,26 @@
  },
  "items": [
   {
+   "id": "https://www.biloxistudios.com/blog/megajam26-devlog#u-20261115-0017",
+   "url": "https://www.biloxistudios.com/blog/megajam26-devlog#u-20261115-0017",
+   "title": "Jam update: Sun 12:17 AM",
+   "content_html": "<section id=\"u-20261115-0017\" class=\"devlog-entry\">\n<!-- section:u-20261115-0017 -->\n<h2>Jam update: Sun 12:17 AM</h2>\n<p><em><time datetime=\"2026-11-15T00:17:01-06:00\">Sunday, November 15, 2026 at 12:17 AM Central</time></em></p>\n<p>The team pushed 126 project updates across Verse gameplay code, art, props and materials, audio.</p>\n</section><hr />",
+   "summary": "The team pushed 126 project updates across Verse gameplay code, art, props and materials, audio.",
+   "date_published": "2026-11-15T00:17:01-06:00",
+   "tags": [
+    "MegaJam26",
+    "UEFN",
+    "Fortnite",
+    "devlog"
+   ],
+   "_megajam26": {
+    "images": [],
+    "clips": [],
+    "done": [],
+    "in_progress": []
+   }
+  },
+  {
    "id": "https://www.biloxistudios.com/blog/megajam26-devlog#u-20261114-2117",
    "url": "https://www.biloxistudios.com/blog/megajam26-devlog#u-20261114-2117",
    "title": "Jam update: Sat 9:17 PM",

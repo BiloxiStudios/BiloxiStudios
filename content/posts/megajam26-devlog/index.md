@@ -1,6 +1,6 @@
 ---
 title: 'MegaJam26 Devlog'
-date: '2026-11-14'
+date: '2026-11-15'
 author: 'Biloxi Studios Team'
 excerpt: 'A running devlog of our UEFN island for the GlassDoor MegaJam26 benefit jam, updated every few hours.'
 coverImage: 'cover.webp'
@@ -19,6 +19,12 @@ This page updates automatically every few hours, newest first, until the jam wra
 <p>Feeds: <a href="/feeds/megajam26.xml">RSS</a> &middot; <a href="/feeds/megajam26.json">JSON</a></p>
 <hr />
 <!-- devlog-sections -->
+<section id="u-20261115-0017" class="devlog-entry">
+<!-- section:u-20261115-0017 -->
+<h2>Jam update: Sun 12:17 AM</h2>
+<p><em><time datetime="2026-11-15T00:17:01-06:00">Sunday, November 15, 2026 at 12:17 AM Central</time></em></p>
+<p>The team pushed 126 project updates across Verse gameplay code, art, props and materials, audio.</p>
+</section><hr />
 <section id="u-20261114-2117" class="devlog-entry">
 <!-- section:u-20261114-2117 -->
 <h2>Jam update: Sat 9:17 PM</h2>
