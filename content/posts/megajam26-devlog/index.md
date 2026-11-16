@@ -37,6 +37,8 @@ This page updates automatically every few hours, newest first, until the jam wra
 <p>NOT seen yet: the A button picture of our own, the final build on a console after the last change, and a second person joining the final version.</p>
 <figure><img src="/images/posts/megajam26-devlog/dl-005fbb704059.webp" alt="The READY TO DIRECT spec, in gold and purple." loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>The READY TO DIRECT spec, in gold and purple.</figcaption></figure>
 <figure><img src="/images/posts/megajam26-devlog/dl-e6983dda5734.webp" alt="The Director&#x27;s Call menu after a CUT, footer on screen." loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>The Director&#x27;s Call menu after a CUT, footer on screen.</figcaption></figure>
+<figure><img src="/images/posts/megajam26-devlog/dl-d27f57343b75.webp" alt="The tone was in the capture before any take and gone from the 3:52 PM recording; the console, not the island." loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>The tone was in the capture before any take and gone from the 3:52 PM recording; the console, not the island.</figcaption></figure>
+<figure><img src="/images/posts/megajam26-devlog/dl-19773301cdb4.webp" alt="The tone shows as one steady line from the first second of the menus." loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>The tone shows as one steady line from the first second of the menus.</figcaption></figure>
 </div>
 </section><hr />
 <section id="u-20261115-2007" class="devlog-entry">
