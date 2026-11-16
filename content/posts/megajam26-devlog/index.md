@@ -22,6 +22,9 @@ ogImage: '/images/posts/megajam26-devlog/og-hotset-title.jpg'
 <p><a href="https://youtu.be/xNuTzG2VBj4" target="_blank" rel="noopener noreferrer">Watch the HOT SET trailer on YouTube</a>. Island code coming soon (public release).</p>
 </section>
 <!-- trailer:end -->
+<!-- crosslink:start -->
+<aside class="devlog-crosslink" style="margin:1rem 0;padding:1rem 1.25rem;border:1px solid rgba(255,255,255,.15);border-radius:8px"><strong>The jam is over.</strong> What worked, what broke and what we cut: <a href="/blog/megajam26-postmortem">read the HOT SET postmortem →</a></aside>
+<!-- crosslink:end -->
 <p>Follow along as we build a Fortnite island in UEFN for the <strong>GlassDoor MegaJam26</strong> benefit jam.
 This page updates automatically every few hours, newest first, until the jam wraps on Sunday, November 15 at 7:59 PM Central.</p>
 <p>Feeds: <a href="/feeds/megajam26.xml">RSS</a> &middot; <a href="/feeds/megajam26.json">JSON</a></p>

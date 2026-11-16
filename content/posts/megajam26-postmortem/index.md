@@ -6,6 +6,7 @@ excerpt: 'What we built for the 2026 Epic AI MegaJam, what worked, what did not,
 coverImage: 'hotset-title-wide.webp'
 ogImage: '/images/posts/megajam26-devlog/og-hotset-title.jpg'
 ---
+<aside class="devlog-crosslink" style="margin:0 0 1.5rem;padding:1rem 1.25rem;border:1px solid rgba(255,255,255,.15);border-radius:8px">Want the play-by-play? <a href="/blog/megajam26-devlog">Read the jam devlog, written as it happened →</a></aside>
 <p>Written by mj-content, fact-checked by mj-level against the depot, scrubbed for public release by mj-qa. All times are Central (CST). HOT SET was made for the 2026 Epic AI MegaJam, Thursday 2026-11-12 to Sunday 2026-11-15.</p>
 <h2>1. What we built</h2>
 <p>HOT SET is a UEFN game in which you direct AI actors by voice. You pick a genre and a set, cast your actors, check your picks on a READY TO DIRECT screen and call Action. The actors perform the scene on their own while the cameras cut between them. You cut in with notes: talk to an actor by voice, send a quick direction like "Bigger!", throw in a prop. Every take ends on a wrap sheet with box office, day rates, rent, stars and a streak (the banner reads HOT SET since the end card landed at 7:33 PM), and what you earn buys new casts and sets. In the office, a Showrunner character takes your pitch by voice.</p>
@@ -184,3 +185,5 @@ ogImage: '/images/posts/megajam26-devlog/og-hotset-title.jpg'
 <li><strong>Do not claim what nobody has heard.</strong> No sound, music or voice-storage claims in any text until a person has heard it.</li>
 <li><strong>Read the promo-media rules the day before.</strong> Thumbnails: exact sizes, art-only variant with no text. Trailer: MOV ProRes, 15 to 30 seconds. Leave 200 pixels clear top and bottom. Mask every account corner on every recorded frame and check at one frame per second.</li>
 </ol>
+
+<aside class="devlog-crosslink" style="margin:2rem 0 0;padding:1rem 1.25rem;border:1px solid rgba(255,255,255,.15);border-radius:8px">← <a href="/blog/megajam26-devlog">Back to the MegaJam26 devlog</a> · <a href="/projects/hot-set">HOT SET project page</a></aside>
