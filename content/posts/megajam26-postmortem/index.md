@@ -167,6 +167,7 @@ ogImage: '/images/posts/megajam26-devlog/og-hotset-title.jpg'
 </tr>
 </tbody>
 </table>
+<figure><img src="/images/posts/megajam26-postmortem/hotset-crew-diagram.webp" alt="Who built HOT SET, and on what: 13 seats on 7 machines, and how a change moves through three gates." loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>Who built HOT SET, and on what: 13 seats on 7 machines, and how a change moves through three gates.</figcaption></figure>
 <p><strong>Machines:</strong> HYDRA = test laptop for pad runs, and QA's docs client; DRAGON = an extra workstation (props, validation, pad runs); kristale-lap = the co-owner's laptop; brandon-lap = the gate laptop.</p>
 <p><strong>How work flows:</strong> a Thought from an owner → mj-lead's order in the group → a seat does it on a shelf → mj-level reads → the owner plays it on a pad, or the co-owner on Xbox → it lands on Dev with a CL → mj-qa records. Three gates: the second-seat read, the owner's yes, and QA's record. Since 6:16 PM on the last day, by the owner's rule (some landings were already direct earlier that afternoon), changes go straight onto the owner's live session first and are read after; nothing waits on a shelf.</p>
 <p><strong>Rules that mattered:</strong> one owner per area; pull first; numbered CLs only (descriptions start with the ticket key); nothing is done until someone saw it in a game session; never press Continue on a Verse validation modal; never print a secret.</p>
