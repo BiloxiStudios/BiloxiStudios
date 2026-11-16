@@ -12,6 +12,13 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: 'HOT SET',
+    description: 'Direct AI actors by voice, then watch them improvise. Made in four days for the 2026 Epic AI MegaJam.',
+    type: 'UEFN Game',
+    link: '/projects/hot-set',
+    imageUrl: '/images/HotSet_Title_Wide.jpg'
+  },
+  {
     title: 'City of Brains Series',
     description: 'An interactive animated series powered by Showrunner where the community holds the pen. Vote on Discord to shape the universe.',
     type: 'Animated Series',
