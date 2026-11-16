@@ -24,6 +24,7 @@ const links = [
   { label: 'Read the devlog', href: '/blog/megajam26-devlog' },
   { label: 'Read the postmortem', href: '/blog/megajam26-postmortem' },
   { label: 'Join the Discord (#hotset)', href: 'https://discord.gg/fWHBt5kyjj' },
+  { label: 'Starter skills on GitHub', href: 'https://github.com/BiloxiStudios/hot-set' },
 ]
 
 export default function HotSet() {
@@ -87,7 +88,7 @@ export default function HotSet() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
         {links.map(l => (
           <a
             key={l.label}
