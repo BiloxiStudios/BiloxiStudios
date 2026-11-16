@@ -24,13 +24,18 @@
 <ul><li>The button picture that could not be drawn. The TALK TO button fires on the pad&#x27;s A press, and the co-owner wanted the button to say so: &quot;a is fine for the talk, just should say it.&quot; Epic&#x27;s UI library can draw a key picture for any input action, so the plan was to point one at the action that draws A. Three attempts later we had a rule instead of a picture. One action draws the wrong button (Y, not A) on an Xbox pad. Four others draw nothing, because they never reach a player and Epic&#x27;s own check rejects them with a box that names nothing. One is legal and draws a blank. And a picture hidden in the editor re-shows itself while the game runs. In the end the buttons that fire on A carry no picture at all, because no stock asset draws the right one. A real A picture of our own, swapped by the player&#x27;s device, is on the list for next time. BUILT.</li></ul>
 <ul><li>The white frame on the Set page. On the Set and Genre page the white focus frame vanished the moment a card was picked. It was not gone: the gold SELECTED frame and the white one sat in the same card, gold drawn on top. The fix was six small moves in the card&#x27;s layer order, with both frames kept under the button so no press could be eaten. Someone walked every card on a pad: white stays over gold on the picked card, and the D-pad and A work on all six. PLAYED on a pad.</li></ul>
 <ul><li>READY TO DIRECT, twice, to the co-owner&#x27;s spec. The spec is three full-size renders and a palette note: a hotter golden sunburst, a gold ticket, gold pedestals, purple accents only, a green START and a blue EDIT. The first pass fixed a solid white hover box, a stretched purple cost plate and a floating portrait. The co-owner&#x27;s verdict on the console was a precise fix list: &quot;the studio cash portion looks like it might be the same color as the background ... two versions of yellow on top of each other&quot;, &quot;The camera&#x27;s wording is not inside the box. The FunkOps is not inside the box. Either take the box out or make the words fit&quot;. The second pass took the box out, made the cash line black with a white outline, put the actor labels on the drum faces, moved the titles onto their plates and made the banner taller. The co-owner&#x27;s answer: &quot;ok this play is good&quot;. PLAYED.</li></ul>
-<ul><li>A power cut and a squeal. At 5:59 PM the power went out. The editor came back at 6:02 with no project, the files were synced to the latest in the gap before the map loaded (the only safe moment to sync widgets), and a build was pushed at 6:16. Then: &quot;there is a hard to listen to high-pitched squeal that makes me and my pcs shudder&quot;. A spectrogram of the capture showed one steady 12 kHz line from the first second of the menus, and none in an earlier capture, so it was not the take, not the music and not the co-owner&#x27;s ears. The crew&#x27;s first theory was a feedback loop in the voice rooms after a change that landed in between. One test ended the hunt: &quot;going back to the lobby to check if sound stops. it does not. xbox is going off.&quot; The console had come back from the power cut in a bad audio state. A power cycle and an HDMI reset fixed it: &quot;That works now.&quot; The squeal was not in the game.</li></ul>
+<ul><li>A power cut and a squeal. At 5:59 PM the power went out. The editor came back at 6:02 with no project, the files were synced to the latest in the gap before the map loaded (the only safe moment to sync widgets), and a build was pushed at 6:16. Then: &quot;there is a hard to listen to high-pitched squeal that makes me and my pcs shudder&quot;. A spectrogram of the capture showed one steady 12 kHz line from the first second of the menus, and none in an earlier capture, so it was not the take, not the music and not the co-owner&#x27;s ears. Our first theory was a feedback loop in the voice rooms after a change that landed in between. One test ended the hunt: &quot;going back to the lobby to check if sound stops. it does not. xbox is going off.&quot; The console had come back from the power cut in a bad audio state. A power cycle and an HDMI reset fixed it: &quot;That works now.&quot; The squeal was not in the game.</li></ul>
 <ul><li>The menu that fell off the screen. &quot;ui is off the screen on the directors call now. i dont know what changed.&quot; What changed was the WRAP / CARRY ON row landing inside the menu&#x27;s vertical stack. After a CUT it appears, grows the stack by about a hundred pixels and pushes RETAKE and SETTINGS off the bottom. The row now sits in its own slot above the panel, and the money pop-ups moved to the top right from a mock-up the co-owner drew. BUILT.</li></ul>
 <ul><li>Hot Set, in the title and on the wrap sheet. At 7:10 PM: &quot;Rename the project to Hot Set.&quot; The project&#x27;s title was changed and read back from the running editor, and the final version carries it. At 7:30 PM the co-owner delivered a new end card because the wrap sheet still said DIRECTOR&#x27;S CUT. The delivered pictures had sample numbers and buttons baked in, so only the banner region was placed onto the real background; the live numbers and buttons are code and were not touched. BUILT.</li></ul>
 <ul><li>The trailer and the key art. The co-owner cut a trailer in two versions, with a no-music cut and review stills, and drew the key art: a sunset director&#x27;s chair, a comic-brush logo and a tall &quot;ACTION OR GO HOME&quot; poster.</li></ul>
 <p>NOT seen yet: the A button picture of our own, the final build on a console after the last change, and a second person joining the final version.</p>
+<figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-005fbb704059.webp" alt="The READY TO DIRECT spec, in gold and purple." loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>The READY TO DIRECT spec, in gold and purple.</figcaption></figure>
+<figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-e6983dda5734.webp" alt="The Director&#x27;s Call menu after a CUT, footer on screen." loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>The Director&#x27;s Call menu after a CUT, footer on screen.</figcaption></figure>
 </div>
 </section><hr />]]></content:encoded>
+<enclosure url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-005fbb704059.webp" type="image/webp" length="0" />
+<media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-005fbb704059.webp" medium="image" type="image/webp" />
+<media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-e6983dda5734.webp" medium="image" type="image/webp" />
 </item>
 <item>
 <title>Jam update: Sun 8:07 PM</title>
@@ -46,7 +51,6 @@
 <h3>Sunday, 8:30 PM: the clock has run out, and this is where the game stands</h3>
 <p>The jam deadline has just passed. Same labels as always: PLAYED means someone ran it in a game session; BUILT means it compiles and was read by a second person, but nobody has seen it work.</p>
 <p>Submitted. The owners confirmed that the jam form went in before the 7:59 PM deadline. The entry is the team&#x27;s version 1 of the project, now titled Hot Set, with a gameplay video. We are not going to say how it will do; we have not seen it as a stranger would.</p>
-<p>Play it and rate it on the game page (<a href="https://bizanator.itch.io/hot-set">https://bizanator.itch.io/hot-set</a>) and the jam entry page (<a href="https://itch.io/jam/2026-epic-ai-megajam/rate/5377098">https://itch.io/jam/2026-epic-ai-megajam/rate/5377098</a>).</p>
 <p>Music: PLAYED. The menu and office music was silent for most of the afternoon. It is in the final build, and both the owner and the co-owner have heard it in a session.</p>
 <p>The final stretch, in the order we met it.</p>
 <ul><li>READY TO DIRECT and the pay pop-ups: PLAYED (see below).</li><li>Actors taking direction: PLAYED, with a catch. A fix made the final build: the owner played it and the actors kept the notes (&quot;Yes, Director&quot;). They still miss some notes, so it is not every time.</li><li>Guest Star and the voice fix: PLAYED earlier today. A surprise actor walks on mid-take, and every actor is heard after a TALK.</li><li>Settings, HEAD TO SET and the How to Play card: BUILT. They compile and were read by a second person. Nobody has pressed them on a controller since the last change.</li></ul>
@@ -54,8 +58,13 @@
 <ul><li>READY TO DIRECT, to the co-owner&#x27;s look. The co-owner&#x27;s spec was a hotter golden sunburst, a gold ticket, gold pedestals, purple accents only, a green START and a blue EDIT. The first pass fixed a solid white hover box, a stretched cost plate and a floating portrait; the pad test then asked for the cash line to stand out from the background and the camera and actor wording to sit inside their boxes. The second pass took the box out, put the cash line in black with a white outline, put the actor labels on the drum faces and made the banner taller. PLAYED.</li><li>Pay pop-ups, top right. The money that pops up as lines land moved to the top right of the screen, from a mock-up the co-owner drew. PLAYED.</li><li>Hot Set, in the title and on the wrap sheet. The project is now titled Hot Set, and a new end card replaced the old DIRECTOR&#x27;S CUT banner on the wrap sheet. Only the banner was replaced; the live numbers and buttons are code and were not touched. BUILT.</li><li>The team upload. The final build was uploaded from the co-owner&#x27;s side as the team&#x27;s version 1 of Hot Set.</li><li>A dock fix, also from the co-owner&#x27;s pad test: PLAYED. After a CUT, the WRAP / CARRY ON row on the Director&#x27;s Call menu pushed RETAKE and SETTINGS off the bottom of the screen. The row now sits in its own slot above the panel, and the footer stays on screen.</li></ul>
 <p>What we did not get to. The anime look is off in this build. The new interface sounds are not in. Nothing has been joined or saved by anyone other than the co-owner&#x27;s own account, so how the game behaves for a second person is NOT seen.</p>
 <p>NOT seen yet: the game as a stranger would meet it, a second person joining the final version, the interface sounds, the anime look, the Settings and HEAD TO SET buttons on a controller after the last change, and anything on the cinematic branch that was not switched on. Thank you for following along. If there is another entry, it will say what happened after the deadline.</p>
+<figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-3e3254a4ce4e.webp" alt="HOT SET: you&#x27;re the director, they&#x27;re the problem." loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>HOT SET: you&#x27;re the director, they&#x27;re the problem.</figcaption></figure>
+<figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-d4736002523e.webp" alt="The wrap sheet, with the HOT SET banner." loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>The wrap sheet, with the HOT SET banner.</figcaption></figure>
 </div>
 </section><hr />]]></content:encoded>
+<enclosure url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-3e3254a4ce4e.webp" type="image/webp" length="0" />
+<media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-3e3254a4ce4e.webp" medium="image" type="image/webp" />
+<media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-d4736002523e.webp" medium="image" type="image/webp" />
 </item>
 <item>
 <title>Jam update: Sun 4:28 PM</title>
@@ -79,8 +88,13 @@
 <p>How to Play card. A short how-to appears beside the Showrunner while the player talks in the office and goes away when the talk ends. It landed and is BUILT; it has not yet shown up in a live session.</p>
 <p>Honest open items. Actors still do not always take direction. The fix is being worked on and is not in the game. The anime look and the new interface sounds are next build, if at all.</p>
 <p>NOT seen yet: a published copy of the game, the Guest Star card picture, the new quick-time timing, the Space Station alarm&#x27;s 10 seconds timed by eye, the Set and Genre focus fix (not in the game yet), the Settings sheet and HEAD TO SET, the How to Play card, actors taking direction, and everything on the cinematic branch (title, credits, office, unlock card, hints). Next entry about 8:30 PM, after the deadline, as a wrap-up if there is anything to say.</p>
+<figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-0c260869bbc1.webp" alt="The GUEST STAR! card that pops up when the guest walks on." loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>The GUEST STAR! card that pops up when the guest walks on.</figcaption></figure>
+<figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-66aebc523e53.webp" alt="READY TO DIRECT, first pass: still a work in progress." loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>READY TO DIRECT, first pass: still a work in progress.</figcaption></figure>
 </div>
 </section><hr />]]></content:encoded>
+<enclosure url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-0c260869bbc1.webp" type="image/webp" length="0" />
+<media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-0c260869bbc1.webp" medium="image" type="image/webp" />
+<media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-66aebc523e53.webp" medium="image" type="image/webp" />
 </item>
 <item>
 <title>Jam update: Sun 11:42 AM</title>
@@ -103,9 +117,14 @@
 <p>Two more, re-made on the latest code. A lighter haze over the studio sky, and an early-press fix for the quick-time prompts, so a press before the prompt is ignored and only a missed prompt counts as a miss. Both are BUILT and compile-checked, and both wait for the owner&#x27;s approval card. They are NOT in the game yet.</p>
 <p>New rule for Verse changes. Every code change now gets its own card with the exact lines, for the owner to approve before it lands. It is slower but it means nothing changes without being seen.</p>
 <p>NOT seen yet: a published copy of the game, the version-3 framing, Peely on a set, the reward sounds, the prop fix, the haze, the early-press fix, and everything on the cinematic branch. Next entry about 4:30 PM.</p>
+<figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-3d37d56ff77c.webp" alt="A balanced two-shot on the temple set." loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>A balanced two-shot on the temple set.</figcaption></figure>
+<figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-b4dd4d5db1f3.webp" alt="A guest actor on the space station set." loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>A guest actor on the space station set.</figcaption></figure>
 </div>
 <p>The art team spent the latest stretch working on props and materials, giving the island&#x27;s look a bit more polish. There&#x27;s no big headline news to share right now, but steady progress is being made behind the scenes. With about eight hours left in the jam, we&#x27;re pushing to bring everything together, so stay tuned for more updates soon!</p>
 </section><hr />]]></content:encoded>
+<enclosure url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-3d37d56ff77c.webp" type="image/webp" length="0" />
+<media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-3d37d56ff77c.webp" medium="image" type="image/webp" />
+<media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-b4dd4d5db1f3.webp" medium="image" type="image/webp" />
 </item>
 <item>
 <title>Jam update: Sun 8:12 AM</title>
@@ -127,12 +146,16 @@
 <p>The menu highlight: three options for the co-owner. The current look, a stronger one and a gold one are all built. The gold is clearly the easiest to see, and it follows the real focus (we checked keyboard-then-controller and it never stays on the wrong button). Notes on the card: white text on gold is soft, and one plate is already yellow at rest. PLAYED, waiting on the co-owner&#x27;s pick.</p>
 <p>A seventh actor. A candidate for the new Casting Call card is an in-engine render framed like the six. The character still needs one proper spawn test: our first attempt used the wrong method, so it proves nothing either way. NOT seen.</p>
 <p>NOT seen yet: a published copy of the game, the mouse path played by a person, the two-shot fix across all sets, the prop fix, the Space Station lights, the anime look in a real take, and everything on the cinematic branch (title, credits, office, unlock card, hints). Next entry about 12:30 PM.</p>
+<figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-3d37d56ff77c.webp" alt="Two actors in one frame, mid-line." loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>Two actors in one frame, mid-line.</figcaption></figure>
+<figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-a17a6606ae5d.webp" alt="A two-shot in the castle lounge." loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>A two-shot in the castle lounge.</figcaption></figure>
 </div>
 <p>Quiet stretch on the island right now, but we&#x27;ve got a fresh screenshot to show for it and the build is holding steady. With about 11 hours left in the jam, we&#x27;re lining up the next round of work and can&#x27;t wait to share more. Stay tuned for new looks at the island soon!</p>
 <h3>Highlights</h3>
 <figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/2026-11-15-720581cf.webp" alt="focus_kbd_then_pad_2_pad_gold.png" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>focus_kbd_then_pad_2_pad_gold.png</figcaption></figure>
 </section><hr />]]></content:encoded>
-<enclosure url="https://www.biloxistudios.com/images/posts/megajam26-devlog/2026-11-15-720581cf.webp" type="image/webp" length="0" />
+<enclosure url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-3d37d56ff77c.webp" type="image/webp" length="0" />
+<media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-3d37d56ff77c.webp" medium="image" type="image/webp" />
+<media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-a17a6606ae5d.webp" medium="image" type="image/webp" />
 <media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/2026-11-15-720581cf.webp" medium="image" type="image/webp" />
 </item>
 <item>
@@ -205,9 +228,14 @@
 <h4>9. Unknowns</h4>
 <p>The exact snapshot launched as a build; validation on the snapshot alone; how a published build behaves (the Showrunner and actors, saves, notes); the mouse; five sets and two actors not seen tonight; whether any debug text of ours shows; hand-prop size, the lock fallback and the indoor sky have no verdict from play.</p>
 <p>Sections 2 and 5 will be re-posted when the running tests finish.</p>
+<figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-ecc6f0e157d4.webp" alt="The Casting Call screen: an actor&#x27;s bio card." loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>The Casting Call screen: an actor&#x27;s bio card.</figcaption></figure>
+<figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-ea81d80e568a.webp" alt="Choosing a genre: Comedy is picked." loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>Choosing a genre: Comedy is picked.</figcaption></figure>
 </div>
 <p>The team is taking a short breather with no big new updates to share right now, but the island is still moving along. With about 19 hours left in the jam, there&#x27;s plenty of time for fresh progress to land. Stay tuned for the next look at what&#x27;s coming together.</p>
 </section><hr />]]></content:encoded>
+<enclosure url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-ecc6f0e157d4.webp" type="image/webp" length="0" />
+<media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-ecc6f0e157d4.webp" medium="image" type="image/webp" />
+<media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-ea81d80e568a.webp" medium="image" type="image/webp" />
 </item>
 <item>
 <title>Jam update: Sun 12:29 AM</title>
@@ -285,11 +313,13 @@
 <p>What was fixed by 3:38, with an honest label on each. All of these are in the build now, and none has been played again yet:</p>
 <ul><li>The quick-time moment takes over the buttons while it is up and for two seconds after, so a mashed press can no longer cut the take or close the sheet.</li><li>Circle now answers it, and the moment asks only for Triangle, Square or Circle.</li><li>The picture fix described above.</li><li>The talk card stays hidden over menus and between takes, and comes back only for a real conversation.</li><li>The Showrunner waits 22 seconds, not 10, before her opening is sent again; a first line takes up to 16 seconds to start, and each resend was restarting her.</li><li>The interview camera sits further back and higher, so her office shows around her. The frame above, from before the change, is a face and a wall.</li><li>The first take of an episode now holds a three-second wide shot of the set before anyone speaks, and in the interview you can pick someone to talk to before the first take.</li><li>The props library grew from 71 to 94 props.</li></ul>
 <p>The second picture shows the other way a moment can end: the show cancelled, &quot;The light came down, CUT!&quot;. That is the game doing what it should. It was the wrong picture that made it unfair, and that is what we spent the afternoon on.</p>
+<figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-9f7fbd43b616.webp" alt="A quick-time prompt on a controller run: press the button as the ring closes." loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>A quick-time prompt on a controller run: press the button as the ring closes.</figcaption></figure>
 <figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-1a0ded38cbff.webp" alt="MegaJam26 screenshot" loading="lazy" style="width:100%;height:auto;border-radius:8px" /></figure>
 </div>
 <p>The team pushed 95 project updates across Verse gameplay code, art, props and materials.</p>
 </section><hr />]]></content:encoded>
-<enclosure url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-1a0ded38cbff.webp" type="image/webp" length="0" />
+<enclosure url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-9f7fbd43b616.webp" type="image/webp" length="0" />
+<media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-9f7fbd43b616.webp" medium="image" type="image/webp" />
 <media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-1a0ded38cbff.webp" medium="image" type="image/webp" />
 </item>
 <item>
@@ -323,20 +353,18 @@
 <p>The bigger change today is that sets and biomes are being pulled apart. A set is the building and the marks the cameras use; a biome is the world around it. The goal is one diner that can stand in a desert or a forest, and later a city or a jungle. The two pictures below are views from the editor, not from a take: the same diner, with the desert around it and then the forest. The open water at the edges is the next thing to hide. It has not been seen in play yet, and a mistake in how the diner was tied to its desert was caught an hour ago, before anyone played it.</p>
 <p>This morning a random Director&#x27;s Challenge was added too. At Action, each full take draws one goal, such as getting an actor to tell a joke, and pays a bonus if it happens. It is in the build and has not been played, so we cannot say how it feels.</p>
 <figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-4debfe76b67c.webp" alt="A fault we caught: the talk card on the left never leaves, and the director&#x27;s controls are missing after the wrap" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>A fault we caught: the talk card on the left never leaves, and the director&#x27;s controls are missing after the wrap</figcaption></figure>
-<figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-bb28df3b860d.webp" alt="Nine frames from one Castle take, ending on the wrap sheet" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>Nine frames from one Castle take, ending on the wrap sheet</figcaption></figure>
 <figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-c1237b8fa492.webp" alt="The diner in the desert: an editor view, not a take" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>The diner in the desert: an editor view, not a take</figcaption></figure>
 <figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-086c8445792e.webp" alt="The same diner in the forest: an editor view, not a take" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>The same diner in the forest: an editor view, not a take</figcaption></figure>
-<figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-60e9bbb2239b.webp" alt="The wrap sheet: box office, day rates, rent, film and stars" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>The wrap sheet: box office, day rates, rent, film and stars</figcaption></figure>
+<figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-d4736002523e.webp" alt="The end-of-take sheet." loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>The end-of-take sheet.</figcaption></figure>
 </div>
 <p>2 more are in progress. The team pushed 58 project updates across Verse gameplay code, art, props and materials, audio.</p>
 <h3>In progress</h3><ul><li>Reusable biomes: any set can load inside a city, desert, jungle or forest biome (biome layer first, then the set layer)</li><li>Persona Director (stretch): on-set challenges - QTE to save the show (e.g. falling light)</li></ul>
 </section><hr />]]></content:encoded>
 <enclosure url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-4debfe76b67c.webp" type="image/webp" length="0" />
 <media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-4debfe76b67c.webp" medium="image" type="image/webp" />
-<media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-bb28df3b860d.webp" medium="image" type="image/webp" />
 <media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-c1237b8fa492.webp" medium="image" type="image/webp" />
 <media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-086c8445792e.webp" medium="image" type="image/webp" />
-<media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-60e9bbb2239b.webp" medium="image" type="image/webp" />
+<media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-d4736002523e.webp" medium="image" type="image/webp" />
 </item>
 <item>
 <title>Jam update: Sat 9:17 AM</title>
@@ -371,14 +399,14 @@
 <p>The same playing turned up a mistake that had been in front of us for hours: the character cast as the ghoul had been walking around in someone else&#x27;s costume, a hooded figure in red and black. The casting was fine; one entry in her costume record pointed at the wrong character. She is herself again in the strip above.</p>
 <p>The space station was played for the first time tonight too. Its windows look onto a field of stars, and when the scene turns dangerous the whole bridge goes red for eight seconds.</p>
 <p>What still is not right as the sun comes up: a second show in the same sitting does not start by itself, one actor wandered off the set mid-scene, and nobody has yet played a full show with a controller in their hands. Today is for those, and for the people who make this game to wake up and play it.</p>
-<figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-976284b39cfa.webp" alt="From the game: every line of one take in the castle" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>From the game: every line of one take in the castle</figcaption></figure>
+<figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-e3e3c5d7672d.webp" alt="The castle lounge, wide." loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>The castle lounge, wide.</figcaption></figure>
 <figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-c3094d66a972.webp" alt="From the game: red alert on the space station" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>From the game: red alert on the space station</figcaption></figure>
 <figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-064b4ecdf2d7.webp" alt="All eight sets, each seen from where its audience sits" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>All eight sets, each seen from where its audience sits</figcaption></figure>
 </div>
 <p>The team pushed 80 project updates across Verse gameplay code, art, props and materials, audio.</p>
 </section><hr />]]></content:encoded>
-<enclosure url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-976284b39cfa.webp" type="image/webp" length="0" />
-<media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-976284b39cfa.webp" medium="image" type="image/webp" />
+<enclosure url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-e3e3c5d7672d.webp" type="image/webp" length="0" />
+<media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-e3e3c5d7672d.webp" medium="image" type="image/webp" />
 <media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-c3094d66a972.webp" medium="image" type="image/webp" />
 <media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-064b4ecdf2d7.webp" medium="image" type="image/webp" />
 </item>
@@ -404,19 +432,21 @@
 <p>That sheet also taught us the night&#x27;s most useful lesson. It trapped our tester: no click and no key would close it. The cause was a single unticked setting that says whether a panel is allowed to take focus. With it off, every instruction to focus the panel was ignored without a word of complaint. The same setting explains why nothing had ever answered a controller. It is ticked now, and written into our rules.</p>
 <p>Elsewhere tonight: the director&#x27;s office, where every show starts, went from a concrete yard to a room with posters, trophies and a film camera; the count of hand props we have modelled reached seventy-one, each with its own icon; and the space station got a red alert.</p>
 <p>Still not done at three o&#x27;clock: nobody has seen a prop in an actor&#x27;s hand, wide shots at night are too dark, and no one has yet played a full show with a controller. Those are next.</p>
+<figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-2f639410463a.webp" alt="A close-up on the actor who is talking." loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>A close-up on the actor who is talking.</figcaption></figure>
 <figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-48a8b3392bf4.webp" alt="From the game: the first real two-shot, in the castle, both actors large in the frame" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>From the game: the first real two-shot, in the castle, both actors large in the frame</figcaption></figure>
 <figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-fc2a1b4bd5cb.webp" alt="From the game: a speaker&#x27;s face in close-up, for the first time" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>From the game: a speaker&#x27;s face in close-up, for the first time</figcaption></figure>
 <figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-5fe804b85c6f.webp" alt="From the game: horror in the haunted manor after the lighting change" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>From the game: horror in the haunted manor after the lighting change</figcaption></figure>
-<figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-f30570d5dbf8.webp" alt="From the game: the end-of-take sheet" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>From the game: the end-of-take sheet</figcaption></figure>
+<figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-d4736002523e.webp" alt="The end-of-take sheet." loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>The end-of-take sheet.</figcaption></figure>
 <figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-11e8288c08db.webp" alt="The director&#x27;s office, dressed tonight" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>The director&#x27;s office, dressed tonight</figcaption></figure>
 </div>
 <p>The team pushed 116 project updates across Verse gameplay code, art, props and materials, audio.</p>
 </section><hr />]]></content:encoded>
-<enclosure url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-48a8b3392bf4.webp" type="image/webp" length="0" />
+<enclosure url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-2f639410463a.webp" type="image/webp" length="0" />
+<media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-2f639410463a.webp" medium="image" type="image/webp" />
 <media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-48a8b3392bf4.webp" medium="image" type="image/webp" />
 <media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-fc2a1b4bd5cb.webp" medium="image" type="image/webp" />
 <media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-5fe804b85c6f.webp" medium="image" type="image/webp" />
-<media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-f30570d5dbf8.webp" medium="image" type="image/webp" />
+<media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-d4736002523e.webp" medium="image" type="image/webp" />
 <media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-11e8288c08db.webp" medium="image" type="image/webp" />
 </item>
 <item>
@@ -429,7 +459,7 @@
 <!-- section:u-20261114-0129 -->
 <h2>Jam update: Sat 1:29 AM</h2>
 <p><em><time datetime="2026-11-14T01:29:19-06:00">Saturday, November 14, 2026 at 1:29 AM Central</time></em></p>
-<div class="devlog-written">
+<div class="devlog-written" data-key="4101718e54e3">
 <h3>Saturday, 1:30 AM: the night we opened every set</h3>
 <p>Dev log entry for Saturday November 14, 2026. Written overnight. Pictures are from the editor unless a caption says they are from the game.</p>
 <p>The last thing we were told before the studio went to sleep was blunt: most of the time you cannot see the show. The camera sits behind a wall, or looks at the back of a prop, while two AI actors perform a scene nobody can watch. For a game about directing a show, that is the one fault that cannot ship.</p>
@@ -448,7 +478,7 @@
 <figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-03cc1a6c4629.webp" alt="The haunted manor as a stage: one wall gone, the dining hall open to the camera" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>The haunted manor as a stage: one wall gone, the dining hall open to the camera</figcaption></figure>
 <figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-6cadd53696d3.webp" alt="From the game, before the fixes: the wide camera jammed against a porch rail, no actor in sight" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>From the game, before the fixes: the wide camera jammed against a porch rail, no actor in sight</figcaption></figure>
 <figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-8fa95deb1615.webp" alt="Eleven of the new hand props, two for each kind of show" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>Eleven of the new hand props, two for each kind of show</figcaption></figure>
-<figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-e16abed89d64.webp" alt="The end-of-take sheet, laid out and waiting for its numbers" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>The end-of-take sheet, laid out and waiting for its numbers</figcaption></figure>
+<figure><img src="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-d4736002523e.webp" alt="The end-of-take sheet." loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>The end-of-take sheet.</figcaption></figure>
 </div>
 <p>We&#x27;re deep into the weekend with about 42 hours still on the clock, and the team has been busy with 87 updates across gameplay code, art, props, materials, and audio. Right now we&#x27;re doing a big sight-line audit, checking every camera position against every set and then opening things up by pulling out walls and reworking layouts so the action is easy to see. No big milestones to announce just yet, but plenty of polish is landing behind the scenes. Stay tuned for visuals soon!</p>
 <h3>In progress</h3><ul><li>Sight-line audit: trace every camera position against every set, then open the sets (walls out, layouts changed)</li></ul>
@@ -459,7 +489,7 @@
 <media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-03cc1a6c4629.webp" medium="image" type="image/webp" />
 <media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-6cadd53696d3.webp" medium="image" type="image/webp" />
 <media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-8fa95deb1615.webp" medium="image" type="image/webp" />
-<media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-e16abed89d64.webp" medium="image" type="image/webp" />
+<media:content url="https://www.biloxistudios.com/images/posts/megajam26-devlog/dl-d4736002523e.webp" medium="image" type="image/webp" />
 </item>
 <item>
 <title>Jam update: Sat 12:17 AM</title>
