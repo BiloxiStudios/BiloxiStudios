@@ -19,6 +19,25 @@ This page updates automatically every few hours, newest first, until the jam wra
 <p>Feeds: <a href="/feeds/megajam26.xml">RSS</a> &middot; <a href="/feeds/megajam26.json">JSON</a></p>
 <hr />
 <!-- devlog-sections -->
+<section id="u-20261115-2007" class="devlog-entry">
+<!-- section:u-20261115-2007 -->
+<h2>Jam update: Sun 8:07 PM</h2>
+<p><em><time datetime="2026-11-15T20:07:01-06:00">Sunday, November 15, 2026 at 8:07 PM Central</time></em></p>
+<div class="devlog-written" data-key="da6960799892">
+<h3>Sunday, 8:30 PM: the clock has run out, and this is where the game stands</h3>
+<p>The jam deadline has just passed. Same labels as always: PLAYED means someone ran it in a game session; BUILT means it compiles and was read by a second person, but nobody has seen it work.</p>
+<p>Submitted. The owners confirmed that the jam form went in before the 7:59 PM deadline. The entry is the team&#x27;s version 1 of the project, now titled Hot Set, with a gameplay video. We are not going to say how it will do; we have not seen it as a stranger would.</p>
+<p>Music: PLAYED. The menu and office music was silent for most of the afternoon. It is in the final build, and both the owner and the co-owner have heard it in a session.</p>
+<p>The final stretch, in the order we met it.</p>
+<ul><li>READY TO DIRECT and the pay pop-ups: PLAYED (see below).</li><li>Actors taking direction: PLAYED, with a catch. A fix made the final build: the owner played it and the actors kept the notes (&quot;Yes, Director&quot;). They still miss some notes, so it is not every time.</li><li>Guest Star and the voice fix: PLAYED earlier today. A surprise actor walks on mid-take, and every actor is heard after a TALK.</li><li>Settings, HEAD TO SET and the How to Play card: BUILT. They compile and were read by a second person. Nobody has pressed them on a controller since the last change.</li></ul>
+<p>What the co-owner built and drove, that players see.</p>
+<ul><li>READY TO DIRECT, to the co-owner&#x27;s look. The co-owner&#x27;s spec was a hotter golden sunburst, a gold ticket, gold pedestals, purple accents only, a green START and a blue EDIT. The first pass fixed a solid white hover box, a stretched cost plate and a floating portrait; the pad test then asked for the cash line to stand out from the background and the camera and actor wording to sit inside their boxes. The second pass took the box out, put the cash line in black with a white outline, put the actor labels on the drum faces and made the banner taller. PLAYED.</li><li>Pay pop-ups, top right. The money that pops up as lines land moved to the top right of the screen, from a mock-up the co-owner drew. PLAYED.</li><li>Hot Set, in the title and on the wrap sheet. The project is now titled Hot Set, and a new end card replaced the old DIRECTOR&#x27;S CUT banner on the wrap sheet. Only the banner was replaced; the live numbers and buttons are code and were not touched. BUILT.</li><li>The team upload. The final build was uploaded from the co-owner&#x27;s side as the team&#x27;s version 1 of Hot Set.</li><li>A dock fix, also from the co-owner&#x27;s pad test: PLAYED. After a CUT, the WRAP / CARRY ON row on the Director&#x27;s Call menu pushed RETAKE and SETTINGS off the bottom of the screen. The row now sits in its own slot above the panel, and the footer stays on screen.</li></ul>
+<p>What we did not get to. The anime look is off in this build. The new interface sounds are not in. Nothing has been joined or saved by anyone other than the co-owner&#x27;s own account, so how the game behaves for a second person is NOT seen.</p>
+<p>NOT seen yet: the game as a stranger would meet it, a second person joining the final version, the interface sounds, the anime look, the Settings and HEAD TO SET buttons on a controller after the last change, and anything on the cinematic branch that was not switched on. Thank you for following along. If there is another entry, it will say what happened after the deadline.</p>
+</div>
+<p>Quiet stretch on the island today, but the team wrapped up a final quality check on our jam submission, confirming everything is packaged and ready to go. There&#x27;s no new gameplay to show off right now, and the clock on the jam has run out. Thanks for following along and cheering us on for this benefit weekend!</p>
+<h3>Done</h3><ul><li>QA: verify submission upload folder and field-mapped README checklist</li></ul>
+</section><hr />
 <section id="u-20261115-1628" class="devlog-entry">
 <!-- section:u-20261115-1628 -->
 <h2>Jam update: Sun 4:28 PM</h2>
