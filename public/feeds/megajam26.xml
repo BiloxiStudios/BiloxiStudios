@@ -37,7 +37,7 @@
 <link>https://www.biloxistudios.com/blog/megajam26-devlog#u-20261115-2007</link>
 <guid isPermaLink="false">megajam26-devlog-u-20261115-2007</guid>
 <pubDate>Sun, 15 Nov 2026 20:07:01 -0600</pubDate>
-<description>Quiet stretch on the island today, but the team wrapped up a final quality check on our jam submission, confirming everything is packaged and ready to go. There&#x27;s no new gameplay to show off right now, and the clock on the jam has run out. Thanks for following along and cheering us on for this benefit weekend!</description>
+<description>Sunday, 8:30 PM: the clock has run out, and this is where the game stands.</description>
 <content:encoded><![CDATA[<section id="u-20261115-2007" class="devlog-entry">
 <!-- section:u-20261115-2007 -->
 <h2>Jam update: Sun 8:07 PM</h2>
@@ -46,6 +46,7 @@
 <h3>Sunday, 8:30 PM: the clock has run out, and this is where the game stands</h3>
 <p>The jam deadline has just passed. Same labels as always: PLAYED means someone ran it in a game session; BUILT means it compiles and was read by a second person, but nobody has seen it work.</p>
 <p>Submitted. The owners confirmed that the jam form went in before the 7:59 PM deadline. The entry is the team&#x27;s version 1 of the project, now titled Hot Set, with a gameplay video. We are not going to say how it will do; we have not seen it as a stranger would.</p>
+<p>Play it and rate it on the game page (<a href="https://bizanator.itch.io/hot-set">https://bizanator.itch.io/hot-set</a>) and the jam entry page (<a href="https://itch.io/jam/2026-epic-ai-megajam/rate/5377098">https://itch.io/jam/2026-epic-ai-megajam/rate/5377098</a>).</p>
 <p>Music: PLAYED. The menu and office music was silent for most of the afternoon. It is in the final build, and both the owner and the co-owner have heard it in a session.</p>
 <p>The final stretch, in the order we met it.</p>
 <ul><li>READY TO DIRECT and the pay pop-ups: PLAYED (see below).</li><li>Actors taking direction: PLAYED, with a catch. A fix made the final build: the owner played it and the actors kept the notes (&quot;Yes, Director&quot;). They still miss some notes, so it is not every time.</li><li>Guest Star and the voice fix: PLAYED earlier today. A surprise actor walks on mid-take, and every actor is heard after a TALK.</li><li>Settings, HEAD TO SET and the How to Play card: BUILT. They compile and were read by a second person. Nobody has pressed them on a controller since the last change.</li></ul>
@@ -54,8 +55,6 @@
 <p>What we did not get to. The anime look is off in this build. The new interface sounds are not in. Nothing has been joined or saved by anyone other than the co-owner&#x27;s own account, so how the game behaves for a second person is NOT seen.</p>
 <p>NOT seen yet: the game as a stranger would meet it, a second person joining the final version, the interface sounds, the anime look, the Settings and HEAD TO SET buttons on a controller after the last change, and anything on the cinematic branch that was not switched on. Thank you for following along. If there is another entry, it will say what happened after the deadline.</p>
 </div>
-<p>Quiet stretch on the island today, but the team wrapped up a final quality check on our jam submission, confirming everything is packaged and ready to go. There&#x27;s no new gameplay to show off right now, and the clock on the jam has run out. Thanks for following along and cheering us on for this benefit weekend!</p>
-<h3>Done</h3><ul><li>QA: verify submission upload folder and field-mapped README checklist</li></ul>
 </section><hr />]]></content:encoded>
 </item>
 <item>
@@ -81,7 +80,6 @@
 <p>Honest open items. Actors still do not always take direction. The fix is being worked on and is not in the game. The anime look and the new interface sounds are next build, if at all.</p>
 <p>NOT seen yet: a published copy of the game, the Guest Star card picture, the new quick-time timing, the Space Station alarm&#x27;s 10 seconds timed by eye, the Set and Genre focus fix (not in the game yet), the Settings sheet and HEAD TO SET, the How to Play card, actors taking direction, and everything on the cinematic branch (title, credits, office, unlock card, hints). Next entry about 8:30 PM, after the deadline, as a wrap-up if there is anything to say.</p>
 </div>
-<p>The team is in the final stretch with about three hours left on the clock, and there&#x27;s no big news to share this round. We&#x27;re heads-down polishing what we&#x27;ve got and keeping everything steady for the finish. Stay tuned, because the next update should have more to show you.</p>
 </section><hr />]]></content:encoded>
 </item>
 <item>
@@ -570,7 +568,7 @@
 <h2>Jam update: Fri 12:17 AM</h2>
 <p><em><time datetime="2026-11-13T00:17:01-06:00">Friday, November 13, 2026 at 12:17 AM Central</time></em></p>
 <p>9 more are in progress. The team pushed 78 project updates across Verse gameplay code, art, props and materials, levels and maps, project files.</p>
-<h3>In progress</h3><ul><li>Persona Director: director_ui_bridge so the UI can replace WBP_DirectorPanel without touching Director logic</li><li>Persona Director: EffectsSystem - realtime event triggers off the Director StageBus</li><li>UI: migrate the co-owner&#x27;s new UI from her project_17_UI into Content/UI (owner decision)</li><li>Persona Director: episodes, points and unlocks (sets, themes, actors)</li><li>Persona Director: interactable set marks in all 11 sets (6-12 per set, tagged)</li><li>Persona Director: new genre locations (space station, spooky night forest, school, ice-cream shop)</li><li>Persona Director: player_data save system + session_data (owner request)</li><li>Persona Director: cast bios + day rates for the actor profile screen (IMDb-style)</li><li>First playable</li></ul>
+<h3>In progress</h3><ul><li>Persona Director: director_ui_bridge so the UI can replace WBP_DirectorPanel without touching Director logic</li><li>Persona Director: EffectsSystem - realtime event triggers off the Director StageBus</li><li>UI: migrate the co-owner&#x27;s new UI into Content/UI (owner decision)</li><li>Persona Director: episodes, points and unlocks (sets, themes, actors)</li><li>Persona Director: interactable set marks in all 11 sets (6-12 per set, tagged)</li><li>Persona Director: new genre locations (space station, spooky night forest, school, ice-cream shop)</li><li>Persona Director: player_data save system + session_data (owner request)</li><li>Persona Director: cast bios + day rates for the actor profile screen (IMDb-style)</li><li>First playable</li></ul>
 </section><hr />]]></content:encoded>
 </item>
 <item>
