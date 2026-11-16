@@ -11,6 +11,7 @@ export interface PostMetadata {
   author: string
   excerpt: string
   coverImage?: string
+  ogImage?: string
 }
 
 export interface Post {
@@ -36,6 +37,7 @@ export async function getPostBySlug(slug: string): Promise<Post> {
       author: data.author,
       excerpt: data.excerpt,
       coverImage: data.coverImage,
+      ...(data.ogImage ? { ogImage: data.ogImage } : {}),
     },
   }
 }
