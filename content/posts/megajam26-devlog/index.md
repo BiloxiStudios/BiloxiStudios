@@ -36,7 +36,6 @@ This page updates automatically every few hours, newest first, until the jam wra
 <p>Honest open items. Actors still do not always take direction. The fix is being worked on and is not in the game. The anime look and the new interface sounds are next build, if at all.</p>
 <p>NOT seen yet: a published copy of the game, the Guest Star card picture, the new quick-time timing, the Space Station alarm&#x27;s 10 seconds timed by eye, the Set and Genre focus fix (not in the game yet), the Settings sheet and HEAD TO SET, the How to Play card, actors taking direction, and everything on the cinematic branch (title, credits, office, unlock card, hints). Next entry about 8:30 PM, after the deadline, as a wrap-up if there is anything to say.</p>
 </div>
-<p>The team is in the final stretch with about three hours left on the clock, and there&#x27;s no big news to share this round. We&#x27;re heads-down polishing what we&#x27;ve got and keeping everything steady for the finish. Stay tuned, because the next update should have more to show you.</p>
 </section><hr />
 <section id="u-20261115-1142" class="devlog-entry">
 <!-- section:u-20261115-1142 -->
