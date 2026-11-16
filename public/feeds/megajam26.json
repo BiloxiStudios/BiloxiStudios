@@ -592,7 +592,7 @@
    "id": "https://www.biloxistudios.com/blog/megajam26-devlog#u-20261113-2117",
    "url": "https://www.biloxistudios.com/blog/megajam26-devlog#u-20261113-2117",
    "title": "Jam update: Fri 9:17 PM",
-   "content_html": "<section id=\"u-20261113-2117\" class=\"devlog-entry\">\n<!-- section:u-20261113-2117 -->\n<h2>Jam update: Fri 9:17 PM</h2>\n<p><em><time datetime=\"2026-11-13T21:17:01-06:00\">Friday, November 13, 2026 at 9:17 PM Central</time></em></p>\n<p>5 more are in progress. The team pushed 101 project updates across Verse gameplay code, art, props and materials, audio.</p>\n<h3>In progress</h3><ul><li>Show fails to auto-start after the Showrunner interview; needs repeated prompts</li><li>Space Station must look like it is in space: windows, and space outside them</li><li>In-play director UI cannot be used with a controller: no focus set; dead while rolling (Rinella: &quot;this is not ok&quot;)</li><li>Extra shots per set: establishing shot, cutaways, tagged points of interest, more shot locations</li><li>Film Noir look is unviewable: the screen is solid grey fog (owner playtest)</li></ul>\n</section><hr />",
+   "content_html": "<section id=\"u-20261113-2117\" class=\"devlog-entry\">\n<!-- section:u-20261113-2117 -->\n<h2>Jam update: Fri 9:17 PM</h2>\n<p><em><time datetime=\"2026-11-13T21:17:01-06:00\">Friday, November 13, 2026 at 9:17 PM Central</time></em></p>\n<p>5 more are in progress. The team pushed 101 project updates across Verse gameplay code, art, props and materials, audio.</p>\n<h3>In progress</h3><ul><li>Show fails to auto-start after the Showrunner interview; needs repeated prompts</li><li>Space Station must look like it is in space: windows, and space outside them</li><li>In-play director UI cannot be used with a controller: no focus set; dead while rolling (the co-owner: &quot;this is not ok&quot;)</li><li>Extra shots per set: establishing shot, cutaways, tagged points of interest, more shot locations</li><li>Film Noir look is unviewable: the screen is solid grey fog (owner playtest)</li></ul>\n</section><hr />",
    "summary": "5 more are in progress. The team pushed 101 project updates across Verse gameplay code, art, props and materials, audio.",
    "date_published": "2026-11-13T21:17:01-06:00",
    "tags": [
@@ -608,7 +608,7 @@
     "in_progress": [
      "Show fails to auto-start after the Showrunner interview; needs repeated prompts",
      "Space Station must look like it is in space: windows, and space outside them",
-     "In-play director UI cannot be used with a controller: no focus set; dead while rolling (Rinella: \"this is not ok\")",
+     "In-play director UI cannot be used with a controller: no focus set; dead while rolling (the co-owner: \"this is not ok\")",
      "Extra shots per set: establishing shot, cutaways, tagged points of interest, more shot locations",
      "Film Noir look is unviewable: the screen is solid grey fog (owner playtest)"
     ]
@@ -730,7 +730,7 @@
    "id": "https://www.biloxistudios.com/blog/megajam26-devlog#u-20261113-0017",
    "url": "https://www.biloxistudios.com/blog/megajam26-devlog#u-20261113-0017",
    "title": "Jam update: Fri 12:17 AM",
-   "content_html": "<section id=\"u-20261113-0017\" class=\"devlog-entry\">\n<!-- section:u-20261113-0017 -->\n<h2>Jam update: Fri 12:17 AM</h2>\n<p><em><time datetime=\"2026-11-13T00:17:01-06:00\">Friday, November 13, 2026 at 12:17 AM Central</time></em></p>\n<p>9 more are in progress. The team pushed 78 project updates across Verse gameplay code, art, props and materials, levels and maps, project files.</p>\n<h3>In progress</h3><ul><li>Persona Director: director_ui_bridge so the UI can replace WBP_DirectorPanel without touching Director logic</li><li>Persona Director: EffectsSystem - realtime event triggers off the Director StageBus</li><li>UI: migrate Rinella&#x27;s new UI from RinProject_17_UI into Content/UI (owner decision)</li><li>Persona Director: episodes, points and unlocks (sets, themes, actors)</li><li>Persona Director: interactable set marks in all 11 sets (6-12 per set, tagged)</li><li>Persona Director: new genre locations (space station, spooky night forest, school, ice-cream shop)</li><li>Persona Director: player_data save system + session_data (owner request)</li><li>Persona Director: cast bios + day rates for the actor profile screen (IMDb-style)</li><li>First playable</li></ul>\n</section><hr />",
+   "content_html": "<section id=\"u-20261113-0017\" class=\"devlog-entry\">\n<!-- section:u-20261113-0017 -->\n<h2>Jam update: Fri 12:17 AM</h2>\n<p><em><time datetime=\"2026-11-13T00:17:01-06:00\">Friday, November 13, 2026 at 12:17 AM Central</time></em></p>\n<p>9 more are in progress. The team pushed 78 project updates across Verse gameplay code, art, props and materials, levels and maps, project files.</p>\n<h3>In progress</h3><ul><li>Persona Director: director_ui_bridge so the UI can replace WBP_DirectorPanel without touching Director logic</li><li>Persona Director: EffectsSystem - realtime event triggers off the Director StageBus</li><li>UI: migrate the co-owner&#x27;s new UI from her project_17_UI into Content/UI (owner decision)</li><li>Persona Director: episodes, points and unlocks (sets, themes, actors)</li><li>Persona Director: interactable set marks in all 11 sets (6-12 per set, tagged)</li><li>Persona Director: new genre locations (space station, spooky night forest, school, ice-cream shop)</li><li>Persona Director: player_data save system + session_data (owner request)</li><li>Persona Director: cast bios + day rates for the actor profile screen (IMDb-style)</li><li>First playable</li></ul>\n</section><hr />",
    "summary": "9 more are in progress. The team pushed 78 project updates across Verse gameplay code, art, props and materials, levels and maps, project files.",
    "date_published": "2026-11-13T00:17:01-06:00",
    "tags": [
@@ -746,7 +746,7 @@
     "in_progress": [
      "Persona Director: director_ui_bridge so the UI can replace WBP_DirectorPanel without touching Director logic",
      "Persona Director: EffectsSystem - realtime event triggers off the Director StageBus",
-     "UI: migrate Rinella's new UI from RinProject_17_UI into Content/UI (owner decision)",
+     "UI: migrate the co-owner's new UI into Content/UI (owner decision)",
      "Persona Director: episodes, points and unlocks (sets, themes, actors)",
      "Persona Director: interactable set marks in all 11 sets (6-12 per set, tagged)",
      "Persona Director: new genre locations (space station, spooky night forest, school, ice-cream shop)",
