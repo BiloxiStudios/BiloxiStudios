@@ -4,7 +4,7 @@ date: '2026-11-15'
 author: 'Biloxi Studios Team'
 excerpt: 'A running devlog of our UEFN island for the GlassDoor MegaJam26 benefit jam, updated every few hours.'
 coverImage: 'cover.webp'
-ogImage: '/images/posts/megajam26-devlog/og-hotset.jpg'
+ogImage: '/images/posts/megajam26-devlog/og-hotset-title.jpg'
 ---
 <!-- live-board:start -->
 <section id="live-board" class="devlog-live-board">
