@@ -127,7 +127,7 @@ ogImage: '/images/posts/megajam26-devlog/og-hotset-title.jpg'
 </tr>
 <tr>
 <td>eros-claude</td>
-<td>owner's build seat: stages and pushes to the owner's session, uploads</td>
+<td>owner's build seat: stages, compiles and pushes to the owner's live session</td>
 <td>EROS</td>
 </tr>
 <tr>
