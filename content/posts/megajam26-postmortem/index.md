@@ -149,12 +149,12 @@ ogImage: '/images/posts/megajam26-devlog/og-hotset-title.jpg'
 <tr>
 <td>mj-level</td>
 <td>gate reader / fact-checker, placed level data, byte checks</td>
-<td>brandon-lap</td>
+<td>biz-lap</td>
 </tr>
 <tr>
 <td>mj-ui</td>
 <td>Widget Blueprints + UI Verse</td>
-<td>kristale-lap</td>
+<td>rin-lap</td>
 </tr>
 <tr>
 <td>uefn-ryujin</td>
@@ -183,9 +183,9 @@ ogImage: '/images/posts/megajam26-devlog/og-hotset-title.jpg'
 </tr>
 </tbody>
 </table>
-<figure><img src="/images/posts/megajam26-postmortem/hotset-crew-diagram-v2.webp" alt="The crew diagram" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>The crew diagram</figcaption></figure>
+<figure><img src="/images/posts/megajam26-postmortem/hotset-crew-diagram-v3.webp" alt="The crew diagram" loading="lazy" style="width:100%;height:auto;border-radius:8px" /><figcaption>The crew diagram</figcaption></figure>
 
-<p><strong>Machines:</strong> HYDRA is a three-headed desktop (AMD, triple display) in the living room, our game-testing rig, assigned to the AI testers this time (it also serves as QA's docs client). DRAGON is an extra workstation (props, validation, pad runs). kristale-lap is the co-owner's laptop, brandon-lap the gate laptop.</p>
+<p><strong>Machines:</strong> HYDRA is a three-headed desktop (AMD, triple display) in the living room, our game-testing rig, assigned to the AI testers this time (it also serves as QA's docs client). DRAGON is an extra workstation (props, validation, pad runs). rin-lap is the co-owner's laptop, biz-lap the gate laptop.</p>
 <p><strong>How work flows:</strong> an owner's note, then the lead's order in the group, then a seat does it on a shelf, a second seat reads it, the owner plays it on a pad (or the co-owner on Xbox), it lands with a changelist, and QA records it. Three gates: the second-seat read, the owner's yes, and QA's record. From 6:16 PM on the last day, changes went straight onto the live session first and were read after.</p>
 <p><strong>Rules that mattered:</strong> one owner per area; pull first; numbered changelists only; nothing is done until someone saw it in a game session; never press Continue on a Verse validation modal; never print a secret.</p>
 <h2>8. Starter tips (copyable)</h2>
